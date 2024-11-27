@@ -72,17 +72,7 @@ class DriftCar(RacingCar):
 car1 = Car("Nissan", "350z", 2.0, 150)
 car2 = RacingCar("Honda", "NSX", 4.2, 660, False, 98)
 car3 = DriftCar("Nissan", "GTR-34", 3.5, 1100, True, 100, -3.5, 280)
-#
-# print(f'{car1} \n')  # Вывод через __str__
-# print(repr(car1))  # Вывод через __repr__
-#
-# print(car2)  # Вывод через __str__
-# print(repr(car2))  # Вывод через __repr__
-#
-# print(car3)  # Вывод через __str__
-# print(repr(car3))  # Вывод через __repr__
-#
-#
+
 print(f'{car1 < car2} {car1.horsepower}, {car2.horsepower}') # True, сравнение по horsepower
 print(f'{car3 > car1} {car3.horsepower}, {car2.horsepower}')  # True
 print(f'{car2 == car3} {car2.horsepower}, {car3.horsepower}')  # False
