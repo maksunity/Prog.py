@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <h1>Привет, {{ session.username }}</h1>
+    <a href="/logout">Выйти</a>
+    <h2>Добавить данные</h2>
+    <form method="POST">
+        <input type="number" name="pulse" placeholder="Пульс" required>
+        <input type="text" name="blood_pressure" placeholder="Давление" required>
+        <button type="submit">Добавить</button>
+    </form>
+    <h2>Статистика</h2>
+    <table>
+        <tr>
+            <th>Дата</th>
+            <th>Пульс</th>
+            <th>Давление</th>
+        </tr>
+        {% for stat in stats %}
+        <tr>
+            <td>{{ stat.timestamp }}</td>
+            <td>{{ stat.pulse }}</td>
+            <td>{{ stat.blood_pressure }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>ч
