@@ -1,5 +1,12 @@
 1st term/mat/
 
+2nd term/4th lab/data
+2nd term/4th lab/datasets
+2nd term/4th lab/mnist
+2nd term/4th lab/yolo11n.pt
+2nd term/4th lab/yolo11n-cls.pt
+
+
 # Системные файлы
 __pycache__/
 *.py[cod]
