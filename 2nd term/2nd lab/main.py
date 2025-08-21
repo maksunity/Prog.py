@@ -10,6 +10,8 @@ y = data.target   # выходные данные (классы)
 
 print(f"Форма X: {X.shape}")
 
+X_centered = X - np.mean(X, axis=0)
+
 # 2. Реализация PCA
 def pca_custom(X, K):
     # Шаг 1: Нормализация (стандартизация)
@@ -18,8 +20,8 @@ def pca_custom(X, K):
     # Шаг 2: Матрица ковариации
     cov_matrix = np.cov(X_meaned, rowvar=False)
 
-    # Шаг 3: Получение собственных векторов и значений
-    eigen_values, eigen_vectors = np.linalg.eig(cov_matrix)
+    # Шаг 3: Собственные значения и векторы (оптимизированная версия)
+    eigen_values, eigen_vectors = np.linalg.eigh(cov_matrix)
 
     # Шаг 4: Сортировка по убыванию собственных значений
     sorted_idx = np.argsort(eigen_values)[::-1]
@@ -32,10 +34,15 @@ def pca_custom(X, K):
     # Шаг 6: Проекция данных
     X_reduced = np.dot(X_meaned, eigen_vectors_k)
 
-    return X_reduced, eigen_values
+    # Расчет доли объясненной дисперсии
+    explained_variance_ratio = eigen_values / np.sum(eigen_values)
+
+    return X_reduced, explained_variance_ratio[:K]
+    # return X_reduced, eigen_values
 
 # 3. Визуализация 2D-проекции
-X_pca_custom, eigen_vals = pca_custom(X, 2)
+# X_pca_custom, eigen_vals = pca_custom(X, 2)
+X_pca_custom, custom_var_ratio = pca_custom(X_centered, 2)
 
 plt.figure(figsize=(8, 6))
 plt.scatter(X_pca_custom[:, 0], X_pca_custom[:, 1], c=y, cmap='coolwarm', edgecolor='k')
@@ -50,7 +57,8 @@ scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
 pca = PCA(n_components=2)
-X_pca_sklearn = pca.fit_transform(X_scaled)
+# X_pca_sklearn = pca.fit_transform(X_scaled)
+X_pca_sklearn = pca.fit_transform(X_centered)
 
 plt.figure(figsize=(8, 6))
 plt.scatter(X_pca_sklearn[:, 0], X_pca_sklearn[:, 1], c=y, cmap='coolwarm', edgecolor='k')
@@ -64,8 +72,16 @@ plt.show()
 print("\nДоля объяснённой дисперсии (sklearn):", pca.explained_variance_ratio_)
 print("Суммарно объяснённая дисперсия:", np.sum(pca.explained_variance_ratio_))
 
+print("\nСравнение объясненной дисперсии:")
+print("Кастомная PCA:", custom_var_ratio)
+print("Sklearn PCA:  ", pca.explained_variance_ratio_)
+print("\nСуммарная дисперсия:")
+print(f"Кастомная: {np.sum(custom_var_ratio):.4f}")
+print(f"Sklearn:   {np.sum(pca.explained_variance_ratio_):.4f}")
+
 # 6. Метод локтя — подбор оптимального K
-pca_full = PCA().fit(X_scaled)
+# pca_full = PCA().fit(X_scaled)
+pca_full = PCA().fit(X_centered)
 explained_variance = np.cumsum(pca_full.explained_variance_ratio_)
 
 plt.figure(figsize=(8, 6))
