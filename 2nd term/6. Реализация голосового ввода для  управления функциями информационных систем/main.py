@@ -407,7 +407,7 @@ def main(from_file=False, text_file_path="input.txt"):
 
 
 if __name__ == "__main__":
-    main(from_file=False)
+    main(from_file=True)
 #
 #     while True:
 #         if from_file:
