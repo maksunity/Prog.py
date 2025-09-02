@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель управления прокатным станом</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f0f2f5; color: #333; }
+        .container { max-width: 1200px; margin: auto; padding: 20px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .card { background-color: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .controls { grid-column: 1 / -1; }
+        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 0; }
+        .status-ok { color: green; }
+        .status-warning { color: orange; }
+        .status-critical { color: red; font-weight: bold; }
+        .metric { display: flex; justify-content: space-between; padding: 5px 0; }
+        .metric-label { font-weight: bold; }
+        .plot { width: 100%; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input[type="number"], input[type="range"] { width: 100%; box-sizing: border-box; }
+        button { background-color: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; }
+        .reset-button { background-color: #dc3545; margin-left: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Панель управления прокатным станом</h1>
+        
+        <div class="card controls">
+            <h2>Управление</h2>
+            <div class="form-group">
+                <label for="speed">Скорость стана (об/мин): <span id="speed-val">0</span></label>
+                <input type="range" id="speed" min="0" max="600" value="0" oninput="updateSpeedValue(this.value)">
+            </div>
+            <div class="form-group">
+                <label for="furnace_temp">Температура печи (°C)</label>
+                <input type="number" id="furnace_temp" value="1200">
+            </div>
+            <div class="form-group">
+                <label for="sim_speed">Скорость симуляции: <span id="sim-speed-val">x1.0</span></label>
+                <input type="range" id="sim_speed" min="0.1" max="10" step="0.1" value="1" oninput="updateSimSpeedValue(this.value)">
+            </div>
+            <div class="form-group">
+                <label for="cooling">Интенсивность охлаждения: <span id="cooling-val">x1.0</span></label>
+                <input type="range" id="cooling" min="0" max="2" step="0.1" value="1" oninput="updateCoolingValue(this.value)">
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="is_rolling"> Прокатка слитка
+                </label>
+            </div>
+            <button onclick="applyControls()">Применить</button>
+            <button onclick="resetSimulation()" class="reset-button">Сбросить симуляцию</button>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2>Прокатный стан: <span id="mill-name"></span> (<span id="mill-status"></span>)</h2>
+                <div class="metric"><span class="metric-label">Скорость:</span> <span id="mill-speed"></span></div>
+            </div>
+            <div class="card">
+                <h2>Оповещения</h2>
+                <ul id="alerts-list"><li>Нет оповещений</li></ul>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2 id="roll1-name">Вал 1</h2>
+                <div class="metric"><span class="metric-label">Статус:</span> <span id="roll1-status"></span></div>
+                <div class="metric"><span class="metric-label">Температура:</span> <span id="roll1-temp"></span></div>
+                <img id="plot-roll1" class="plot" src="" alt="График температуры Вала 1">
+            </div>
+            <div class="card">
+                <h2 id="roll2-name">Вал 2</h2>
+                <div class="metric"><span class="metric-label">Статус:</span> <span id="roll2-status"></span></div>
+                <div class="metric"><span class="metric-label">Температура:</span> <span id="roll2-temp"></span></div>
+                <img id="plot-roll2" class="plot" src="" alt="График температуры Вала 2">
+            </div>
+            <div class="card">
+                <h2 id="bearing1-name">Подшипник 1</h2>
+                <div class="metric"><span class="metric-label">Статус:</span> <span id="bearing1-status"></span></div>
+                <div class="metric"><span class="metric-label">Температура:</span> <span id="bearing1-temp"></span></div>
+                <img id="plot-bearing1" class="plot" src="" alt="График температуры Подшипника 1">
+            </div>
+            <div class="card">
+                <h2 id="bearing2-name">Подшипник 2</h2>
+                <div class="metric"><span class="metric-label">Статус:</span> <span id="bearing2-status"></span></div>
+                <div class="metric"><span class="metric-label">Температура:</span> <span id="bearing2-temp"></span></div>
+                <img id="plot-bearing2" class="plot" src="" alt="График температуры Подшипника 2">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateSpeedValue(val) {
+            document.getElementById('speed-val').textContent = val;
+        }
+
+        function updateSimSpeedValue(val) {
+            document.getElementById('sim-speed-val').textContent = `x${parseFloat(val).toFixed(1)}`;
+        }
+
+        function updateCoolingValue(val) {
+            document.getElementById('cooling-val').textContent = `x${parseFloat(val).toFixed(1)}`;
+        }
+
+        async function applyControls() {
+            const speed = document.getElementById('speed').value;
+            const furnace_temp = document.getElementById('furnace_temp').value;
+            const is_rolling = document.getElementById('is_rolling').checked;
+            const sim_speed = document.getElementById('sim_speed').value;
+            const cooling_intensity = document.getElementById('cooling').value;
+
+            await fetch('/control', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ speed, furnace_temp, is_rolling, sim_speed, cooling_intensity })
+            });
+        }
+
+        async function resetSimulation() {
+            await fetch('/reset', { method: 'POST' });
+            
+            // Reset UI controls to default values
+            document.getElementById('speed').value = 0;
+            document.getElementById('furnace_temp').value = 1200;
+            document.getElementById('is_rolling').checked = false;
+            document.getElementById('sim_speed').value = 1;
+            document.getElementById('cooling').value = 1;
+
+            // Update slider value displays
+            updateSpeedValue(0);
+            updateSimSpeedValue(1);
+            updateCoolingValue(1);
+
+            // Immediately refresh the dashboard to show the reset state
+            updateDashboard();
+        }
+
+        function setStatusClass(element, status) {
+            element.className = '';
+            if (status === 'OK') element.classList.add('status-ok');
+            else if (status === 'WARNING') element.classList.add('status-warning');
+            else if (status === 'CRITICAL') element.classList.add('status-critical');
+            element.textContent = status;
+        }
+
+        async function updateDashboard() {
+            const response = await fetch('/status');
+            const data = await response.json();
+
+            if (!data || data.status === 'error') return;
+
+            // Mill
+            document.getElementById('mill-name').textContent = data.name;
+            document.getElementById('mill-speed').textContent = data.speed;
+            setStatusClass(document.getElementById('mill-status'), data.status);
+
+            // Roll 1
+            const r1 = data.roll_1_state;
+            document.getElementById('roll1-name').textContent = r1.name;
+            document.getElementById('roll1-temp').textContent = r1.temperature;
+            setStatusClass(document.getElementById('roll1-status'), r1.status);
+
+            // Bearing 1
+            const b1 = r1.bearing_state;
+            document.getElementById('bearing1-name').textContent = b1.name;
+            document.getElementById('bearing1-temp').textContent = b1.temperature;
+            setStatusClass(document.getElementById('bearing1-status'), b1.status);
+
+            // Roll 2
+            const r2 = data.roll_2_state;
+            document.getElementById('roll2-name').textContent = r2.name;
+            document.getElementById('roll2-temp').textContent = r2.temperature;
+            setStatusClass(document.getElementById('roll2-status'), r2.status);
+
+            // Bearing 2
+            const b2 = r2.bearing_state;
+            document.getElementById('bearing2-name').textContent = b2.name;
+            document.getElementById('bearing2-temp').textContent = b2.temperature;
+            setStatusClass(document.getElementById('bearing2-status'), b2.status);
+
+            // Alerts
+            const alertsList = document.getElementById('alerts-list');
+            alertsList.innerHTML = '';
+            let hasAlerts = false;
+            [r1, b1, r2, b2].forEach(item => {
+                if (item.alerts.length > 0) {
+                    hasAlerts = true;
+                    const li = document.createElement('li');
+                    li.textContent = `${item.name}: ${item.alerts[0]}`;
+                    alertsList.appendChild(li);
+                }
+            });
+            if (!hasAlerts) {
+                alertsList.innerHTML = '<li>Нет оповещений</li>';
+            }
+
+            // Update plots by changing src to bust cache
+            const timestamp = new Date().getTime();
+            document.getElementById('plot-roll1').src = `/plot/roll1.png?t=${timestamp}`;
+            document.getElementById('plot-roll2').src = `/plot/roll2.png?t=${timestamp}`;
+            document.getElementById('plot-bearing1').src = `/plot/bearing1.png?t=${timestamp}`;
+            document.getElementById('plot-bearing2').src = `/plot/bearing2.png?t=${timestamp}`;
+        }
+
+        setInterval(updateDashboard, 1500); // Update every 1.5 seconds
+        window.onload = updateDashboard;
+    </script>
+</body>
+</html>
