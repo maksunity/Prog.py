@@ -1,0 +1,72 @@
+Практика 3: Тематическое моделирование веб-данных
+Разработать систему тематического моделирования для автоматического анализа и категоризации собранных веб-данных:
+
+Задачи:
+1. Реализовать пайплайн тематического моделирования для текстовых данных:
+Предобработка и векторизация текстов
+Применение методов LDA и NMF
+Оценка качества и интерпретация результатов
+Визуализация тематических распределений
+2. Обработать минимум 2 различных датасета (собрать с практики 2):
+Новостные статьи (200+ документов)
+Описания товаров/услуг (200+ документов) + отзывы
+
+# LDA с Gensim
+from gensim import models, corpora
+lda_model = models.LdaModel(corpus, num_topics=10, id2word=dictionary)
+# NMF с Scikit-learn
+from sklearn.decomposition import NMF
+from sklearn.feature_extraction.text import TfidfVectorizer
+nmf_model = NMF(n_components=10, random_state=42)
+# LDA для новостей с автоматическим подбором числа тем
+python topic_modeling.py --dataset news --method lda --topics auto --output
+news_topics
+# NMF для товаров с фиксированным числом тем
+python topic_modeling.py --dataset products --method nmf --topics 15--output
+product_categories
+# Сравнение методов
+python topic_modeling.py --dataset mixed --method both --topics 10--compare
+
+На выходе
+1. Визуализации тем через pyLDAvis (и опционально word clouds)
+2. Тематические распределения по документам (какая тема в каком документе насколько
+представлена)
+3. Ключевые слова для каждой темы с весами (см. пример выше на рисунке)
+
+Рекомендуется также взять models.coherencemodel – Topic coherence pipeline — gensim для оценки качества тем (coherence score
+
+Пример
+Необходимо провести тематическое моделирование коллекции методами латентного размещения (аллокации) Дирихле и неотрицательного матричного разложения и визуализировать темы с разным количеством топ-слов, реализовав функцию
+plot_top_words 
+1. Для тематического моделирования понадобится matplotlib ,sklearn.feature_extraction.text( TfidfVectorizer , CountVectorizer ),sklearn.decomposition( NMF , LatentDirichletAllocation )
+2. Для препроцессинга нужно воспользоваться прошлыми материалами (в части стоп-слов, токенизации и лемматизации)
+3. Затем построить через CountVectorizer , TfidfVectorizer (попробуйте оба) векторное представление каждого текста (для визуализации полезно также сделать что-то вроде tfidf_feature_names = tfidf_vectorizer.get_feature_names() )
+4. Полученные вектора передавать уже в модель для тематического моделирования
+5. Количество признаков — начать с 50-100, топиков — 10, топ-слов — 10
+
+
+# как это может выглядеть (без реализации логики функций)
+n_features = 50
+n_components = 10
+n_top_words = 10
+# тут все, собственно, происходит
+if __name__ == '__main__':
+tfidf_vectorizer, tfidf = create_vectors_tf_idf('./...')
+nmf = NMF(n_components=n_components, random_state=1, alpha=.1,
+l1_ratio=.5).fit(tfidf)
+tfidf_feature_names = tfidf_vectorizer.get_feature_names()
+plot_top_words(nmf, tfidf_feature_names, n_top_words, 'Topics in NMF model
+(Frobenius norm)')
+nmf_k = NMF(n_components=n_components, random_state=1,
+beta_loss='kullback-leibler', solver='mu', max_iter=1000, alpha=.1,
+l1_ratio=.5).fit(tfidf)
+plot_top_words(nmf_k, tfidf_feature_names, n_top_words, 'Topics in NMF model
+(generalized Kullback-Leibler divergence)')
+tf_vectorizer, tf = create_vectors_count('./sports')
+lda = LatentDirichletAllocation(n_components=n_components, max_iter=5,
+learning_method='online',
+learning_offset=50.,
+random_state=0)
+lda.fit(tf)
+tf_feature_names = tf_vectorizer.get_feature_names()
+plot_top_words(lda, tf_feature_names, n_top_words, 'Topics in LDA model'

@@ -1,0 +1,2026 @@
+{
+  "video_name": "C:\\Users\\maksunity\\PycharmProjects\\Datamining\\Web-tech\\4_th lab\\videos\\The World’s Fastest G87 M2 ｜ Midnight Tokyo Run.mp4",
+  "detections": [
+    {
+      "timestamp": 0.9592916666666667,
+      "objects": [
+        {
+          "object": "oven",
+          "confidence": 0.5298904180526733,
+          "timestamp": 0.9592916666666667
+        }
+      ]
+    },
+    {
+      "timestamp": 4.796458333333333,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8410155773162842,
+          "timestamp": 4.796458333333333
+        },
+        {
+          "object": "car",
+          "confidence": 0.8146292567253113,
+          "timestamp": 4.796458333333333
+        }
+      ]
+    },
+    {
+      "timestamp": 5.75575,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8455733060836792,
+          "timestamp": 5.75575
+        },
+        {
+          "object": "person",
+          "confidence": 0.8423762321472168,
+          "timestamp": 5.75575
+        }
+      ]
+    },
+    {
+      "timestamp": 6.715041666666666,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9045300483703613,
+          "timestamp": 6.715041666666666
+        },
+        {
+          "object": "car",
+          "confidence": 0.8117213845252991,
+          "timestamp": 6.715041666666666
+        },
+        {
+          "object": "person",
+          "confidence": 0.5586795210838318,
+          "timestamp": 6.715041666666666
+        }
+      ]
+    },
+    {
+      "timestamp": 7.674333333333333,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8539811372756958,
+          "timestamp": 7.674333333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.7480615377426147,
+          "timestamp": 7.674333333333333
+        }
+      ]
+    },
+    {
+      "timestamp": 8.633624999999999,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.6637702584266663,
+          "timestamp": 8.633624999999999
+        }
+      ]
+    },
+    {
+      "timestamp": 14.389375,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8484032154083252,
+          "timestamp": 14.389375
+        },
+        {
+          "object": "person",
+          "confidence": 0.8162784576416016,
+          "timestamp": 14.389375
+        }
+      ]
+    },
+    {
+      "timestamp": 15.348666666666666,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8954887986183167,
+          "timestamp": 15.348666666666666
+        },
+        {
+          "object": "person",
+          "confidence": 0.7985649108886719,
+          "timestamp": 15.348666666666666
+        },
+        {
+          "object": "car",
+          "confidence": 0.6543222665786743,
+          "timestamp": 15.348666666666666
+        }
+      ]
+    },
+    {
+      "timestamp": 16.307958333333332,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.893235445022583,
+          "timestamp": 16.307958333333332
+        },
+        {
+          "object": "car",
+          "confidence": 0.737892746925354,
+          "timestamp": 16.307958333333332
+        },
+        {
+          "object": "person",
+          "confidence": 0.6411744952201843,
+          "timestamp": 16.307958333333332
+        },
+        {
+          "object": "person",
+          "confidence": 0.6186825633049011,
+          "timestamp": 16.307958333333332
+        }
+      ]
+    },
+    {
+      "timestamp": 17.267249999999997,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8842127919197083,
+          "timestamp": 17.267249999999997
+        },
+        {
+          "object": "car",
+          "confidence": 0.8707630038261414,
+          "timestamp": 17.267249999999997
+        },
+        {
+          "object": "person",
+          "confidence": 0.8319399952888489,
+          "timestamp": 17.267249999999997
+        },
+        {
+          "object": "person",
+          "confidence": 0.7703272700309753,
+          "timestamp": 17.267249999999997
+        }
+      ]
+    },
+    {
+      "timestamp": 18.226541666666666,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.9323176145553589,
+          "timestamp": 18.226541666666666
+        },
+        {
+          "object": "person",
+          "confidence": 0.774181067943573,
+          "timestamp": 18.226541666666666
+        },
+        {
+          "object": "person",
+          "confidence": 0.7444003820419312,
+          "timestamp": 18.226541666666666
+        }
+      ]
+    },
+    {
+      "timestamp": 19.18583333333333,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.9342237710952759,
+          "timestamp": 19.18583333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.8083198666572571,
+          "timestamp": 19.18583333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.7866941094398499,
+          "timestamp": 19.18583333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.7300063371658325,
+          "timestamp": 19.18583333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.6044259071350098,
+          "timestamp": 19.18583333333333
+        }
+      ]
+    },
+    {
+      "timestamp": 25.900875,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.5843517780303955,
+          "timestamp": 25.900875
+        }
+      ]
+    },
+    {
+      "timestamp": 26.860166666666665,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.5115926861763,
+          "timestamp": 26.860166666666665
+        }
+      ]
+    },
+    {
+      "timestamp": 27.81945833333333,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.5792177319526672,
+          "timestamp": 27.81945833333333
+        }
+      ]
+    },
+    {
+      "timestamp": 28.77875,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8162664771080017,
+          "timestamp": 28.77875
+        },
+        {
+          "object": "person",
+          "confidence": 0.7817933559417725,
+          "timestamp": 28.77875
+        },
+        {
+          "object": "person",
+          "confidence": 0.7363443374633789,
+          "timestamp": 28.77875
+        },
+        {
+          "object": "truck",
+          "confidence": 0.5313421487808228,
+          "timestamp": 28.77875
+        }
+      ]
+    },
+    {
+      "timestamp": 29.738041666666664,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8247547745704651,
+          "timestamp": 29.738041666666664
+        },
+        {
+          "object": "person",
+          "confidence": 0.7701789140701294,
+          "timestamp": 29.738041666666664
+        }
+      ]
+    },
+    {
+      "timestamp": 30.697333333333333,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8308478593826294,
+          "timestamp": 30.697333333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.6186531186103821,
+          "timestamp": 30.697333333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.5426501035690308,
+          "timestamp": 30.697333333333333
+        },
+        {
+          "object": "truck",
+          "confidence": 0.5305339097976685,
+          "timestamp": 30.697333333333333
+        },
+        {
+          "object": "car",
+          "confidence": 0.5285637974739075,
+          "timestamp": 30.697333333333333
+        }
+      ]
+    },
+    {
+      "timestamp": 31.656625,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.833531379699707,
+          "timestamp": 31.656625
+        }
+      ]
+    },
+    {
+      "timestamp": 32.615916666666664,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8903396129608154,
+          "timestamp": 32.615916666666664
+        }
+      ]
+    },
+    {
+      "timestamp": 33.57520833333333,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8693295121192932,
+          "timestamp": 33.57520833333333
+        }
+      ]
+    },
+    {
+      "timestamp": 34.534499999999994,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8463846445083618,
+          "timestamp": 34.534499999999994
+        }
+      ]
+    },
+    {
+      "timestamp": 35.49379166666667,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8761154413223267,
+          "timestamp": 35.49379166666667
+        }
+      ]
+    },
+    {
+      "timestamp": 36.45308333333333,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.9075919389724731,
+          "timestamp": 36.45308333333333
+        }
+      ]
+    },
+    {
+      "timestamp": 37.412375,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.9067454934120178,
+          "timestamp": 37.412375
+        }
+      ]
+    },
+    {
+      "timestamp": 38.37166666666666,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.6490451097488403,
+          "timestamp": 38.37166666666666
+        }
+      ]
+    },
+    {
+      "timestamp": 43.168124999999996,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.890998363494873,
+          "timestamp": 43.168124999999996
+        },
+        {
+          "object": "person",
+          "confidence": 0.8837999105453491,
+          "timestamp": 43.168124999999996
+        },
+        {
+          "object": "person",
+          "confidence": 0.8283843994140625,
+          "timestamp": 43.168124999999996
+        },
+        {
+          "object": "person",
+          "confidence": 0.8246641159057617,
+          "timestamp": 43.168124999999996
+        },
+        {
+          "object": "person",
+          "confidence": 0.7834399342536926,
+          "timestamp": 43.168124999999996
+        },
+        {
+          "object": "person",
+          "confidence": 0.6513986587524414,
+          "timestamp": 43.168124999999996
+        }
+      ]
+    },
+    {
+      "timestamp": 44.12741666666666,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.916875422000885,
+          "timestamp": 44.12741666666666
+        },
+        {
+          "object": "person",
+          "confidence": 0.831871747970581,
+          "timestamp": 44.12741666666666
+        },
+        {
+          "object": "person",
+          "confidence": 0.8094800710678101,
+          "timestamp": 44.12741666666666
+        },
+        {
+          "object": "person",
+          "confidence": 0.8031272292137146,
+          "timestamp": 44.12741666666666
+        },
+        {
+          "object": "person",
+          "confidence": 0.7012794613838196,
+          "timestamp": 44.12741666666666
+        }
+      ]
+    },
+    {
+      "timestamp": 45.08670833333333,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8855704069137573,
+          "timestamp": 45.08670833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.8649294376373291,
+          "timestamp": 45.08670833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.8176978826522827,
+          "timestamp": 45.08670833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.7759913802146912,
+          "timestamp": 45.08670833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.617607831954956,
+          "timestamp": 45.08670833333333
+        }
+      ]
+    },
+    {
+      "timestamp": 46.046,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.7786931991577148,
+          "timestamp": 46.046
+        },
+        {
+          "object": "person",
+          "confidence": 0.5141669511795044,
+          "timestamp": 46.046
+        }
+      ]
+    },
+    {
+      "timestamp": 47.005291666666665,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.7496156096458435,
+          "timestamp": 47.005291666666665
+        }
+      ]
+    },
+    {
+      "timestamp": 47.96458333333333,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.7487127780914307,
+          "timestamp": 47.96458333333333
+        }
+      ]
+    },
+    {
+      "timestamp": 48.923874999999995,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8466468453407288,
+          "timestamp": 48.923874999999995
+        }
+      ]
+    },
+    {
+      "timestamp": 49.88316666666666,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.6934890151023865,
+          "timestamp": 49.88316666666666
+        }
+      ]
+    },
+    {
+      "timestamp": 51.80175,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.9053398370742798,
+          "timestamp": 51.80175
+        },
+        {
+          "object": "person",
+          "confidence": 0.8913702368736267,
+          "timestamp": 51.80175
+        },
+        {
+          "object": "car",
+          "confidence": 0.7501673102378845,
+          "timestamp": 51.80175
+        },
+        {
+          "object": "person",
+          "confidence": 0.7317854762077332,
+          "timestamp": 51.80175
+        },
+        {
+          "object": "person",
+          "confidence": 0.6874361038208008,
+          "timestamp": 51.80175
+        },
+        {
+          "object": "person",
+          "confidence": 0.6521676182746887,
+          "timestamp": 51.80175
+        },
+        {
+          "object": "person",
+          "confidence": 0.5947492122650146,
+          "timestamp": 51.80175
+        },
+        {
+          "object": "person",
+          "confidence": 0.5798426270484924,
+          "timestamp": 51.80175
+        },
+        {
+          "object": "backpack",
+          "confidence": 0.5050639510154724,
+          "timestamp": 51.80175
+        }
+      ]
+    },
+    {
+      "timestamp": 52.761041666666664,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8923701643943787,
+          "timestamp": 52.761041666666664
+        },
+        {
+          "object": "person",
+          "confidence": 0.8047313094139099,
+          "timestamp": 52.761041666666664
+        },
+        {
+          "object": "person",
+          "confidence": 0.7843725085258484,
+          "timestamp": 52.761041666666664
+        },
+        {
+          "object": "person",
+          "confidence": 0.7414077520370483,
+          "timestamp": 52.761041666666664
+        },
+        {
+          "object": "person",
+          "confidence": 0.7169319987297058,
+          "timestamp": 52.761041666666664
+        },
+        {
+          "object": "person",
+          "confidence": 0.7058526873588562,
+          "timestamp": 52.761041666666664
+        },
+        {
+          "object": "person",
+          "confidence": 0.6122927665710449,
+          "timestamp": 52.761041666666664
+        },
+        {
+          "object": "person",
+          "confidence": 0.5422136783599854,
+          "timestamp": 52.761041666666664
+        }
+      ]
+    },
+    {
+      "timestamp": 53.72033333333333,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.7708972692489624,
+          "timestamp": 53.72033333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.7057750821113586,
+          "timestamp": 53.72033333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.6494124531745911,
+          "timestamp": 53.72033333333333
+        },
+        {
+          "object": "clock",
+          "confidence": 0.5217028260231018,
+          "timestamp": 53.72033333333333
+        }
+      ]
+    },
+    {
+      "timestamp": 54.679624999999994,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8494203090667725,
+          "timestamp": 54.679624999999994
+        },
+        {
+          "object": "person",
+          "confidence": 0.7350703477859497,
+          "timestamp": 54.679624999999994
+        },
+        {
+          "object": "clock",
+          "confidence": 0.6476140022277832,
+          "timestamp": 54.679624999999994
+        },
+        {
+          "object": "car",
+          "confidence": 0.5603377223014832,
+          "timestamp": 54.679624999999994
+        }
+      ]
+    },
+    {
+      "timestamp": 57.5575,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.9066875576972961,
+          "timestamp": 57.5575
+        },
+        {
+          "object": "person",
+          "confidence": 0.7636910676956177,
+          "timestamp": 57.5575
+        }
+      ]
+    },
+    {
+      "timestamp": 58.51679166666666,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.9094660878181458,
+          "timestamp": 58.51679166666666
+        },
+        {
+          "object": "person",
+          "confidence": 0.8105294704437256,
+          "timestamp": 58.51679166666666
+        }
+      ]
+    },
+    {
+      "timestamp": 59.47608333333333,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.9328590631484985,
+          "timestamp": 59.47608333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.7571301460266113,
+          "timestamp": 59.47608333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.5005242228507996,
+          "timestamp": 59.47608333333333
+        }
+      ]
+    },
+    {
+      "timestamp": 60.43537499999999,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.5418350100517273,
+          "timestamp": 60.43537499999999
+        }
+      ]
+    },
+    {
+      "timestamp": 61.394666666666666,
+      "objects": [
+        {
+          "object": "train",
+          "confidence": 0.6049569845199585,
+          "timestamp": 61.394666666666666
+        }
+      ]
+    },
+    {
+      "timestamp": 62.35395833333333,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.9379695653915405,
+          "timestamp": 62.35395833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.8559697270393372,
+          "timestamp": 62.35395833333333
+        },
+        {
+          "object": "car",
+          "confidence": 0.6757232546806335,
+          "timestamp": 62.35395833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.6743287444114685,
+          "timestamp": 62.35395833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.6546812653541565,
+          "timestamp": 62.35395833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.6062433123588562,
+          "timestamp": 62.35395833333333
+        }
+      ]
+    },
+    {
+      "timestamp": 63.31325,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.935540497303009,
+          "timestamp": 63.31325
+        },
+        {
+          "object": "person",
+          "confidence": 0.8599854707717896,
+          "timestamp": 63.31325
+        },
+        {
+          "object": "person",
+          "confidence": 0.729109525680542,
+          "timestamp": 63.31325
+        },
+        {
+          "object": "person",
+          "confidence": 0.5283425450325012,
+          "timestamp": 63.31325
+        }
+      ]
+    },
+    {
+      "timestamp": 66.191125,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8374088406562805,
+          "timestamp": 66.191125
+        },
+        {
+          "object": "person",
+          "confidence": 0.7867503762245178,
+          "timestamp": 66.191125
+        },
+        {
+          "object": "person",
+          "confidence": 0.7835829257965088,
+          "timestamp": 66.191125
+        },
+        {
+          "object": "person",
+          "confidence": 0.750671923160553,
+          "timestamp": 66.191125
+        },
+        {
+          "object": "person",
+          "confidence": 0.6942203044891357,
+          "timestamp": 66.191125
+        },
+        {
+          "object": "person",
+          "confidence": 0.6750062108039856,
+          "timestamp": 66.191125
+        },
+        {
+          "object": "person",
+          "confidence": 0.6201553344726562,
+          "timestamp": 66.191125
+        },
+        {
+          "object": "person",
+          "confidence": 0.6087974309921265,
+          "timestamp": 66.191125
+        }
+      ]
+    },
+    {
+      "timestamp": 67.15041666666666,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.5734294056892395,
+          "timestamp": 67.15041666666666
+        }
+      ]
+    },
+    {
+      "timestamp": 68.10970833333333,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8688502907752991,
+          "timestamp": 68.10970833333333
+        },
+        {
+          "object": "car",
+          "confidence": 0.8680192828178406,
+          "timestamp": 68.10970833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.8385058045387268,
+          "timestamp": 68.10970833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.8339208960533142,
+          "timestamp": 68.10970833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.7763497233390808,
+          "timestamp": 68.10970833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.7418750524520874,
+          "timestamp": 68.10970833333333
+        },
+        {
+          "object": "car",
+          "confidence": 0.6320825815200806,
+          "timestamp": 68.10970833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.5959910750389099,
+          "timestamp": 68.10970833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.5937063694000244,
+          "timestamp": 68.10970833333333
+        }
+      ]
+    },
+    {
+      "timestamp": 69.06899999999999,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8938508629798889,
+          "timestamp": 69.06899999999999
+        },
+        {
+          "object": "car",
+          "confidence": 0.880210280418396,
+          "timestamp": 69.06899999999999
+        },
+        {
+          "object": "person",
+          "confidence": 0.8493520021438599,
+          "timestamp": 69.06899999999999
+        },
+        {
+          "object": "person",
+          "confidence": 0.8072434663772583,
+          "timestamp": 69.06899999999999
+        },
+        {
+          "object": "backpack",
+          "confidence": 0.7583581805229187,
+          "timestamp": 69.06899999999999
+        },
+        {
+          "object": "person",
+          "confidence": 0.7320572137832642,
+          "timestamp": 69.06899999999999
+        },
+        {
+          "object": "car",
+          "confidence": 0.6107378005981445,
+          "timestamp": 69.06899999999999
+        }
+      ]
+    },
+    {
+      "timestamp": 70.98758333333333,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.5012028217315674,
+          "timestamp": 70.98758333333333
+        }
+      ]
+    },
+    {
+      "timestamp": 71.94687499999999,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.6159969568252563,
+          "timestamp": 71.94687499999999
+        }
+      ]
+    },
+    {
+      "timestamp": 72.90616666666666,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8725336790084839,
+          "timestamp": 72.90616666666666
+        }
+      ]
+    },
+    {
+      "timestamp": 73.86545833333332,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.825274646282196,
+          "timestamp": 73.86545833333332
+        }
+      ]
+    },
+    {
+      "timestamp": 74.82475,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.868057370185852,
+          "timestamp": 74.82475
+        }
+      ]
+    },
+    {
+      "timestamp": 75.78404166666667,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.9202461838722229,
+          "timestamp": 75.78404166666667
+        },
+        {
+          "object": "person",
+          "confidence": 0.7992343902587891,
+          "timestamp": 75.78404166666667
+        },
+        {
+          "object": "person",
+          "confidence": 0.77278733253479,
+          "timestamp": 75.78404166666667
+        },
+        {
+          "object": "person",
+          "confidence": 0.7711016535758972,
+          "timestamp": 75.78404166666667
+        },
+        {
+          "object": "person",
+          "confidence": 0.7696104645729065,
+          "timestamp": 75.78404166666667
+        },
+        {
+          "object": "person",
+          "confidence": 0.7627236843109131,
+          "timestamp": 75.78404166666667
+        },
+        {
+          "object": "person",
+          "confidence": 0.6792380213737488,
+          "timestamp": 75.78404166666667
+        }
+      ]
+    },
+    {
+      "timestamp": 76.74333333333333,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8361448049545288,
+          "timestamp": 76.74333333333333
+        },
+        {
+          "object": "car",
+          "confidence": 0.83049076795578,
+          "timestamp": 76.74333333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.8022140860557556,
+          "timestamp": 76.74333333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.7840228080749512,
+          "timestamp": 76.74333333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.781961977481842,
+          "timestamp": 76.74333333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.7803428769111633,
+          "timestamp": 76.74333333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.7205613255500793,
+          "timestamp": 76.74333333333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.6640570759773254,
+          "timestamp": 76.74333333333333
+        }
+      ]
+    },
+    {
+      "timestamp": 77.702625,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8656445145606995,
+          "timestamp": 77.702625
+        },
+        {
+          "object": "person",
+          "confidence": 0.8573397994041443,
+          "timestamp": 77.702625
+        },
+        {
+          "object": "car",
+          "confidence": 0.8471104502677917,
+          "timestamp": 77.702625
+        },
+        {
+          "object": "person",
+          "confidence": 0.7678993940353394,
+          "timestamp": 77.702625
+        },
+        {
+          "object": "person",
+          "confidence": 0.7371626496315002,
+          "timestamp": 77.702625
+        },
+        {
+          "object": "person",
+          "confidence": 0.6988563537597656,
+          "timestamp": 77.702625
+        },
+        {
+          "object": "person",
+          "confidence": 0.6526122093200684,
+          "timestamp": 77.702625
+        },
+        {
+          "object": "person",
+          "confidence": 0.5137275457382202,
+          "timestamp": 77.702625
+        }
+      ]
+    },
+    {
+      "timestamp": 78.66191666666666,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8394549489021301,
+          "timestamp": 78.66191666666666
+        },
+        {
+          "object": "person",
+          "confidence": 0.8201968669891357,
+          "timestamp": 78.66191666666666
+        },
+        {
+          "object": "car",
+          "confidence": 0.8154116868972778,
+          "timestamp": 78.66191666666666
+        },
+        {
+          "object": "person",
+          "confidence": 0.8019811511039734,
+          "timestamp": 78.66191666666666
+        },
+        {
+          "object": "person",
+          "confidence": 0.7994446754455566,
+          "timestamp": 78.66191666666666
+        },
+        {
+          "object": "person",
+          "confidence": 0.660691499710083,
+          "timestamp": 78.66191666666666
+        },
+        {
+          "object": "person",
+          "confidence": 0.6055373549461365,
+          "timestamp": 78.66191666666666
+        },
+        {
+          "object": "person",
+          "confidence": 0.5895927548408508,
+          "timestamp": 78.66191666666666
+        }
+      ]
+    },
+    {
+      "timestamp": 79.62120833333333,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8470542430877686,
+          "timestamp": 79.62120833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.836706280708313,
+          "timestamp": 79.62120833333333
+        },
+        {
+          "object": "car",
+          "confidence": 0.7926793694496155,
+          "timestamp": 79.62120833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.7912877798080444,
+          "timestamp": 79.62120833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.7904614210128784,
+          "timestamp": 79.62120833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.7571788430213928,
+          "timestamp": 79.62120833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.703009843826294,
+          "timestamp": 79.62120833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.6354418992996216,
+          "timestamp": 79.62120833333333
+        },
+        {
+          "object": "person",
+          "confidence": 0.6141408681869507,
+          "timestamp": 79.62120833333333
+        }
+      ]
+    },
+    {
+      "timestamp": 80.5805,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.7665187120437622,
+          "timestamp": 80.5805
+        }
+      ]
+    },
+    {
+      "timestamp": 82.49908333333333,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.6304250359535217,
+          "timestamp": 82.49908333333333
+        }
+      ]
+    },
+    {
+      "timestamp": 83.45837499999999,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.9068950414657593,
+          "timestamp": 83.45837499999999
+        }
+      ]
+    },
+    {
+      "timestamp": 84.41766666666666,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8520235419273376,
+          "timestamp": 84.41766666666666
+        }
+      ]
+    },
+    {
+      "timestamp": 85.37695833333332,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8591987490653992,
+          "timestamp": 85.37695833333332
+        }
+      ]
+    },
+    {
+      "timestamp": 86.33624999999999,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8040592074394226,
+          "timestamp": 86.33624999999999
+        }
+      ]
+    },
+    {
+      "timestamp": 87.29554166666667,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.837924599647522,
+          "timestamp": 87.29554166666667
+        }
+      ]
+    },
+    {
+      "timestamp": 88.25483333333332,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8129554986953735,
+          "timestamp": 88.25483333333332
+        }
+      ]
+    },
+    {
+      "timestamp": 90.17341666666665,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.5614176988601685,
+          "timestamp": 90.17341666666665
+        }
+      ]
+    },
+    {
+      "timestamp": 91.13270833333333,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.684815526008606,
+          "timestamp": 91.13270833333333
+        }
+      ]
+    },
+    {
+      "timestamp": 92.092,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.878530740737915,
+          "timestamp": 92.092
+        }
+      ]
+    },
+    {
+      "timestamp": 93.05129166666666,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.864909827709198,
+          "timestamp": 93.05129166666666
+        }
+      ]
+    },
+    {
+      "timestamp": 94.01058333333333,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8307256102561951,
+          "timestamp": 94.01058333333333
+        }
+      ]
+    },
+    {
+      "timestamp": 94.96987499999999,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.835437536239624,
+          "timestamp": 94.96987499999999
+        }
+      ]
+    },
+    {
+      "timestamp": 95.92916666666666,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.7572050094604492,
+          "timestamp": 95.92916666666666
+        }
+      ]
+    },
+    {
+      "timestamp": 96.88845833333333,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8396913409233093,
+          "timestamp": 96.88845833333333
+        }
+      ]
+    },
+    {
+      "timestamp": 97.84774999999999,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8720574975013733,
+          "timestamp": 97.84774999999999
+        }
+      ]
+    },
+    {
+      "timestamp": 106.48137499999999,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.5964257717132568,
+          "timestamp": 106.48137499999999
+        }
+      ]
+    },
+    {
+      "timestamp": 107.44066666666666,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.7425336837768555,
+          "timestamp": 107.44066666666666
+        }
+      ]
+    },
+    {
+      "timestamp": 108.39995833333333,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8689365983009338,
+          "timestamp": 108.39995833333333
+        }
+      ]
+    },
+    {
+      "timestamp": 110.31854166666666,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.6061686277389526,
+          "timestamp": 110.31854166666666
+        }
+      ]
+    },
+    {
+      "timestamp": 111.27783333333332,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.814384937286377,
+          "timestamp": 111.27783333333332
+        }
+      ]
+    },
+    {
+      "timestamp": 112.23712499999999,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8868755102157593,
+          "timestamp": 112.23712499999999
+        }
+      ]
+    },
+    {
+      "timestamp": 113.19641666666666,
+      "objects": [
+        {
+          "object": "car",
+          "confidence": 0.8619655966758728,
+          "timestamp": 113.19641666666666
+        }
+      ]
+    }
+  ],
+  "transcription": {
+    "text": " ДИНАМИЧНАЯ МУЗЫКА ТРЕВОЖНАЯ МУЗЫКА ТРЕВОЖНАЯ МУЗЫКА ТРЕВОЖНАЯ МУЗЫКА",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 8.0,
+        "text": " ДИНАМИЧНАЯ МУЗЫКА",
+        "tokens": [
+          50364,
+          3401,
+          10276,
+          23413,
+          10626,
+          10276,
+          17519,
+          28729,
+          25007,
+          50764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.8562454743818804,
+        "compression_ratio": 0.8918918918918919,
+        "no_speech_prob": 0.41886425018310547
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 33.0,
+        "text": " ТРЕВОЖНАЯ МУЗЫКА",
+        "tokens": [
+          50364,
+          3200,
+          42447,
+          40311,
+          28308,
+          28729,
+          25007,
+          50514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.9539495044284396,
+        "compression_ratio": 0.775,
+        "no_speech_prob": 0.5456646084785461
+      },
+      {
+        "id": 2,
+        "seek": 6000,
+        "start": 60.0,
+        "end": 72.0,
+        "text": " ТРЕВОЖНАЯ МУЗЫКА",
+        "tokens": [
+          50364,
+          3200,
+          42447,
+          40311,
+          28308,
+          28729,
+          25007,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.5183809068467882,
+        "compression_ratio": 0.775,
+        "no_speech_prob": 0.6262776255607605
+      },
+      {
+        "id": 3,
+        "seek": 9000,
+        "start": 90.0,
+        "end": 113.0,
+        "text": " ТРЕВОЖНАЯ МУЗЫКА",
+        "tokens": [
+          50414,
+          3200,
+          42447,
+          40311,
+          28308,
+          28729,
+          25007,
+          51514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2943049536810981,
+        "compression_ratio": 0.775,
+        "no_speech_prob": 0.5101646780967712
+      }
+    ]
+  },
+  "events": [
+    {
+      "timestamp": 4.796458333333333,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: person, car",
+      "objects": [
+        "person",
+        "car"
+      ]
+    },
+    {
+      "timestamp": 5.75575,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: person, car",
+      "objects": [
+        "car",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 6.715041666666666,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: person, car",
+      "objects": [
+        "person",
+        "car",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 7.674333333333333,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: person, car",
+      "objects": [
+        "car",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 14.389375,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: person",
+      "objects": [
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 15.348666666666666,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: person, car",
+      "objects": [
+        "person",
+        "person",
+        "car"
+      ]
+    },
+    {
+      "timestamp": 16.307958333333332,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: person, car",
+      "objects": [
+        "person",
+        "car",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 17.267249999999997,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: person, car",
+      "objects": [
+        "person",
+        "car",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 18.226541666666666,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: person, car",
+      "objects": [
+        "car",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 19.18583333333333,
+      "type": "visual",
+      "description": "Обнаружено 5 объектов: person, car",
+      "objects": [
+        "car",
+        "person",
+        "person",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 28.77875,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: truck, person",
+      "objects": [
+        "person",
+        "person",
+        "person",
+        "truck"
+      ]
+    },
+    {
+      "timestamp": 29.738041666666664,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: person",
+      "objects": [
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 30.697333333333333,
+      "type": "visual",
+      "description": "Обнаружено 5 объектов: truck, person, car",
+      "objects": [
+        "person",
+        "person",
+        "person",
+        "truck",
+        "car"
+      ]
+    },
+    {
+      "timestamp": 43.168124999999996,
+      "type": "visual",
+      "description": "Обнаружено 6 объектов: person, car",
+      "objects": [
+        "car",
+        "person",
+        "person",
+        "person",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 44.12741666666666,
+      "type": "visual",
+      "description": "Обнаружено 5 объектов: person, car",
+      "objects": [
+        "car",
+        "person",
+        "person",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 45.08670833333333,
+      "type": "visual",
+      "description": "Обнаружено 5 объектов: person, car",
+      "objects": [
+        "car",
+        "person",
+        "person",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 46.046,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: person, car",
+      "objects": [
+        "car",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 51.80175,
+      "type": "visual",
+      "description": "Обнаружено 9 объектов: backpack, person, car",
+      "objects": [
+        "car",
+        "person",
+        "car",
+        "person",
+        "person",
+        "person",
+        "person",
+        "person",
+        "backpack"
+      ]
+    },
+    {
+      "timestamp": 52.761041666666664,
+      "type": "visual",
+      "description": "Обнаружено 8 объектов: person, car",
+      "objects": [
+        "car",
+        "person",
+        "person",
+        "person",
+        "person",
+        "person",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 53.72033333333333,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: clock, person",
+      "objects": [
+        "person",
+        "person",
+        "person",
+        "clock"
+      ]
+    },
+    {
+      "timestamp": 54.679624999999994,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: clock, person, car",
+      "objects": [
+        "person",
+        "person",
+        "clock",
+        "car"
+      ]
+    },
+    {
+      "timestamp": 57.5575,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: person, car",
+      "objects": [
+        "car",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 58.51679166666666,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: person, car",
+      "objects": [
+        "car",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 59.47608333333333,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: person, car",
+      "objects": [
+        "car",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 62.35395833333333,
+      "type": "visual",
+      "description": "Обнаружено 6 объектов: person, car",
+      "objects": [
+        "car",
+        "person",
+        "car",
+        "person",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 63.31325,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: person, car",
+      "objects": [
+        "car",
+        "person",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 66.191125,
+      "type": "visual",
+      "description": "Обнаружено 8 объектов: person, car",
+      "objects": [
+        "car",
+        "person",
+        "person",
+        "person",
+        "person",
+        "person",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 68.10970833333333,
+      "type": "visual",
+      "description": "Обнаружено 9 объектов: person, car",
+      "objects": [
+        "person",
+        "car",
+        "person",
+        "person",
+        "person",
+        "person",
+        "car",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 69.06899999999999,
+      "type": "visual",
+      "description": "Обнаружено 7 объектов: backpack, person, car",
+      "objects": [
+        "person",
+        "car",
+        "person",
+        "person",
+        "backpack",
+        "person",
+        "car"
+      ]
+    },
+    {
+      "timestamp": 75.78404166666667,
+      "type": "visual",
+      "description": "Обнаружено 7 объектов: person, car",
+      "objects": [
+        "car",
+        "person",
+        "person",
+        "person",
+        "person",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 76.74333333333333,
+      "type": "visual",
+      "description": "Обнаружено 8 объектов: person, car",
+      "objects": [
+        "person",
+        "car",
+        "person",
+        "person",
+        "person",
+        "person",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 77.702625,
+      "type": "visual",
+      "description": "Обнаружено 8 объектов: person, car",
+      "objects": [
+        "person",
+        "person",
+        "car",
+        "person",
+        "person",
+        "person",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 78.66191666666666,
+      "type": "visual",
+      "description": "Обнаружено 8 объектов: person, car",
+      "objects": [
+        "person",
+        "person",
+        "car",
+        "person",
+        "person",
+        "person",
+        "person",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 79.62120833333333,
+      "type": "visual",
+      "description": "Обнаружено 9 объектов: person, car",
+      "objects": [
+        "person",
+        "person",
+        "car",
+        "person",
+        "person",
+        "person",
+        "person",
+        "person",
+        "person"
+      ]
+    }
+  ],
+  "statistics": {
+    "total_frames_analyzed": 83,
+    "total_objects_detected": 214,
+    "unique_objects": 7,
+    "most_common_objects": [
+      [
+        "person",
+        128
+      ],
+      [
+        "car",
+        78
+      ],
+      [
+        "truck",
+        2
+      ],
+      [
+        "backpack",
+        2
+      ],
+      [
+        "clock",
+        2
+      ],
+      [
+        "oven",
+        1
+      ],
+      [
+        "train",
+        1
+      ]
+    ],
+    "transcription_length": 69,
+    "total_events": 34,
+    "visual_events": 34,
+    "speech_events": 0
+  },
+  "topics": null
+}

@@ -1,0 +1,802 @@
+[
+  {
+    "title": "ПВО ночью уничтожила 75 украинских беспилотников",
+    "url": "https://ria.ru/20260121/bespilotniki-2069215218.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "ПВО ночью уничтожила 75 украинских беспилотников"
+  },
+  {
+    "title": "Президент США пообещал, что применение Европой \"торговой базуки\" вернется к ней рикошетом",
+    "url": "https://ria.ru/20260121/tramp-2069209459.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Президент США пообещал, что применение Европой \"торговой базуки\" вернется к ней рикошетом"
+  },
+  {
+    "title": "Убийцу Синдзо Абэ приговорили к пожизненному заключению",
+    "url": "https://ria.ru/20260121/smi-2069214048.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Убийцу Синдзо Абэ приговорили к пожизненному заключению"
+  },
+  {
+    "title": "Армия Канады прорабатывает сценарий партизанской войны со Штатами, пишет Globe and Mail",
+    "url": "https://ria.ru/20260121/kanada-2069200445.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Армия Канады прорабатывает сценарий партизанской войны со Штатами, пишет Globe and Mail"
+  },
+  {
+    "title": "Приставы окончили производство о принудительном выселении Долиной",
+    "url": "https://ria.ru/20260121/vyselenie-2069189142.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Приставы окончили производство о принудительном выселении Долиной"
+  },
+  {
+    "title": "Уиткофф оценил переговоры с Дмитриевым",
+    "url": "https://ria.ru/20260120/ssha-2069163479.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Уиткофф оценил переговоры с Дмитриевым"
+  },
+  {
+    "title": "\"Поражение России\". На Западе резко высказались о переговорах",
+    "url": "https://ria.ru/20260120/rossiya-2069162973.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "\"Поражение России\". На Западе резко высказались о переговорах"
+  },
+  {
+    "title": "Владелец подмосковной пекарни \"Машенька\" планирует закрыть бизнес",
+    "url": "https://ria.ru/20260120/biznes-2069159530.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Владелец подмосковной пекарни \"Машенька\" планирует закрыть бизнес"
+  },
+  {
+    "title": "Американские военные захватили танкер в Карибском море",
+    "url": "https://ria.ru/20260121/tanker-2069189291.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Американские военные захватили танкер в Карибском море"
+  },
+  {
+    "title": "Трамп объяснил, почему пригласил Путина в Совет мира",
+    "url": "https://ria.ru/20260120/tramp-2069161170.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Трамп объяснил, почему пригласил Путина в Совет мира"
+  },
+  {
+    "title": "Подписка на РБК",
+    "url": "https://pro.rbc.ru/?from=topline_main&utm_source=topline",
+    "date": "2026-01-21",
+    "source": "RBC.ru",
+    "keywords": "general",
+    "content": "Подписка на РБК"
+  },
+  {
+    "title": "РБК Образование",
+    "url": "https://www.rbc.ru/story/education?from=topline_menu&utm_source=topline",
+    "date": "2026-01-21",
+    "source": "RBC.ru",
+    "keywords": "general",
+    "content": "РБК Образование"
+  },
+  {
+    "title": "Национальные проекты",
+    "url": "https://www.rbc.ru/national?utm_source=topline",
+    "date": "2026-01-21",
+    "source": "RBC.ru",
+    "keywords": "general",
+    "content": "Национальные проекты"
+  },
+  {
+    "title": "РБК Бизнес-среда",
+    "url": "https://spb.plus.rbc.ru/?utm_source=topline",
+    "date": "2026-01-21",
+    "source": "RBC.ru",
+    "keywords": "general",
+    "content": "РБК Бизнес-среда"
+  },
+  {
+    "title": "Дискуссионный клуб",
+    "url": "https://www.rbc.ru/dc/?utm_source=topline",
+    "date": "2026-01-21",
+    "source": "RBC.ru",
+    "keywords": "general",
+    "content": "Дискуссионный клуб"
+  },
+  {
+    "title": "Кредитные рейтинги",
+    "url": "https://ratings.ru/?utm_source=topline",
+    "date": "2026-01-21",
+    "source": "RBC.ru",
+    "keywords": "general",
+    "content": "Кредитные рейтинги"
+  },
+  {
+    "title": "Спецпроекты СПб",
+    "url": "https://spbspecials.rbc.ru/?utm_source=topline",
+    "date": "2026-01-21",
+    "source": "RBC.ru",
+    "keywords": "general",
+    "content": "Спецпроекты СПб"
+  },
+  {
+    "title": "Конференции СПб",
+    "url": "https://spb-bc.rbc.ru/?utm_source=topline",
+    "date": "2026-01-21",
+    "source": "RBC.ru",
+    "keywords": "general",
+    "content": "Конференции СПб"
+  },
+  {
+    "title": "Проверка контрагентов",
+    "url": "https://corp.rescore.online/?utm_source=topline",
+    "date": "2026-01-21",
+    "source": "RBC.ru",
+    "keywords": "general",
+    "content": "Проверка контрагентов"
+  },
+  {
+    "title": "Технологии и медиа",
+    "url": "https://www.rbc.ru/rubric/technology_and_media?utm_source=topline",
+    "date": "2026-01-21",
+    "source": "RBC.ru",
+    "keywords": "general",
+    "content": "Технологии и медиа"
+  },
+  {
+    "title": "Рынок наличной валюты",
+    "url": "https://cash.rbc.ru/?utm_source=topline",
+    "date": "2026-01-21",
+    "source": "RBC.ru",
+    "keywords": "general",
+    "content": "Рынок наличной валюты"
+  },
+  {
+    "title": "Санкт-Петербург и область",
+    "url": "https://www.rbc.ru",
+    "date": "2026-01-21",
+    "source": "RBC.ru",
+    "keywords": "general",
+    "content": "Санкт-Петербург и область"
+  },
+  {
+    "title": "Вологодская область",
+    "url": "https://vo.rbc.ru",
+    "date": "2026-01-21",
+    "source": "RBC.ru",
+    "keywords": "general",
+    "content": "Вологодская область"
+  },
+  {
+    "title": "Краснодарский край",
+    "url": "https://kuban.rbc.ru",
+    "date": "2026-01-21",
+    "source": "RBC.ru",
+    "keywords": "general",
+    "content": "Краснодарский край"
+  },
+  {
+    "title": "Нижний Новгород",
+    "url": "https://nn.rbc.ru",
+    "date": "2026-01-21",
+    "source": "RBC.ru",
+    "keywords": "general",
+    "content": "Нижний Новгород"
+  },
+  {
+    "title": "Силовые структуры",
+    "url": "https://lenta.ru/rubrics/forces/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "Силовые структуры"
+  },
+  {
+    "title": "Наука и техника",
+    "url": "https://lenta.ru/rubrics/science/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "Наука и техника"
+  },
+  {
+    "title": "Теперь вы знаете",
+    "url": "https://lenta.ru/twz/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "Теперь вы знаете"
+  },
+  {
+    "title": "В России указали на связь ударов ВСУ по регионам с мирными переговорами",
+    "url": "https://lenta.ru/news/2026/01/21/svyaz/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "В России указали на связь ударов ВСУ по регионам с мирными переговорами"
+  },
+  {
+    "title": "Макрон пригласил Трампа на ужин, глава США ответил угрозами. Как в этом замешаны Россия и Израиль",
+    "url": "https://lenta.ru/extlink/2025/12/01/tvz/?intlnk=true",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "Макрон пригласил Трампа на ужин, глава США ответил угрозами. Как в этом замешаны Россия и Израиль"
+  },
+  {
+    "title": "От AirPods до утюга. Какие устройства могут подслушивать россиян",
+    "url": "https://lenta.ru/extlink/2025/12/16/tvz1/?intlnk=true",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "От AirPods до утюга. Какие устройства могут подслушивать россиян"
+  },
+  {
+    "title": "Мощное землетрясение произошло в одной стране",
+    "url": "https://lenta.ru/news/2026/01/21/moschnoe-zemletryasenie-proizoshlo-v-odnoy-strane/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "Мощное землетрясение произошло в одной стране"
+  },
+  {
+    "title": "Объявлено о напряженной ситуации и недочетах властей после атаки ВСУ на регион России",
+    "url": "https://lenta.ru/news/2026/01/21/nedocheti/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "Объявлено о напряженной ситуации и недочетах властей после атаки ВСУ на регион России"
+  },
+  {
+    "title": "Один новомодный сексуальный фетиш назвали смертельно опасным",
+    "url": "https://lenta.ru/news/2026/01/21/odin-novomodnyy-seksualnyy-fetish-nazvali-smertelno-opasnym/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "Один новомодный сексуальный фетиш назвали смертельно опасным"
+  },
+  {
+    "title": "Бывших мужа и жену арестовали за секс в отеле",
+    "url": "https://lenta.ru/news/2026/01/21/byvshih-muzha-i-zhenu-arestovali-za-seks-v-otele/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "Бывших мужа и жену арестовали за секс в отеле"
+  },
+  {
+    "title": "Известный журналист назвал уехавших из России людей «грязью из-под ногтей»",
+    "url": "https://lenta.ru/news/2026/01/21/izvestnyy-zhurnalist-nazval-uehavshih-iz-rossii-lyudey-gryazyu-iz-pod-nogtey/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "Известный журналист назвал уехавших из России людей «грязью из-под ногтей»"
+  },
+  {
+    "title": "Тревел-блогер описал жителей русского Севера фразой «условия не делают их черствыми»",
+    "url": "https://lenta.ru/news/2026/01/21/trevel-bloger-opisal-zhiteley-russkogo-severa-frazoy-usloviya-ne-delayut-ih-cherstvymi/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "Тревел-блогер описал жителей русского Севера фразой «условия не делают их черствыми»"
+  },
+  {
+    "title": "Развеян популярный миф о восстановлении сердца после инфаркта",
+    "url": "https://lenta.ru/news/2026/01/21/razveyan-populyarnyy-mif-o-vosstanovlenii-serdtsa-posle-infarkta/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "Развеян популярный миф о восстановлении сердца после инфаркта"
+  },
+  {
+    "title": "В Британии указали на страх Зеленского перед Трампом",
+    "url": "https://lenta.ru/news/2026/01/21/v-britanii-ukazali-na-strah-zelenskogo-pered-trampom/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "В Британии указали на страх Зеленского перед Трампом"
+  },
+  {
+    "title": "Появилось видео мощного пожара после ночного налета ВСУ на российский регион",
+    "url": "https://lenta.ru/news/2026/01/21/vid/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "Появилось видео мощного пожара после ночного налета ВСУ на российский регион"
+  },
+  {
+    "title": "Генпрокуратура потребовала изъять активы у трех российских депутатов",
+    "url": "https://lenta.ru/news/2026/01/21/genprokuratura-potrebovala-iz-yat-aktivy-u-treh-rossiyskih-deputatov/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "Генпрокуратура потребовала изъять активы у трех российских депутатов"
+  },
+  {
+    "title": "Стало известно о скандале в Польше из-за унижения Сикорского",
+    "url": "https://lenta.ru/news/2026/01/21/stalo-izvestno-o-skandale-v-polshe-iz-za-unizheniya-sikorskogo/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "Стало известно о скандале в Польше из-за унижения Сикорского"
+  },
+  {
+    "title": "Раскрыты подробности массированного ночного налета ВСУ на российские регионы",
+    "url": "https://lenta.ru/news/2026/01/21/raskryty-podrobnosti-massirovannogo-nochnogo-naleta-vsu-na-rossiyskie-regiony/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "Раскрыты подробности массированного ночного налета ВСУ на российские регионы"
+  },
+  {
+    "title": "Трамп развернул самолет перед Давосом",
+    "url": "https://lenta.ru/news/2026/01/21/tramp-razvernul-samolet-pered-davosom/",
+    "date": "2026-01-21",
+    "source": "Lenta.ru",
+    "keywords": "general",
+    "content": "Трамп развернул самолет перед Давосом"
+  },
+  {
+    "title": "Военная операция на Украине",
+    "url": "https://tass.ru/voennaya-operaciya-na-ukraine",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Военная операция на Украине"
+  },
+  {
+    "title": "Ближневосточный конфликт",
+    "url": "https://tass.ru/blizhnevostochnyy-konflikt",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Ближневосточный конфликт"
+  },
+  {
+    "title": "Новости партнеров",
+    "url": "https://tass.ru/novosti-partnerov",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Новости партнеров"
+  },
+  {
+    "title": "Биографии и справки",
+    "url": "https://tass.ru/info",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Биографии и справки"
+  },
+  {
+    "title": "Московская область",
+    "url": "https://tass.ru/moskovskaya-oblast",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Московская область"
+  },
+  {
+    "title": "Посольство РФ: у России нет \"ни поводов, ни интересов\" запускать дроны в Бельгии",
+    "url": "https://tass.ru/politika/25547063",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Посольство РФ: у России нет \"ни поводов, ни интересов\" запускать дроны в Бельгии"
+  },
+  {
+    "title": "Посольство РФ назвало ошибкой решение Кишинева закрыть Русский дом",
+    "url": "https://tass.ru/politika/25547089",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Посольство РФ назвало ошибкой решение Кишинева закрыть Русский дом"
+  },
+  {
+    "title": "Путин: в документах западных спецслужб стоит задача раскачать РФ изнутри",
+    "url": "https://tass.ru/politika/25546627",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Путин: в документах западных спецслужб стоит задача раскачать РФ изнутри"
+  },
+  {
+    "title": "Комиссия Госсовета по направлению \"Семья\" изучит условия семейной ипотеки",
+    "url": "https://tass.ru/obschestvo/25547031",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Комиссия Госсовета по направлению \"Семья\" изучит условия семейной ипотеки"
+  },
+  {
+    "title": "Голикова: проект стратегии госнацполитики уделяет внимание устранению национализма",
+    "url": "https://tass.ru/politika/25546447",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Голикова: проект стратегии госнацполитики уделяет внимание устранению национализма"
+  },
+  {
+    "title": "Информация о массовом отравлении на теплоходе \"Сергей Дягилев\" не подтвердилась",
+    "url": "https://tass.ru/obschestvo/25546281",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Информация о массовом отравлении на теплоходе \"Сергей Дягилев\" не подтвердилась"
+  },
+  {
+    "title": "Песков: у России самая новая ядерная триада в мире",
+    "url": "https://tass.ru/politika/25545569",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Песков: у России самая новая ядерная триада в мире"
+  },
+  {
+    "title": "Путин утвердил временный порядок приема в гражданство РФ иностранных бойцов",
+    "url": "https://tass.ru/obschestvo/25545507",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Путин утвердил временный порядок приема в гражданство РФ иностранных бойцов"
+  },
+  {
+    "title": "Захарова: задержанный в Эстонии журналист Беседин стал жертвой \"охоты на ведьм\"",
+    "url": "https://tass.ru/politika/25545671",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Захарова: задержанный в Эстонии журналист Беседин стал жертвой \"охоты на ведьм\""
+  },
+  {
+    "title": "Юрия Николаева похоронят 8 ноября на Троекуровском кладбище",
+    "url": "https://tass.ru/obschestvo/25545259",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Юрия Николаева похоронят 8 ноября на Троекуровском кладбище"
+  },
+  {
+    "title": "Кинопремия \"Бриллиантовая бабочка\"",
+    "url": "https://tass.ru/kultura/24689375",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Кинопремия \"Бриллиантовая бабочка\""
+  },
+  {
+    "title": "\"Не опускайте руки и верьте в свою звезду\". Жизнь и взгляды Юрия Николаева",
+    "url": "https://tass.ru/kultura/25535895",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "\"Не опускайте руки и верьте в свою звезду\". Жизнь и взгляды Юрия Николаева"
+  },
+  {
+    "title": "Краснов: без внешнего влияния — суды должны ориентироваться на закон",
+    "url": "https://tass.ru/interviews/25501245",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Краснов: без внешнего влияния — суды должны ориентироваться на закон"
+  },
+  {
+    "title": "Кто на новенького? Возможные замены Станковича в \"Спартаке\"",
+    "url": "https://tass.ru/sport/25537529",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Кто на новенького? Возможные замены Станковича в \"Спартаке\""
+  },
+  {
+    "title": "Беспокоящий огонь заявлениями: политики о Tomahawk для Украины",
+    "url": "https://tass.ru/mezhdunarodnaya-panorama/25518971",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Беспокоящий огонь заявлениями: политики о Tomahawk для Украины"
+  },
+  {
+    "title": "Все спецпроекты",
+    "url": "https://tass.ru/specialprojects",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Все спецпроекты"
+  },
+  {
+    "title": "РИА Недвижимость",
+    "url": "https://realty.ria.ru/politics/",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "РИА Недвижимость"
+  },
+  {
+    "title": "В России стартовал Единый день голосования: что важно знать",
+    "url": "https://ria.ru/20250912/vybory-2041330433.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "В России стартовал Единый день голосования: что важно знать"
+  },
+  {
+    "title": "Ормузский пролив: угроза закрытия, значение для Ирана и всего мира",
+    "url": "https://ria.ru/20250620/ormyzskiy-proliv-2024394371.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Ормузский пролив: угроза закрытия, значение для Ирана и всего мира"
+  },
+  {
+    "title": "Итоги президентских выборов в США",
+    "url": "https://ria.ru/20241106/vybory-1975987294.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Итоги президентских выборов в США"
+  },
+  {
+    "title": "Путин постоянно контактирует с лидерами партий, сообщил Песков",
+    "url": "https://ria.ru/20260121/putin-2069214608.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Путин постоянно контактирует с лидерами партий, сообщил Песков"
+  },
+  {
+    "title": "Геннадий Зюганов",
+    "url": "https://ria.ru/person/gennadiy-zyuganov/",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Геннадий Зюганов"
+  },
+  {
+    "title": "Справедливая Россия",
+    "url": "https://ria.ru/organization_Spravedlivaja_Rossija/",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Справедливая Россия"
+  },
+  {
+    "title": "Путин проведет встречу по вопросам на прямой линии",
+    "url": "https://ria.ru/20260120/putin-2069056406.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Путин проведет встречу по вопросам на прямой линии"
+  },
+  {
+    "title": "Татьяна Голикова",
+    "url": "https://ria.ru/person/tatyana-golikova/",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Татьяна Голикова"
+  },
+  {
+    "title": "Дмитрий Чернышенко",
+    "url": "https://ria.ru/person/dmitriy-chernyshenko/",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Дмитрий Чернышенко"
+  },
+  {
+    "title": "Итоги года с Владимиром Путиным — 2025",
+    "url": "https://ria.ru/category_itogi-goda-s-vladimirom-putinym--2025/",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Итоги года с Владимиром Путиным — 2025"
+  },
+  {
+    "title": "Глава Адыгеи поблагодарил Путина за поддержку региона",
+    "url": "https://ria.ru/20260120/adygeya-2069048270.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Глава Адыгеи поблагодарил Путина за поддержку региона"
+  },
+  {
+    "title": "Республика Адыгея",
+    "url": "https://ria.ru/location_Adygeja/",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Республика Адыгея"
+  },
+  {
+    "title": "Пресс-конференция Лаврова длилась более трех часов",
+    "url": "https://ria.ru/20260120/lavrov-2069046808.html",
+    "date": "2026-01-21",
+    "source": "RIA",
+    "keywords": "general",
+    "content": "Пресс-конференция Лаврова длилась более трех часов"
+  },
+  {
+    "title": "Военная операция на Украине",
+    "url": "https://tass.ru/voennaya-operaciya-na-ukraine",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Военная операция на Украине"
+  },
+  {
+    "title": "Ситуация вокруг Гренландии",
+    "url": "https://tass.ru/situaciya-vokrug-grenlandii",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Ситуация вокруг Гренландии"
+  },
+  {
+    "title": "Столкновение поездов в Испании",
+    "url": "https://tass.ru/stolknovenie-poezdov-v-ispanii",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Столкновение поездов в Испании"
+  },
+  {
+    "title": "Новости партнеров",
+    "url": "https://tass.ru/novosti-partnerov",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Новости партнеров"
+  },
+  {
+    "title": "Биографии и справки",
+    "url": "https://tass.ru/info",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Биографии и справки"
+  },
+  {
+    "title": "Московская область",
+    "url": "https://tass.ru/moskovskaya-oblast",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Московская область"
+  },
+  {
+    "title": "Санкции в отношении России",
+    "url": "https://tass.ru/sankcii-v-otnoshenii-rossii",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Санкции в отношении России"
+  },
+  {
+    "title": "Ответные санкции РФ",
+    "url": "https://tass.ru/otvetnye-sankcii-rf",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Ответные санкции РФ"
+  },
+  {
+    "title": "Внутренняя политика",
+    "url": "https://tass.ru/vnutrennyaya-politika",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Внутренняя политика"
+  },
+  {
+    "title": "Внешняя политика",
+    "url": "https://tass.ru/vneshnyaya-politika",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Внешняя политика"
+  },
+  {
+    "title": "Эксперт Степанов: разведывательный контур НАТО \"трещит по швам\"",
+    "url": "https://tass.ru/politika/26205249",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Эксперт Степанов: разведывательный контур НАТО \"трещит по швам\""
+  },
+  {
+    "title": "Песков: Путин постоянно общается с лидерами думских фракций",
+    "url": "https://tass.ru/politika/26205111",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Песков: Путин постоянно общается с лидерами думских фракций"
+  },
+  {
+    "title": "Дмитриев: в ЕС намерены использовать \"торговую базуку\" для гордости Байдена",
+    "url": "https://tass.ru/politika/26204921",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Дмитриев: в ЕС намерены использовать \"торговую базуку\" для гордости Байдена"
+  },
+  {
+    "title": "В ГД отметили, что румынизация Молдавии противоречит международным нормам",
+    "url": "https://tass.ru/politika/26204349",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "В ГД отметили, что румынизация Молдавии противоречит международным нормам"
+  },
+  {
+    "title": "Колокольцев встретился в Гаване с президентом Кубы",
+    "url": "https://tass.ru/politika/26204207",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Колокольцев встретился в Гаване с президентом Кубы"
+  },
+  {
+    "title": "Посол РФ сообщил о желании Москвы иметь добрососедские отношения с Канадой",
+    "url": "https://tass.ru/politika/26204095",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Посол РФ сообщил о желании Москвы иметь добрососедские отношения с Канадой"
+  },
+  {
+    "title": "Эксперт Корчмарь: \"Совета мира\" вернет международные отношения к политике силы",
+    "url": "https://tass.ru/politika/26203951",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Эксперт Корчмарь: \"Совета мира\" вернет международные отношения к политике силы"
+  },
+  {
+    "title": "Дмитриев ответил Туску, что умиротворение является единственным выбором для ЕС",
+    "url": "https://tass.ru/politika/26203643",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Дмитриев ответил Туску, что умиротворение является единственным выбором для ЕС"
+  },
+  {
+    "title": "ГД обсудит запрет на депортацию иностранцев, воевавших в составе ВС РФ",
+    "url": "https://tass.ru/politika/26203579",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "ГД обсудит запрет на депортацию иностранцев, воевавших в составе ВС РФ"
+  },
+  {
+    "title": "РФ подтверждает настрой на укрепление отношений с ЦАР после выборов в республике",
+    "url": "https://tass.ru/politika/26203115",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "РФ подтверждает настрой на укрепление отношений с ЦАР после выборов в республике"
+  },
+  {
+    "title": "Захарова назвала форум в Давосе международным театром абсурда",
+    "url": "https://tass.ru/politika/26203103",
+    "date": "2026-01-21",
+    "source": "TASS",
+    "keywords": "general",
+    "content": "Захарова назвала форум в Давосе международным театром абсурда"
+  }
+]

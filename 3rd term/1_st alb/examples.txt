@@ -1,0 +1,29 @@
+Примеры использования программы для лабораторной работы
+
+1. Поиск упоминаний г. Перми и Пермского Политеха:
+   python main.py "perm" --limit 10
+   python main.py "polytechnic" --domain "pstu.ru" --limit 10 --show-text
+
+2. Поиск упоминаний кафедры ИТАС ПНИПУ:
+   python main.py "itas" --domain "pstu.ru" --limit 5 --show-text
+   python main.py "department" --domain "pstu.ru" --limit 10
+
+3. Поиск упоминаний МГУ им. Ломоносова:
+   python main.py "mgu" "lomonosov" --limit 15
+   python main.py "university" --domain "msu.ru" --limit 10 --show-text
+
+4. Поиск упоминаний МФТИ:
+   python main.py "mipt" --limit 10
+   python main.py "bauman" --limit 10
+
+5. Поиск Бориса Пастернака в контексте г. Перми:
+   python main.py "boris pasternak" --limit 20 --show-text
+
+Общий формат команды:
+python main.py <ключевые_слова> [--domain <домен>] [--limit <число>] [--show-text]
+
+Параметры:
+  ключевые_слова - одно или несколько слов для поиска (обязательно)
+  --domain       - ограничить поиск определенным доменом (опционально)
+  --limit        - максимальное количество результатов, по умолчанию 10 (опционально)
+  --show-text    - загрузить и показать фрагмент текста страницы (опционально)

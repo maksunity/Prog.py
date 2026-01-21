@@ -1,0 +1,4135 @@
+{
+  "video_name": "C:\\Users\\maksunity\\PycharmProjects\\Datamining\\Web-tech\\4_th lab\\videos\\2 Rubiks Cubes 2 Cig 2 Beer SPEEDRUN (FORMER WR) (1_28.37).mp4",
+  "detections": [
+    {
+      "timestamp": 0.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9334463477134705,
+          "timestamp": 0.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.8715012073516846,
+          "timestamp": 0.0
+        },
+        {
+          "object": "tie",
+          "confidence": 0.820180356502533,
+          "timestamp": 0.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6948202848434448,
+          "timestamp": 0.0
+        },
+        {
+          "object": "chair",
+          "confidence": 0.6590855121612549,
+          "timestamp": 0.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.583389163017273,
+          "timestamp": 0.0
+        }
+      ]
+    },
+    {
+      "timestamp": 1.0,
+      "objects": [
+        {
+          "object": "cup",
+          "confidence": 0.8798714280128479,
+          "timestamp": 1.0
+        },
+        {
+          "object": "person",
+          "confidence": 0.8329521417617798,
+          "timestamp": 1.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6665600538253784,
+          "timestamp": 1.0
+        },
+        {
+          "object": "bottle",
+          "confidence": 0.6059479117393494,
+          "timestamp": 1.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5567578077316284,
+          "timestamp": 1.0
+        }
+      ]
+    },
+    {
+      "timestamp": 2.0,
+      "objects": [
+        {
+          "object": "cup",
+          "confidence": 0.7981114387512207,
+          "timestamp": 2.0
+        },
+        {
+          "object": "person",
+          "confidence": 0.7826926708221436,
+          "timestamp": 2.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5614100694656372,
+          "timestamp": 2.0
+        }
+      ]
+    },
+    {
+      "timestamp": 3.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9035480618476868,
+          "timestamp": 3.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7209433317184448,
+          "timestamp": 3.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.6652225255966187,
+          "timestamp": 3.0
+        }
+      ]
+    },
+    {
+      "timestamp": 4.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8796490430831909,
+          "timestamp": 4.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6458858847618103,
+          "timestamp": 4.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5920224189758301,
+          "timestamp": 4.0
+        }
+      ]
+    },
+    {
+      "timestamp": 5.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9342413544654846,
+          "timestamp": 5.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7701855301856995,
+          "timestamp": 5.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5355177521705627,
+          "timestamp": 5.0
+        }
+      ]
+    },
+    {
+      "timestamp": 6.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9056723117828369,
+          "timestamp": 6.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7950822710990906,
+          "timestamp": 6.0
+        }
+      ]
+    },
+    {
+      "timestamp": 7.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8918675184249878,
+          "timestamp": 7.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7928467392921448,
+          "timestamp": 7.0
+        }
+      ]
+    },
+    {
+      "timestamp": 8.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9046858549118042,
+          "timestamp": 8.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7579665184020996,
+          "timestamp": 8.0
+        }
+      ]
+    },
+    {
+      "timestamp": 9.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8915392756462097,
+          "timestamp": 9.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.755892813205719,
+          "timestamp": 9.0
+        },
+        {
+          "object": "tie",
+          "confidence": 0.5000234246253967,
+          "timestamp": 9.0
+        }
+      ]
+    },
+    {
+      "timestamp": 10.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8877180218696594,
+          "timestamp": 10.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7603771686553955,
+          "timestamp": 10.0
+        }
+      ]
+    },
+    {
+      "timestamp": 11.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9054856300354004,
+          "timestamp": 11.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7508043646812439,
+          "timestamp": 11.0
+        }
+      ]
+    },
+    {
+      "timestamp": 12.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8927781581878662,
+          "timestamp": 12.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7411883473396301,
+          "timestamp": 12.0
+        }
+      ]
+    },
+    {
+      "timestamp": 13.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8943594694137573,
+          "timestamp": 13.0
+        },
+        {
+          "object": "bottle",
+          "confidence": 0.7869839072227478,
+          "timestamp": 13.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7282692193984985,
+          "timestamp": 13.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5659753680229187,
+          "timestamp": 13.0
+        },
+        {
+          "object": "bottle",
+          "confidence": 0.5085574388504028,
+          "timestamp": 13.0
+        }
+      ]
+    },
+    {
+      "timestamp": 14.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9199650287628174,
+          "timestamp": 14.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7044446468353271,
+          "timestamp": 14.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5364766716957092,
+          "timestamp": 14.0
+        }
+      ]
+    },
+    {
+      "timestamp": 15.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9328591227531433,
+          "timestamp": 15.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.583713710308075,
+          "timestamp": 15.0
+        }
+      ]
+    },
+    {
+      "timestamp": 16.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8957038521766663,
+          "timestamp": 16.0
+        }
+      ]
+    },
+    {
+      "timestamp": 17.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9137086868286133,
+          "timestamp": 17.0
+        }
+      ]
+    },
+    {
+      "timestamp": 18.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9069699048995972,
+          "timestamp": 18.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6564356088638306,
+          "timestamp": 18.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6207602620124817,
+          "timestamp": 18.0
+        },
+        {
+          "object": "tie",
+          "confidence": 0.6161172986030579,
+          "timestamp": 18.0
+        }
+      ]
+    },
+    {
+      "timestamp": 19.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9163277745246887,
+          "timestamp": 19.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5938168168067932,
+          "timestamp": 19.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5409663319587708,
+          "timestamp": 19.0
+        },
+        {
+          "object": "tie",
+          "confidence": 0.5065591931343079,
+          "timestamp": 19.0
+        }
+      ]
+    },
+    {
+      "timestamp": 20.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9113416075706482,
+          "timestamp": 20.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7306584715843201,
+          "timestamp": 20.0
+        }
+      ]
+    },
+    {
+      "timestamp": 21.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9240038990974426,
+          "timestamp": 21.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5330688953399658,
+          "timestamp": 21.0
+        }
+      ]
+    },
+    {
+      "timestamp": 22.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9296575784683228,
+          "timestamp": 22.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.812593400478363,
+          "timestamp": 22.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6494067311286926,
+          "timestamp": 22.0
+        }
+      ]
+    },
+    {
+      "timestamp": 23.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9235844612121582,
+          "timestamp": 23.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.8208613395690918,
+          "timestamp": 23.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6361094117164612,
+          "timestamp": 23.0
+        }
+      ]
+    },
+    {
+      "timestamp": 24.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9226148724555969,
+          "timestamp": 24.0
+        },
+        {
+          "object": "cell phone",
+          "confidence": 0.6619690656661987,
+          "timestamp": 24.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5652547478675842,
+          "timestamp": 24.0
+        }
+      ]
+    },
+    {
+      "timestamp": 25.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9204546809196472,
+          "timestamp": 25.0
+        },
+        {
+          "object": "cell phone",
+          "confidence": 0.649726152420044,
+          "timestamp": 25.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5519611835479736,
+          "timestamp": 25.0
+        },
+        {
+          "object": "tie",
+          "confidence": 0.5359379649162292,
+          "timestamp": 25.0
+        }
+      ]
+    },
+    {
+      "timestamp": 26.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9107473492622375,
+          "timestamp": 26.0
+        },
+        {
+          "object": "tie",
+          "confidence": 0.5406075119972229,
+          "timestamp": 26.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5184329748153687,
+          "timestamp": 26.0
+        }
+      ]
+    },
+    {
+      "timestamp": 27.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9041538834571838,
+          "timestamp": 27.0
+        },
+        {
+          "object": "tie",
+          "confidence": 0.6851224899291992,
+          "timestamp": 27.0
+        }
+      ]
+    },
+    {
+      "timestamp": 28.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9051825404167175,
+          "timestamp": 28.0
+        }
+      ]
+    },
+    {
+      "timestamp": 29.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9204534888267517,
+          "timestamp": 29.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7226294875144958,
+          "timestamp": 29.0
+        }
+      ]
+    },
+    {
+      "timestamp": 30.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9179269671440125,
+          "timestamp": 30.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.8261324763298035,
+          "timestamp": 30.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7747321724891663,
+          "timestamp": 30.0
+        }
+      ]
+    },
+    {
+      "timestamp": 31.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9112010598182678,
+          "timestamp": 31.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7227615714073181,
+          "timestamp": 31.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7194687128067017,
+          "timestamp": 31.0
+        }
+      ]
+    },
+    {
+      "timestamp": 32.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9019210338592529,
+          "timestamp": 32.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7400020360946655,
+          "timestamp": 32.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6652252078056335,
+          "timestamp": 32.0
+        }
+      ]
+    },
+    {
+      "timestamp": 33.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9053516387939453,
+          "timestamp": 33.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7340570688247681,
+          "timestamp": 33.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6473588347434998,
+          "timestamp": 33.0
+        }
+      ]
+    },
+    {
+      "timestamp": 34.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9122645258903503,
+          "timestamp": 34.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7192479372024536,
+          "timestamp": 34.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6100292205810547,
+          "timestamp": 34.0
+        }
+      ]
+    },
+    {
+      "timestamp": 35.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9091693162918091,
+          "timestamp": 35.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7877380847930908,
+          "timestamp": 35.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7786257863044739,
+          "timestamp": 35.0
+        },
+        {
+          "object": "tie",
+          "confidence": 0.5494188070297241,
+          "timestamp": 35.0
+        }
+      ]
+    },
+    {
+      "timestamp": 36.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.907948911190033,
+          "timestamp": 36.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.789491593837738,
+          "timestamp": 36.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7216697931289673,
+          "timestamp": 36.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5015991926193237,
+          "timestamp": 36.0
+        }
+      ]
+    },
+    {
+      "timestamp": 37.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8658114075660706,
+          "timestamp": 37.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7506603002548218,
+          "timestamp": 37.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7254230976104736,
+          "timestamp": 37.0
+        }
+      ]
+    },
+    {
+      "timestamp": 38.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8849412798881531,
+          "timestamp": 38.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7399837374687195,
+          "timestamp": 38.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7232936024665833,
+          "timestamp": 38.0
+        }
+      ]
+    },
+    {
+      "timestamp": 39.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.7957682013511658,
+          "timestamp": 39.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7206374406814575,
+          "timestamp": 39.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.67460697889328,
+          "timestamp": 39.0
+        }
+      ]
+    },
+    {
+      "timestamp": 40.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8651293516159058,
+          "timestamp": 40.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7438897490501404,
+          "timestamp": 40.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6908136606216431,
+          "timestamp": 40.0
+        }
+      ]
+    },
+    {
+      "timestamp": 41.0,
+      "objects": [
+        {
+          "object": "cup",
+          "confidence": 0.7095773816108704,
+          "timestamp": 41.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6293771266937256,
+          "timestamp": 41.0
+        },
+        {
+          "object": "person",
+          "confidence": 0.6059194207191467,
+          "timestamp": 41.0
+        }
+      ]
+    },
+    {
+      "timestamp": 42.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8543427586555481,
+          "timestamp": 42.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.709496021270752,
+          "timestamp": 42.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6139270067214966,
+          "timestamp": 42.0
+        }
+      ]
+    },
+    {
+      "timestamp": 43.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8434289693832397,
+          "timestamp": 43.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7500903010368347,
+          "timestamp": 43.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6218769550323486,
+          "timestamp": 43.0
+        }
+      ]
+    },
+    {
+      "timestamp": 44.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8733552098274231,
+          "timestamp": 44.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6595131754875183,
+          "timestamp": 44.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5538565516471863,
+          "timestamp": 44.0
+        }
+      ]
+    },
+    {
+      "timestamp": 45.0,
+      "objects": [
+        {
+          "object": "cup",
+          "confidence": 0.6943951845169067,
+          "timestamp": 45.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5395055413246155,
+          "timestamp": 45.0
+        },
+        {
+          "object": "person",
+          "confidence": 0.520348846912384,
+          "timestamp": 45.0
+        }
+      ]
+    },
+    {
+      "timestamp": 46.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.883224368095398,
+          "timestamp": 46.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6386489868164062,
+          "timestamp": 46.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6069960594177246,
+          "timestamp": 46.0
+        }
+      ]
+    },
+    {
+      "timestamp": 47.0,
+      "objects": [
+        {
+          "object": "cup",
+          "confidence": 0.646717369556427,
+          "timestamp": 47.0
+        },
+        {
+          "object": "person",
+          "confidence": 0.6118161082267761,
+          "timestamp": 47.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5776428580284119,
+          "timestamp": 47.0
+        }
+      ]
+    },
+    {
+      "timestamp": 48.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8147361278533936,
+          "timestamp": 48.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5363678932189941,
+          "timestamp": 48.0
+        }
+      ]
+    },
+    {
+      "timestamp": 49.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9113399386405945,
+          "timestamp": 49.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6463907957077026,
+          "timestamp": 49.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5915020704269409,
+          "timestamp": 49.0
+        }
+      ]
+    },
+    {
+      "timestamp": 50.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8775373101234436,
+          "timestamp": 50.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7140767574310303,
+          "timestamp": 50.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6322320103645325,
+          "timestamp": 50.0
+        }
+      ]
+    },
+    {
+      "timestamp": 51.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8716956377029419,
+          "timestamp": 51.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6607779860496521,
+          "timestamp": 51.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5870380401611328,
+          "timestamp": 51.0
+        }
+      ]
+    },
+    {
+      "timestamp": 52.0,
+      "objects": [
+        {
+          "object": "cup",
+          "confidence": 0.6911174654960632,
+          "timestamp": 52.0
+        },
+        {
+          "object": "person",
+          "confidence": 0.6270344853401184,
+          "timestamp": 52.0
+        }
+      ]
+    },
+    {
+      "timestamp": 53.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.6606462001800537,
+          "timestamp": 53.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6468983888626099,
+          "timestamp": 53.0
+        }
+      ]
+    },
+    {
+      "timestamp": 54.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8843655586242676,
+          "timestamp": 54.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7223494648933411,
+          "timestamp": 54.0
+        }
+      ]
+    },
+    {
+      "timestamp": 55.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.89023756980896,
+          "timestamp": 55.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.8279411792755127,
+          "timestamp": 55.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.531050980091095,
+          "timestamp": 55.0
+        }
+      ]
+    },
+    {
+      "timestamp": 56.0,
+      "objects": [
+        {
+          "object": "cup",
+          "confidence": 0.8660564422607422,
+          "timestamp": 56.0
+        },
+        {
+          "object": "person",
+          "confidence": 0.8557891845703125,
+          "timestamp": 56.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5708371996879578,
+          "timestamp": 56.0
+        }
+      ]
+    },
+    {
+      "timestamp": 57.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8755109310150146,
+          "timestamp": 57.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.8003214597702026,
+          "timestamp": 57.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5787099599838257,
+          "timestamp": 57.0
+        }
+      ]
+    },
+    {
+      "timestamp": 58.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8804144263267517,
+          "timestamp": 58.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7380136847496033,
+          "timestamp": 58.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5726071000099182,
+          "timestamp": 58.0
+        }
+      ]
+    },
+    {
+      "timestamp": 59.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.892524003982544,
+          "timestamp": 59.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.8267881870269775,
+          "timestamp": 59.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6418908834457397,
+          "timestamp": 59.0
+        }
+      ]
+    },
+    {
+      "timestamp": 60.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9042383432388306,
+          "timestamp": 60.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7780001163482666,
+          "timestamp": 60.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7755889296531677,
+          "timestamp": 60.0
+        }
+      ]
+    },
+    {
+      "timestamp": 61.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9282987713813782,
+          "timestamp": 61.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7538719773292542,
+          "timestamp": 61.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7411255836486816,
+          "timestamp": 61.0
+        }
+      ]
+    },
+    {
+      "timestamp": 62.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9169493913650513,
+          "timestamp": 62.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7554134726524353,
+          "timestamp": 62.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7349904775619507,
+          "timestamp": 62.0
+        }
+      ]
+    },
+    {
+      "timestamp": 63.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.917430579662323,
+          "timestamp": 63.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7498985528945923,
+          "timestamp": 63.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7393937110900879,
+          "timestamp": 63.0
+        }
+      ]
+    },
+    {
+      "timestamp": 64.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9123393297195435,
+          "timestamp": 64.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.8025029897689819,
+          "timestamp": 64.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7514601945877075,
+          "timestamp": 64.0
+        }
+      ]
+    },
+    {
+      "timestamp": 65.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8893135786056519,
+          "timestamp": 65.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7581924796104431,
+          "timestamp": 65.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7563822865486145,
+          "timestamp": 65.0
+        }
+      ]
+    },
+    {
+      "timestamp": 66.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8373051881790161,
+          "timestamp": 66.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7026306986808777,
+          "timestamp": 66.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6468602418899536,
+          "timestamp": 66.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5038018822669983,
+          "timestamp": 66.0
+        }
+      ]
+    },
+    {
+      "timestamp": 67.0,
+      "objects": [
+        {
+          "object": "cup",
+          "confidence": 0.7451492547988892,
+          "timestamp": 67.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6829399466514587,
+          "timestamp": 67.0
+        },
+        {
+          "object": "dog",
+          "confidence": 0.6419814825057983,
+          "timestamp": 67.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5331007838249207,
+          "timestamp": 67.0
+        }
+      ]
+    },
+    {
+      "timestamp": 68.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8966922760009766,
+          "timestamp": 68.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7925572991371155,
+          "timestamp": 68.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7161105871200562,
+          "timestamp": 68.0
+        }
+      ]
+    },
+    {
+      "timestamp": 69.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8748303055763245,
+          "timestamp": 69.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7999404072761536,
+          "timestamp": 69.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6780586242675781,
+          "timestamp": 69.0
+        }
+      ]
+    },
+    {
+      "timestamp": 70.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8994473218917847,
+          "timestamp": 70.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7776873111724854,
+          "timestamp": 70.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6778573989868164,
+          "timestamp": 70.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5031415820121765,
+          "timestamp": 70.0
+        }
+      ]
+    },
+    {
+      "timestamp": 71.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9135918021202087,
+          "timestamp": 71.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7934280633926392,
+          "timestamp": 71.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7575819492340088,
+          "timestamp": 71.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5422036051750183,
+          "timestamp": 71.0
+        }
+      ]
+    },
+    {
+      "timestamp": 72.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9135034680366516,
+          "timestamp": 72.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7896674275398254,
+          "timestamp": 72.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7798520922660828,
+          "timestamp": 72.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5719707608222961,
+          "timestamp": 72.0
+        }
+      ]
+    },
+    {
+      "timestamp": 73.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9109869003295898,
+          "timestamp": 73.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7487465739250183,
+          "timestamp": 73.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7222723960876465,
+          "timestamp": 73.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5754286646842957,
+          "timestamp": 73.0
+        }
+      ]
+    },
+    {
+      "timestamp": 74.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9194445013999939,
+          "timestamp": 74.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7936233878135681,
+          "timestamp": 74.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7477976083755493,
+          "timestamp": 74.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5635684132575989,
+          "timestamp": 74.0
+        }
+      ]
+    },
+    {
+      "timestamp": 75.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9330011010169983,
+          "timestamp": 75.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7525480389595032,
+          "timestamp": 75.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7117505073547363,
+          "timestamp": 75.0
+        },
+        {
+          "object": "pizza",
+          "confidence": 0.5956893563270569,
+          "timestamp": 75.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5450897812843323,
+          "timestamp": 75.0
+        }
+      ]
+    },
+    {
+      "timestamp": 76.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9175863265991211,
+          "timestamp": 76.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7798963189125061,
+          "timestamp": 76.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7704781889915466,
+          "timestamp": 76.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5205270051956177,
+          "timestamp": 76.0
+        }
+      ]
+    },
+    {
+      "timestamp": 77.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9302361011505127,
+          "timestamp": 77.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7646352052688599,
+          "timestamp": 77.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7584059834480286,
+          "timestamp": 77.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.522761344909668,
+          "timestamp": 77.0
+        }
+      ]
+    },
+    {
+      "timestamp": 78.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9251499176025391,
+          "timestamp": 78.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7637789845466614,
+          "timestamp": 78.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.712285578250885,
+          "timestamp": 78.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5255905985832214,
+          "timestamp": 78.0
+        }
+      ]
+    },
+    {
+      "timestamp": 79.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9246779680252075,
+          "timestamp": 79.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.785317599773407,
+          "timestamp": 79.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7709540724754333,
+          "timestamp": 79.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5333783626556396,
+          "timestamp": 79.0
+        }
+      ]
+    },
+    {
+      "timestamp": 80.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9080617427825928,
+          "timestamp": 80.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7512335777282715,
+          "timestamp": 80.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6710127592086792,
+          "timestamp": 80.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5614646673202515,
+          "timestamp": 80.0
+        }
+      ]
+    },
+    {
+      "timestamp": 81.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9101057052612305,
+          "timestamp": 81.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7927514314651489,
+          "timestamp": 81.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7434084415435791,
+          "timestamp": 81.0
+        }
+      ]
+    },
+    {
+      "timestamp": 82.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9255801439285278,
+          "timestamp": 82.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7987816333770752,
+          "timestamp": 82.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6764528751373291,
+          "timestamp": 82.0
+        },
+        {
+          "object": "tie",
+          "confidence": 0.587282121181488,
+          "timestamp": 82.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5111181735992432,
+          "timestamp": 82.0
+        }
+      ]
+    },
+    {
+      "timestamp": 83.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.925386905670166,
+          "timestamp": 83.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.8128169178962708,
+          "timestamp": 83.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7227240800857544,
+          "timestamp": 83.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5560492873191833,
+          "timestamp": 83.0
+        }
+      ]
+    },
+    {
+      "timestamp": 84.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9292159080505371,
+          "timestamp": 84.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7914784550666809,
+          "timestamp": 84.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7505919933319092,
+          "timestamp": 84.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5545418858528137,
+          "timestamp": 84.0
+        }
+      ]
+    },
+    {
+      "timestamp": 85.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9112647771835327,
+          "timestamp": 85.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.72743821144104,
+          "timestamp": 85.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6235284209251404,
+          "timestamp": 85.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5319869518280029,
+          "timestamp": 85.0
+        }
+      ]
+    },
+    {
+      "timestamp": 86.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.920505166053772,
+          "timestamp": 86.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7372005581855774,
+          "timestamp": 86.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6151010394096375,
+          "timestamp": 86.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5076228380203247,
+          "timestamp": 86.0
+        }
+      ]
+    },
+    {
+      "timestamp": 87.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9052020907402039,
+          "timestamp": 87.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7747370004653931,
+          "timestamp": 87.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7148603200912476,
+          "timestamp": 87.0
+        }
+      ]
+    },
+    {
+      "timestamp": 88.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9303246736526489,
+          "timestamp": 88.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7408944368362427,
+          "timestamp": 88.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5107554197311401,
+          "timestamp": 88.0
+        }
+      ]
+    },
+    {
+      "timestamp": 89.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.91352778673172,
+          "timestamp": 89.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7128688097000122,
+          "timestamp": 89.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5561506152153015,
+          "timestamp": 89.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5298603177070618,
+          "timestamp": 89.0
+        }
+      ]
+    },
+    {
+      "timestamp": 90.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9254847764968872,
+          "timestamp": 90.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.8118829131126404,
+          "timestamp": 90.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5630565285682678,
+          "timestamp": 90.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5283553004264832,
+          "timestamp": 90.0
+        }
+      ]
+    },
+    {
+      "timestamp": 91.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9282774925231934,
+          "timestamp": 91.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7190300226211548,
+          "timestamp": 91.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.570171594619751,
+          "timestamp": 91.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5359387993812561,
+          "timestamp": 91.0
+        }
+      ]
+    },
+    {
+      "timestamp": 92.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9332801103591919,
+          "timestamp": 92.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7421794533729553,
+          "timestamp": 92.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5821457505226135,
+          "timestamp": 92.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.525659441947937,
+          "timestamp": 92.0
+        }
+      ]
+    },
+    {
+      "timestamp": 93.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9296771287918091,
+          "timestamp": 93.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7087551951408386,
+          "timestamp": 93.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6139310002326965,
+          "timestamp": 93.0
+        }
+      ]
+    },
+    {
+      "timestamp": 94.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9277399778366089,
+          "timestamp": 94.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7784055471420288,
+          "timestamp": 94.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6089812517166138,
+          "timestamp": 94.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5395214557647705,
+          "timestamp": 94.0
+        }
+      ]
+    },
+    {
+      "timestamp": 95.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9224984049797058,
+          "timestamp": 95.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6916202306747437,
+          "timestamp": 95.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.558449387550354,
+          "timestamp": 95.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.527614951133728,
+          "timestamp": 95.0
+        }
+      ]
+    },
+    {
+      "timestamp": 96.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9290586709976196,
+          "timestamp": 96.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.681578516960144,
+          "timestamp": 96.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5039399266242981,
+          "timestamp": 96.0
+        }
+      ]
+    },
+    {
+      "timestamp": 97.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9227844476699829,
+          "timestamp": 97.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7135100960731506,
+          "timestamp": 97.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5430352687835693,
+          "timestamp": 97.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5263211727142334,
+          "timestamp": 97.0
+        }
+      ]
+    },
+    {
+      "timestamp": 98.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9317491054534912,
+          "timestamp": 98.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6428118944168091,
+          "timestamp": 98.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5302554965019226,
+          "timestamp": 98.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5275580286979675,
+          "timestamp": 98.0
+        }
+      ]
+    },
+    {
+      "timestamp": 99.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9267369508743286,
+          "timestamp": 99.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7114846110343933,
+          "timestamp": 99.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5720109939575195,
+          "timestamp": 99.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.527218222618103,
+          "timestamp": 99.0
+        }
+      ]
+    },
+    {
+      "timestamp": 100.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9330657124519348,
+          "timestamp": 100.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6084733009338379,
+          "timestamp": 100.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.579887330532074,
+          "timestamp": 100.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5191028118133545,
+          "timestamp": 100.0
+        }
+      ]
+    },
+    {
+      "timestamp": 101.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9306738376617432,
+          "timestamp": 101.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.575900673866272,
+          "timestamp": 101.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5303214192390442,
+          "timestamp": 101.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5173706412315369,
+          "timestamp": 101.0
+        }
+      ]
+    },
+    {
+      "timestamp": 102.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9235104918479919,
+          "timestamp": 102.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6637698411941528,
+          "timestamp": 102.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6411256790161133,
+          "timestamp": 102.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5112564563751221,
+          "timestamp": 102.0
+        }
+      ]
+    },
+    {
+      "timestamp": 103.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9096476435661316,
+          "timestamp": 103.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.8064483404159546,
+          "timestamp": 103.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6627031564712524,
+          "timestamp": 103.0
+        }
+      ]
+    },
+    {
+      "timestamp": 104.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9188588857650757,
+          "timestamp": 104.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.9118496179580688,
+          "timestamp": 104.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7762475609779358,
+          "timestamp": 104.0
+        }
+      ]
+    },
+    {
+      "timestamp": 105.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8883297443389893,
+          "timestamp": 105.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7172159552574158,
+          "timestamp": 105.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5291199684143066,
+          "timestamp": 105.0
+        }
+      ]
+    },
+    {
+      "timestamp": 106.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8703023791313171,
+          "timestamp": 106.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5965139269828796,
+          "timestamp": 106.0
+        }
+      ]
+    },
+    {
+      "timestamp": 107.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.898102343082428,
+          "timestamp": 107.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6081717610359192,
+          "timestamp": 107.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5344249606132507,
+          "timestamp": 107.0
+        }
+      ]
+    },
+    {
+      "timestamp": 108.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8921512961387634,
+          "timestamp": 108.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.640377938747406,
+          "timestamp": 108.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5543227195739746,
+          "timestamp": 108.0
+        }
+      ]
+    },
+    {
+      "timestamp": 109.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8635870218276978,
+          "timestamp": 109.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6668482422828674,
+          "timestamp": 109.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5735172033309937,
+          "timestamp": 109.0
+        }
+      ]
+    },
+    {
+      "timestamp": 110.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8660827279090881,
+          "timestamp": 110.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6773231029510498,
+          "timestamp": 110.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5494475364685059,
+          "timestamp": 110.0
+        }
+      ]
+    },
+    {
+      "timestamp": 111.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9098127484321594,
+          "timestamp": 111.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7488857507705688,
+          "timestamp": 111.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5200316905975342,
+          "timestamp": 111.0
+        }
+      ]
+    },
+    {
+      "timestamp": 112.0,
+      "objects": [
+        {
+          "object": "cup",
+          "confidence": 0.8751118779182434,
+          "timestamp": 112.0
+        },
+        {
+          "object": "person",
+          "confidence": 0.8552659153938293,
+          "timestamp": 112.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7261982560157776,
+          "timestamp": 112.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5149091482162476,
+          "timestamp": 112.0
+        }
+      ]
+    },
+    {
+      "timestamp": 113.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9082924127578735,
+          "timestamp": 113.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7734231948852539,
+          "timestamp": 113.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7509102821350098,
+          "timestamp": 113.0
+        }
+      ]
+    },
+    {
+      "timestamp": 114.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9023836255073547,
+          "timestamp": 114.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7521017789840698,
+          "timestamp": 114.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5844666361808777,
+          "timestamp": 114.0
+        }
+      ]
+    },
+    {
+      "timestamp": 115.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.881566047668457,
+          "timestamp": 115.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.8147713541984558,
+          "timestamp": 115.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7599639892578125,
+          "timestamp": 115.0
+        },
+        {
+          "object": "tie",
+          "confidence": 0.5465724468231201,
+          "timestamp": 115.0
+        }
+      ]
+    },
+    {
+      "timestamp": 116.0,
+      "objects": [
+        {
+          "object": "cell phone",
+          "confidence": 0.6235602498054504,
+          "timestamp": 116.0
+        }
+      ]
+    },
+    {
+      "timestamp": 117.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.5034419894218445,
+          "timestamp": 117.0
+        }
+      ]
+    },
+    {
+      "timestamp": 118.0,
+      "objects": [
+        {
+          "object": "cup",
+          "confidence": 0.5172698497772217,
+          "timestamp": 118.0
+        }
+      ]
+    },
+    {
+      "timestamp": 119.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8939167857170105,
+          "timestamp": 119.0
+        },
+        {
+          "object": "chair",
+          "confidence": 0.679092288017273,
+          "timestamp": 119.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6545426249504089,
+          "timestamp": 119.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5743294954299927,
+          "timestamp": 119.0
+        }
+      ]
+    },
+    {
+      "timestamp": 120.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.7139232754707336,
+          "timestamp": 120.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6652952432632446,
+          "timestamp": 120.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6153505444526672,
+          "timestamp": 120.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5474226474761963,
+          "timestamp": 120.0
+        }
+      ]
+    },
+    {
+      "timestamp": 121.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9166181683540344,
+          "timestamp": 121.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.8765954375267029,
+          "timestamp": 121.0
+        },
+        {
+          "object": "tie",
+          "confidence": 0.6915274262428284,
+          "timestamp": 121.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.6150898337364197,
+          "timestamp": 121.0
+        }
+      ]
+    },
+    {
+      "timestamp": 122.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9011926651000977,
+          "timestamp": 122.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.8814810514450073,
+          "timestamp": 122.0
+        }
+      ]
+    },
+    {
+      "timestamp": 123.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9032150506973267,
+          "timestamp": 123.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.8309298157691956,
+          "timestamp": 123.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7233294248580933,
+          "timestamp": 123.0
+        },
+        {
+          "object": "dining table",
+          "confidence": 0.5277301073074341,
+          "timestamp": 123.0
+        }
+      ]
+    },
+    {
+      "timestamp": 124.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8838613629341125,
+          "timestamp": 124.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.8225468993186951,
+          "timestamp": 124.0
+        },
+        {
+          "object": "chair",
+          "confidence": 0.8057928085327148,
+          "timestamp": 124.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7739545106887817,
+          "timestamp": 124.0
+        },
+        {
+          "object": "person",
+          "confidence": 0.5533960461616516,
+          "timestamp": 124.0
+        }
+      ]
+    },
+    {
+      "timestamp": 125.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.9104898571968079,
+          "timestamp": 125.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.7540534138679504,
+          "timestamp": 125.0
+        },
+        {
+          "object": "chair",
+          "confidence": 0.6921144723892212,
+          "timestamp": 125.0
+        },
+        {
+          "object": "person",
+          "confidence": 0.6148792505264282,
+          "timestamp": 125.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5194208025932312,
+          "timestamp": 125.0
+        }
+      ]
+    },
+    {
+      "timestamp": 126.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8983768224716187,
+          "timestamp": 126.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5979065895080566,
+          "timestamp": 126.0
+        },
+        {
+          "object": "cup",
+          "confidence": 0.5084228515625,
+          "timestamp": 126.0
+        }
+      ]
+    },
+    {
+      "timestamp": 127.0,
+      "objects": [
+        {
+          "object": "cat",
+          "confidence": 0.6344932317733765,
+          "timestamp": 127.0
+        }
+      ]
+    },
+    {
+      "timestamp": 128.0,
+      "objects": [
+        {
+          "object": "person",
+          "confidence": 0.8685989379882812,
+          "timestamp": 128.0
+        },
+        {
+          "object": "cat",
+          "confidence": 0.7403462529182434,
+          "timestamp": 128.0
+        }
+      ]
+    },
+    {
+      "timestamp": 129.0,
+      "objects": [
+        {
+          "object": "cat",
+          "confidence": 0.7940897941589355,
+          "timestamp": 129.0
+        }
+      ]
+    },
+    {
+      "timestamp": 130.0,
+      "objects": [
+        {
+          "object": "cat",
+          "confidence": 0.7810546159744263,
+          "timestamp": 130.0
+        },
+        {
+          "object": "chair",
+          "confidence": 0.5067046284675598,
+          "timestamp": 130.0
+        }
+      ]
+    }
+  ],
+  "transcription": {
+    "text": " 5 Music сказал ГУДК Premium Вообще ТРЕВОЖНАЯ МУЗЫКА",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 21.400000000000002,
+        "text": " 5 Music",
+        "tokens": [
+          50410,
+          1025,
+          7609,
+          51434
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -5.952067184448242,
+        "compression_ratio": 0.4666666666666667,
+        "no_speech_prob": 0.02115585282444954
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 55.480000000000004,
+        "text": " сказал",
+        "tokens": [
+          50364,
+          24980,
+          51638
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -3.628804016113281,
+        "compression_ratio": 0.631578947368421,
+        "no_speech_prob": 0.2615358829498291
+      },
+      {
+        "id": 2,
+        "seek": 5548,
+        "start": 55.559999999999995,
+        "end": 57.72,
+        "text": " ГУДК Premium",
+        "tokens": [
+          50368,
+          7247,
+          11887,
+          8442,
+          8169,
+          34881,
+          50476
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.538427670796712,
+        "compression_ratio": 0.7837837837837838,
+        "no_speech_prob": 0.09942818433046341
+      },
+      {
+        "id": 3,
+        "seek": 5548,
+        "start": 59.919999999999995,
+        "end": 61.14,
+        "text": " Вообще",
+        "tokens": [
+          50586,
+          24334,
+          12605,
+          50647
+        ],
+        "temperature": 1.0,
+        "avg_logprob": -4.538427670796712,
+        "compression_ratio": 0.7837837837837838,
+        "no_speech_prob": 0.09942818433046341
+      },
+      {
+        "id": 4,
+        "seek": 8548,
+        "start": 85.48,
+        "end": 112.80000000000001,
+        "text": " ТРЕВОЖНАЯ МУЗЫКА",
+        "tokens": [
+          50364,
+          3200,
+          42447,
+          40311,
+          28308,
+          28729,
+          25007,
+          51730
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.6139353752136231,
+        "compression_ratio": 0.775,
+        "no_speech_prob": 0.2137541025876999
+      }
+    ]
+  },
+  "events": [
+    {
+      "timestamp": 0.0,
+      "type": "visual",
+      "description": "Обнаружено 6 объектов: chair, dining table, person, tie, cup",
+      "objects": [
+        "person",
+        "cup",
+        "tie",
+        "cup",
+        "chair",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 1.0,
+      "type": "visual",
+      "description": "Обнаружено 5 объектов: bottle, cup, person, dining table",
+      "objects": [
+        "cup",
+        "person",
+        "cup",
+        "bottle",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 2.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person, dining table",
+      "objects": [
+        "cup",
+        "person",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 3.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 4.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 5.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 6.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 7.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 8.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 9.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: tie, cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "tie"
+      ]
+    },
+    {
+      "timestamp": 10.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 11.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 12.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 13.0,
+      "type": "visual",
+      "description": "Обнаружено 5 объектов: bottle, cup, person",
+      "objects": [
+        "person",
+        "bottle",
+        "cup",
+        "cup",
+        "bottle"
+      ]
+    },
+    {
+      "timestamp": 14.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 15.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 18.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: tie, cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "tie"
+      ]
+    },
+    {
+      "timestamp": 19.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: tie, cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "tie"
+      ]
+    },
+    {
+      "timestamp": 20.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 21.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 22.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 23.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 24.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person, cell phone",
+      "objects": [
+        "person",
+        "cell phone",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 25.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: tie, cup, person, cell phone",
+      "objects": [
+        "person",
+        "cell phone",
+        "cup",
+        "tie"
+      ]
+    },
+    {
+      "timestamp": 26.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: tie, cup, person",
+      "objects": [
+        "person",
+        "tie",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 27.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: tie, person",
+      "objects": [
+        "person",
+        "tie"
+      ]
+    },
+    {
+      "timestamp": 29.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 30.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 31.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 32.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 33.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 34.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 35.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: tie, cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "tie"
+      ]
+    },
+    {
+      "timestamp": 36.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 37.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 38.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 39.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 40.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 41.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "cup",
+        "cup",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 42.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 43.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 44.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 45.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "cup",
+        "cup",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 46.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 47.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "cup",
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 48.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 49.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 50.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 51.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 52.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cup, person",
+      "objects": [
+        "cup",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 53.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 54.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 55.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 56.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "cup",
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 57.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 58.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 59.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 60.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 61.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 62.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 63.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 64.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 65.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 66.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 67.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, dining table, dog",
+      "objects": [
+        "cup",
+        "cup",
+        "dog",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 68.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 69.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 70.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 71.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 72.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 73.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 74.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 75.0,
+      "type": "visual",
+      "description": "Обнаружено 5 объектов: pizza, cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "pizza",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 76.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 77.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 78.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 79.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 80.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 81.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 82.0,
+      "type": "visual",
+      "description": "Обнаружено 5 объектов: tie, cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "tie",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 83.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 84.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 85.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 86.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 87.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 88.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 89.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 90.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 91.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 92.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 93.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 94.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 95.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 96.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 97.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 98.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "dining table",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 99.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 100.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 101.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "dining table",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 102.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 103.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 104.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 105.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 106.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 107.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 108.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 109.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 110.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 111.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 112.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "cup",
+        "person",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 113.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 114.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 115.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: tie, cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "tie"
+      ]
+    },
+    {
+      "timestamp": 119.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: chair, cup, person",
+      "objects": [
+        "person",
+        "chair",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 120.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 121.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: tie, cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "tie",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 122.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 123.0,
+      "type": "visual",
+      "description": "Обнаружено 4 объектов: cup, person, dining table",
+      "objects": [
+        "person",
+        "cup",
+        "cup",
+        "dining table"
+      ]
+    },
+    {
+      "timestamp": 124.0,
+      "type": "visual",
+      "description": "Обнаружено 5 объектов: chair, cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "chair",
+        "cup",
+        "person"
+      ]
+    },
+    {
+      "timestamp": 125.0,
+      "type": "visual",
+      "description": "Обнаружено 5 объектов: chair, cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "chair",
+        "person",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 126.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cup, person",
+      "objects": [
+        "person",
+        "cup",
+        "cup"
+      ]
+    },
+    {
+      "timestamp": 128.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: cat, person",
+      "objects": [
+        "person",
+        "cat"
+      ]
+    },
+    {
+      "timestamp": 130.0,
+      "type": "visual",
+      "description": "Обнаружено 2 объектов: chair, cat",
+      "objects": [
+        "cat",
+        "chair"
+      ]
+    }
+  ],
+  "statistics": {
+    "total_frames_analyzed": 131,
+    "total_objects_detected": 412,
+    "unique_objects": 10,
+    "most_common_objects": [
+      [
+        "cup",
+        209
+      ],
+      [
+        "person",
+        127
+      ],
+      [
+        "dining table",
+        48
+      ],
+      [
+        "tie",
+        11
+      ],
+      [
+        "chair",
+        5
+      ],
+      [
+        "cat",
+        4
+      ],
+      [
+        "bottle",
+        3
+      ],
+      [
+        "cell phone",
+        3
+      ],
+      [
+        "dog",
+        1
+      ],
+      [
+        "pizza",
+        1
+      ]
+    ],
+    "transcription_length": 52,
+    "total_events": 123,
+    "visual_events": 123,
+    "speech_events": 0
+  },
+  "topics": null
+}

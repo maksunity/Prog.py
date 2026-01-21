@@ -1,0 +1,217 @@
+{
+  "video_name": "videos\\Introducing GALLEON 100 SD ｜ A New Era of Input.mp4",
+  "detections": [
+    {
+      "timestamp": 0.0,
+      "objects": [
+        {
+          "object": "cell phone",
+          "confidence": 0.674288272857666,
+          "timestamp": 0.0
+        },
+        {
+          "object": "cell phone",
+          "confidence": 0.6464927196502686,
+          "timestamp": 0.0
+        },
+        {
+          "object": "cell phone",
+          "confidence": 0.5391808748245239,
+          "timestamp": 0.0
+        }
+      ]
+    },
+    {
+      "timestamp": 10.0,
+      "objects": [
+        {
+          "object": "cell phone",
+          "confidence": 0.574378252029419,
+          "timestamp": 10.0
+        }
+      ]
+    },
+    {
+      "timestamp": 14.0,
+      "objects": [
+        {
+          "object": "keyboard",
+          "confidence": 0.7999589443206787,
+          "timestamp": 14.0
+        }
+      ]
+    },
+    {
+      "timestamp": 16.0,
+      "objects": [
+        {
+          "object": "keyboard",
+          "confidence": 0.8197711706161499,
+          "timestamp": 16.0
+        }
+      ]
+    },
+    {
+      "timestamp": 18.0,
+      "objects": [
+        {
+          "object": "keyboard",
+          "confidence": 0.8780807852745056,
+          "timestamp": 18.0
+        }
+      ]
+    },
+    {
+      "timestamp": 22.0,
+      "objects": [
+        {
+          "object": "cell phone",
+          "confidence": 0.7598212957382202,
+          "timestamp": 22.0
+        }
+      ]
+    },
+    {
+      "timestamp": 32.0,
+      "objects": [
+        {
+          "object": "keyboard",
+          "confidence": 0.9208468198776245,
+          "timestamp": 32.0
+        }
+      ]
+    },
+    {
+      "timestamp": 34.0,
+      "objects": [
+        {
+          "object": "keyboard",
+          "confidence": 0.9434601664543152,
+          "timestamp": 34.0
+        }
+      ]
+    },
+    {
+      "timestamp": 40.0,
+      "objects": [
+        {
+          "object": "keyboard",
+          "confidence": 0.6938217282295227,
+          "timestamp": 40.0
+        }
+      ]
+    }
+  ],
+  "transcription": {
+    "text": " МУЗЫКАЛЬНАЯ ЗАСТАВКА МУЗЫКАЛЬНАЯ ЗАСТАВКА МУЗЫКАЛЬНАЯ ЗАСТАВКА",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 12.0,
+        "text": " МУЗЫКАЛЬНАЯ ЗАСТАВКА",
+        "tokens": [
+          50364,
+          25007,
+          14854,
+          37796,
+          28729,
+          5841,
+          5594,
+          40752,
+          5594,
+          8578,
+          20869,
+          50964
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.5041531494685582,
+        "compression_ratio": 0.8863636363636364,
+        "no_speech_prob": 0.3768061101436615
+      },
+      {
+        "id": 1,
+        "seek": 1200,
+        "start": 12.0,
+        "end": 40.0,
+        "text": " МУЗЫКАЛЬНАЯ ЗАСТАВКА",
+        "tokens": [
+          50364,
+          25007,
+          14854,
+          37796,
+          28729,
+          5841,
+          5594,
+          40752,
+          5594,
+          8578,
+          20869,
+          51764
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.39500823387732875,
+        "compression_ratio": 0.8863636363636364,
+        "no_speech_prob": 0.7449521422386169
+      },
+      {
+        "id": 2,
+        "seek": 4200,
+        "start": 42.0,
+        "end": 46.0,
+        "text": " МУЗЫКАЛЬНАЯ ЗАСТАВКА",
+        "tokens": [
+          50364,
+          25007,
+          14854,
+          37796,
+          28729,
+          5841,
+          5594,
+          40752,
+          5594,
+          8578,
+          20869,
+          50564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.238663361622737,
+        "compression_ratio": 0.8863636363636364,
+        "no_speech_prob": 0.42638102173805237
+      }
+    ]
+  },
+  "events": [
+    {
+      "timestamp": 0.0,
+      "type": "visual",
+      "description": "Обнаружено 3 объектов: cell phone",
+      "objects": [
+        "cell phone",
+        "cell phone",
+        "cell phone"
+      ]
+    }
+  ],
+  "statistics": {
+    "total_frames_analyzed": 9,
+    "total_objects_detected": 11,
+    "unique_objects": 2,
+    "most_common_objects": [
+      [
+        "keyboard",
+        6
+      ],
+      [
+        "cell phone",
+        5
+      ]
+    ],
+    "transcription_length": 63,
+    "total_events": 1,
+    "visual_events": 1,
+    "speech_events": 0
+  },
+  "topics": null
+}

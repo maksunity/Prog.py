@@ -1,0 +1,3903 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4dfbe2e532900791a653cc5d927664ab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+    <div style="position: fixed; 
+                bottom: 50px; right: 50px; width: 200px; height: auto; 
+                background-color: white; z-index:9999; font-size:14px;
+                border:2px solid grey; border-radius: 5px; padding: 10px">
+    <p style="margin-top:0; font-weight: bold;">Административные округа:</p>
+    <p style="margin:5px 0;"><span style="background-color:red;                           width:15px; height:15px; display:inline-block; margin-right:5px;                           border: 1px solid black;"></span>ЦАО</p><p style="margin:5px 0;"><span style="background-color:blue;                           width:15px; height:15px; display:inline-block; margin-right:5px;                           border: 1px solid black;"></span>САО</p><p style="margin:5px 0;"><span style="background-color:green;                           width:15px; height:15px; display:inline-block; margin-right:5px;                           border: 1px solid black;"></span>СВАО</p><p style="margin:5px 0;"><span style="background-color:purple;                           width:15px; height:15px; display:inline-block; margin-right:5px;                           border: 1px solid black;"></span>ВАО</p><p style="margin:5px 0;"><span style="background-color:orange;                           width:15px; height:15px; display:inline-block; margin-right:5px;                           border: 1px solid black;"></span>ЮВАО</p><p style="margin:5px 0;"><span style="background-color:darkred;                           width:15px; height:15px; display:inline-block; margin-right:5px;                           border: 1px solid black;"></span>ЮАО</p><p style="margin:5px 0;"><span style="background-color:lightred;                           width:15px; height:15px; display:inline-block; margin-right:5px;                           border: 1px solid black;"></span>ЮЗАО</p><p style="margin:5px 0;"><span style="background-color:darkblue;                           width:15px; height:15px; display:inline-block; margin-right:5px;                           border: 1px solid black;"></span>ЗАО</p><p style="margin:5px 0;"><span style="background-color:darkgreen;                           width:15px; height:15px; display:inline-block; margin-right:5px;                           border: 1px solid black;"></span>СЗАО</p><p style="margin:5px 0;"><span style="background-color:lightgreen;                           width:15px; height:15px; display:inline-block; margin-right:5px;                           border: 1px solid black;"></span>ЗелАО</p><p style="margin:5px 0;"><span style="background-color:pink;                           width:15px; height:15px; display:inline-block; margin-right:5px;                           border: 1px solid black;"></span>ТАО</p></div>
+    
+            <div class="folium-map" id="map_4dfbe2e532900791a653cc5d927664ab" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4dfbe2e532900791a653cc5d927664ab = L.map(
+                "map_4dfbe2e532900791a653cc5d927664ab",
+                {
+                    center: [55.7558, 37.6173],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_af7a2b7ffb00ec8df30b1fee4eabc9d0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_af7a2b7ffb00ec8df30b1fee4eabc9d0.addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+            var circle_marker_b4cb72e437e3ada7381ce78e8bde0128 = L.circleMarker(
+                [55.79981, 37.53412],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_6ff2c8daa3593c9c8c9bfbcc4f2298e7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb9e4d15ab24fb47737c8cfd55024fb6 = $(`<div id="html_fb9e4d15ab24fb47737c8cfd55024fb6" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Аэропорт<br>         <b>Координаты:</b> 55.79981, 37.53412<br>         <b>Округ:</b> САО         </div>`)[0];
+                popup_6ff2c8daa3593c9c8c9bfbcc4f2298e7.setContent(html_fb9e4d15ab24fb47737c8cfd55024fb6);
+            
+        
+
+        circle_marker_b4cb72e437e3ada7381ce78e8bde0128.bindPopup(popup_6ff2c8daa3593c9c8c9bfbcc4f2298e7)
+        ;
+
+        
+    
+    
+            var circle_marker_7d9507c850b45a7f600f29d5bc95e393 = L.circleMarker(
+                [55.68808, 37.57501],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_4b9836a774c7b39390c8f0c1f0f285c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f016645481902138df34c43751b7fe61 = $(`<div id="html_f016645481902138df34c43751b7fe61" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Академическая<br>         <b>Координаты:</b> 55.68808, 37.57501<br>         <b>Округ:</b> ЮЗАО         </div>`)[0];
+                popup_4b9836a774c7b39390c8f0c1f0f285c1.setContent(html_f016645481902138df34c43751b7fe61);
+            
+        
+
+        circle_marker_7d9507c850b45a7f600f29d5bc95e393.bindPopup(popup_4b9836a774c7b39390c8f0c1f0f285c1)
+        ;
+
+        
+    
+    
+            var circle_marker_4cd479d71b2d329ade8f05cce58e5d86 = L.circleMarker(
+                [55.80737, 37.63844],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_b4e572fe8d23dd02c93dbca9a1750a3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a7cfed496d72dbe8fa14ec2068fcffc = $(`<div id="html_3a7cfed496d72dbe8fa14ec2068fcffc" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Алексеевская<br>         <b>Координаты:</b> 55.80737, 37.63844<br>         <b>Округ:</b> СВАО         </div>`)[0];
+                popup_b4e572fe8d23dd02c93dbca9a1750a3f.setContent(html_3a7cfed496d72dbe8fa14ec2068fcffc);
+            
+        
+
+        circle_marker_4cd479d71b2d329ade8f05cce58e5d86.bindPopup(popup_b4e572fe8d23dd02c93dbca9a1750a3f)
+        ;
+
+        
+    
+    
+            var circle_marker_6e67c45d06bcf592f7983a2650bc8663 = L.circleMarker(
+                [55.75219, 37.60836],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_1418e174929f7f77ba726a1f79822010 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_719a9b66a37a7b58f98f413800e86d6a = $(`<div id="html_719a9b66a37a7b58f98f413800e86d6a" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Александровский сад<br>         <b>Координаты:</b> 55.75219, 37.60836<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_1418e174929f7f77ba726a1f79822010.setContent(html_719a9b66a37a7b58f98f413800e86d6a);
+            
+        
+
+        circle_marker_6e67c45d06bcf592f7983a2650bc8663.bindPopup(popup_1418e174929f7f77ba726a1f79822010)
+        ;
+
+        
+    
+    
+            var circle_marker_8d1cf23b2a983cb83e83118332710110 = L.circleMarker(
+                [55.89504, 37.58605],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_8bbd9a3e3e9251bc9a6dda18cdbb5b6b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bea41082541c19867d02976f585f37f5 = $(`<div id="html_bea41082541c19867d02976f585f37f5" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Алтуфьево<br>         <b>Координаты:</b> 55.89504, 37.58605<br>         <b>Округ:</b> САО         </div>`)[0];
+                popup_8bbd9a3e3e9251bc9a6dda18cdbb5b6b.setContent(html_bea41082541c19867d02976f585f37f5);
+            
+        
+
+        circle_marker_8d1cf23b2a983cb83e83118332710110.bindPopup(popup_8bbd9a3e3e9251bc9a6dda18cdbb5b6b)
+        ;
+
+        
+    
+    
+            var circle_marker_a44571cff94e8f022a2811d52480912d = L.circleMarker(
+                [55.581818, 37.594978],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_6eb4270714d8e6bc5d077684286d01be = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e22a0f20a45dac1b7793471796bb919 = $(`<div id="html_1e22a0f20a45dac1b7793471796bb919" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Аннино (стр.)<br>         <b>Координаты:</b> 55.581818, 37.594978<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_6eb4270714d8e6bc5d077684286d01be.setContent(html_1e22a0f20a45dac1b7793471796bb919);
+            
+        
+
+        circle_marker_a44571cff94e8f022a2811d52480912d.bindPopup(popup_6eb4270714d8e6bc5d077684286d01be)
+        ;
+
+        
+    
+    
+            var circle_marker_3f174c2abc7dfbc1088524186762dbaa = L.circleMarker(
+                [55.75228, 37.60357],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_890aeaa599049fff5be005d2e94811c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d233cde7f4149d502da14f00f258e07e = $(`<div id="html_d233cde7f4149d502da14f00f258e07e" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Арбатская<br>         <b>Координаты:</b> 55.75228, 37.60357<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_890aeaa599049fff5be005d2e94811c5.setContent(html_d233cde7f4149d502da14f00f258e07e);
+            
+        
+
+        circle_marker_3f174c2abc7dfbc1088524186762dbaa.bindPopup(popup_890aeaa599049fff5be005d2e94811c5)
+        ;
+
+        
+    
+    
+            var circle_marker_9ed71feb3c74892487f1f3795b8cf6ba = L.circleMarker(
+                [55.75208, 37.71677],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_85e19c542a7e4142d24c9e8d5523b8a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b358bccb168ce28a114d88494ce63339 = $(`<div id="html_b358bccb168ce28a114d88494ce63339" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Авиамоторная<br>         <b>Координаты:</b> 55.75208, 37.71677<br>         <b>Округ:</b> ВАО         </div>`)[0];
+                popup_85e19c542a7e4142d24c9e8d5523b8a9.setContent(html_b358bccb168ce28a114d88494ce63339);
+            
+        
+
+        circle_marker_9ed71feb3c74892487f1f3795b8cf6ba.bindPopup(popup_85e19c542a7e4142d24c9e8d5523b8a9)
+        ;
+
+        
+    
+    
+            var circle_marker_71fd132bc5d2c91d59152f9961eaf398 = L.circleMarker(
+                [55.70801, 37.65858],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_78bc0accf53ea4f2c6bec7eea34ab351 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_86c47b2328ba7637d5972a03ab6356c2 = $(`<div id="html_86c47b2328ba7637d5972a03ab6356c2" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Автозаводская<br>         <b>Координаты:</b> 55.70801, 37.65858<br>         <b>Округ:</b> ЮВАО         </div>`)[0];
+                popup_78bc0accf53ea4f2c6bec7eea34ab351.setContent(html_86c47b2328ba7637d5972a03ab6356c2);
+            
+        
+
+        circle_marker_71fd132bc5d2c91d59152f9961eaf398.bindPopup(popup_78bc0accf53ea4f2c6bec7eea34ab351)
+        ;
+
+        
+    
+    
+            var circle_marker_a75790ca0cec8b04cd5e9edf0433d533 = L.circleMarker(
+                [55.86814, 37.66292],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_a7cd6b88296a837b199aebe78c214ae8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_449de7817ecdccb036693bf93dd865fd = $(`<div id="html_449de7817ecdccb036693bf93dd865fd" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Бабушкинская<br>         <b>Координаты:</b> 55.86814, 37.66292<br>         <b>Округ:</b> СВАО         </div>`)[0];
+                popup_a7cd6b88296a837b199aebe78c214ae8.setContent(html_449de7817ecdccb036693bf93dd865fd);
+            
+        
+
+        circle_marker_a75790ca0cec8b04cd5e9edf0433d533.bindPopup(popup_a7cd6b88296a837b199aebe78c214ae8)
+        ;
+
+        
+    
+    
+            var circle_marker_c3c9441db80bbdd1e0aadba56ad8fb6e = L.circleMarker(
+                [55.74326, 37.49753],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_3a775b4fb09f2eda82bd25a90b5020ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_29ea4d17d1523b7969706a1b0e790f41 = $(`<div id="html_29ea4d17d1523b7969706a1b0e790f41" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Багратионовская<br>         <b>Координаты:</b> 55.74326, 37.49753<br>         <b>Округ:</b> ЗАО         </div>`)[0];
+                popup_3a775b4fb09f2eda82bd25a90b5020ac.setContent(html_29ea4d17d1523b7969706a1b0e790f41);
+            
+        
+
+        circle_marker_c3c9441db80bbdd1e0aadba56ad8fb6e.bindPopup(popup_3a775b4fb09f2eda82bd25a90b5020ac)
+        ;
+
+        
+    
+    
+            var circle_marker_39d40b9ab007fe41463801f2522e8e47 = L.circleMarker(
+                [55.76027, 37.58111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_79bc6c24539003301e264e4117c0e118 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cdb09507ffd4238382169821c79b4965 = $(`<div id="html_cdb09507ffd4238382169821c79b4965" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Баррикадная<br>         <b>Координаты:</b> 55.76027, 37.58111<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_79bc6c24539003301e264e4117c0e118.setContent(html_cdb09507ffd4238382169821c79b4965);
+            
+        
+
+        circle_marker_39d40b9ab007fe41463801f2522e8e47.bindPopup(popup_79bc6c24539003301e264e4117c0e118)
+        ;
+
+        
+    
+    
+            var circle_marker_3d5eaf3c6ca25fd6fe701e69e5ba427a = L.circleMarker(
+                [55.77228, 37.67857],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_f98678dade3c8818ee07ec196dbae899 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24e6c69bd2981ae87bff3a862a6e06e9 = $(`<div id="html_24e6c69bd2981ae87bff3a862a6e06e9" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Бауманская<br>         <b>Координаты:</b> 55.77228, 37.67857<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_f98678dade3c8818ee07ec196dbae899.setContent(html_24e6c69bd2981ae87bff3a862a6e06e9);
+            
+        
+
+        circle_marker_3d5eaf3c6ca25fd6fe701e69e5ba427a.bindPopup(popup_f98678dade3c8818ee07ec196dbae899)
+        ;
+
+        
+    
+    
+            var circle_marker_f85adf4dc2ee9e1e1d8084e52d4625d8 = L.circleMarker(
+                [55.77378, 37.54412],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_2a5e920838fdbe59444ecd8bbaf81f67 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cba5fadc124c0d1eabe020d8a307f7c8 = $(`<div id="html_cba5fadc124c0d1eabe020d8a307f7c8" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Беговая<br>         <b>Координаты:</b> 55.77378, 37.54412<br>         <b>Округ:</b> САО         </div>`)[0];
+                popup_2a5e920838fdbe59444ecd8bbaf81f67.setContent(html_cba5fadc124c0d1eabe020d8a307f7c8);
+            
+        
+
+        circle_marker_f85adf4dc2ee9e1e1d8084e52d4625d8.bindPopup(popup_2a5e920838fdbe59444ecd8bbaf81f67)
+        ;
+
+        
+    
+    
+            var circle_marker_a883af4c765222663ac301724eb75b00 = L.circleMarker(
+                [55.77492, 37.58207],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_83cefab1c1789c1e91d551e6e7d92a8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3cef562ffce1a5e0c19e3529f894a7e9 = $(`<div id="html_3cef562ffce1a5e0c19e3529f894a7e9" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Белорусская<br>         <b>Координаты:</b> 55.77492, 37.58207<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_83cefab1c1789c1e91d551e6e7d92a8d.setContent(html_3cef562ffce1a5e0c19e3529f894a7e9);
+            
+        
+
+        circle_marker_a883af4c765222663ac301724eb75b00.bindPopup(popup_83cefab1c1789c1e91d551e6e7d92a8d)
+        ;
+
+        
+    
+    
+            var circle_marker_e6bda18a00cae596d807f93c525433de = L.circleMarker(
+                [55.64371, 37.52762],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_18a6b044234cabc97b5fb683b4826d17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_154a2605d12362221cbe167ed4bf6f07 = $(`<div id="html_154a2605d12362221cbe167ed4bf6f07" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Беляево<br>         <b>Координаты:</b> 55.64371, 37.52762<br>         <b>Округ:</b> ЮЗАО         </div>`)[0];
+                popup_18a6b044234cabc97b5fb683b4826d17.setContent(html_154a2605d12362221cbe167ed4bf6f07);
+            
+        
+
+        circle_marker_e6bda18a00cae596d807f93c525433de.bindPopup(popup_18a6b044234cabc97b5fb683b4826d17)
+        ;
+
+        
+    
+    
+            var circle_marker_6b74ea1118bb73c39b9ca1e71352e45e = L.circleMarker(
+                [55.88294, 37.60523],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_f90389587495a69ed6d1960fe2fb45d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ee8a74b09ebb851a24aefcc256df1dcd = $(`<div id="html_ee8a74b09ebb851a24aefcc256df1dcd" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Бибирево<br>         <b>Координаты:</b> 55.88294, 37.60523<br>         <b>Округ:</b> СВАО         </div>`)[0];
+                popup_f90389587495a69ed6d1960fe2fb45d6.setContent(html_ee8a74b09ebb851a24aefcc256df1dcd);
+            
+        
+
+        circle_marker_6b74ea1118bb73c39b9ca1e71352e45e.bindPopup(popup_f90389587495a69ed6d1960fe2fb45d6)
+        ;
+
+        
+    
+    
+            var circle_marker_77eb399988da16368975f3cfaa63c948 = L.circleMarker(
+                [55.75211, 37.60988],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_59c861fafd7da65630ba01fbe18d9fe0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc470a22039df24ff8e786ebddade846 = $(`<div id="html_cc470a22039df24ff8e786ebddade846" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Библиотека им. Ленина<br>         <b>Координаты:</b> 55.75211, 37.60988<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_59c861fafd7da65630ba01fbe18d9fe0.setContent(html_cc470a22039df24ff8e786ebddade846);
+            
+        
+
+        circle_marker_77eb399988da16368975f3cfaa63c948.bindPopup(popup_59c861fafd7da65630ba01fbe18d9fe0)
+        ;
+
+        
+    
+    
+            var circle_marker_3f5c8addee98fe6d6fdae687be0b22fd = L.circleMarker(
+                [55.60029, 37.55735],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_af8920d3f26d4ce76d1b1309840e7428 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f9f4e18fecfb12515f0066361475508 = $(`<div id="html_9f9f4e18fecfb12515f0066361475508" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Битцевский парк<br>         <b>Координаты:</b> 55.60029, 37.55735<br>         <b>Округ:</b> ЮАО         </div>`)[0];
+                popup_af8920d3f26d4ce76d1b1309840e7428.setContent(html_9f9f4e18fecfb12515f0066361475508);
+            
+        
+
+        circle_marker_3f5c8addee98fe6d6fdae687be0b22fd.bindPopup(popup_af8920d3f26d4ce76d1b1309840e7428)
+        ;
+
+        
+    
+    
+            var circle_marker_09826991afed39d7d61d8908c32e265e = L.circleMarker(
+                [55.75034, 37.60857],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_8248ecd21c0e102947821061ab396bc1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d4f965ee4eb34f434d4e6b254def72e7 = $(`<div id="html_d4f965ee4eb34f434d4e6b254def72e7" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Боровицкая<br>         <b>Координаты:</b> 55.75034, 37.60857<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_8248ecd21c0e102947821061ab396bc1.setContent(html_d4f965ee4eb34f434d4e6b254def72e7);
+            
+        
+
+        circle_marker_09826991afed39d7d61d8908c32e265e.bindPopup(popup_8248ecd21c0e102947821061ab396bc1)
+        ;
+
+        
+    
+    
+            var circle_marker_46d6efb98013e0df7000be6ed62bce82 = L.circleMarker(
+                [55.84649, 37.63914],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_ece520a7a09990ef983c058e9604c766 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2bfdcaef7112c9bcc192429a2fd0bc6e = $(`<div id="html_2bfdcaef7112c9bcc192429a2fd0bc6e" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Ботанический сад<br>         <b>Координаты:</b> 55.84649, 37.63914<br>         <b>Округ:</b> СВАО         </div>`)[0];
+                popup_ece520a7a09990ef983c058e9604c766.setContent(html_2bfdcaef7112c9bcc192429a2fd0bc6e);
+            
+        
+
+        circle_marker_46d6efb98013e0df7000be6ed62bce82.bindPopup(popup_ece520a7a09990ef983c058e9604c766)
+        ;
+
+        
+    
+    
+            var circle_marker_5456e1dc9b2e0abd1cfc2ab5c8d116b7 = L.circleMarker(
+                [55.631363, 37.75174],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_2a54b22e9f4531050af494c37380bdfc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_078eeae8f4e2ed4c5e21bec79415e5f4 = $(`<div id="html_078eeae8f4e2ed4c5e21bec79415e5f4" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Братеево (стр.)<br>         <b>Координаты:</b> 55.631363, 37.75174<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_2a54b22e9f4531050af494c37380bdfc.setContent(html_078eeae8f4e2ed4c5e21bec79415e5f4);
+            
+        
+
+        circle_marker_5456e1dc9b2e0abd1cfc2ab5c8d116b7.bindPopup(popup_2a54b22e9f4531050af494c37380bdfc)
+        ;
+
+        
+    
+    
+            var circle_marker_b63e4683e5dc4d8d097b08bae8f8bad8 = L.circleMarker(
+                [55.66126, 37.7509],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_03e70e622293d1dddecbc841c775610a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ccb3cb83e46acfb3b3c6b8cf2cb23b6 = $(`<div id="html_2ccb3cb83e46acfb3b3c6b8cf2cb23b6" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Братиславская<br>         <b>Координаты:</b> 55.66126, 37.7509<br>         <b>Округ:</b> ЮВАО         </div>`)[0];
+                popup_03e70e622293d1dddecbc841c775610a.setContent(html_2ccb3cb83e46acfb3b3c6b8cf2cb23b6);
+            
+        
+
+        circle_marker_b63e4683e5dc4d8d097b08bae8f8bad8.bindPopup(popup_03e70e622293d1dddecbc841c775610a)
+        ;
+
+        
+    
+    
+            var circle_marker_e047e8304c018db011ba8fc709652443 = L.circleMarker(
+                [55.76596, 37.6075],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_e76838058f2a4b99faa2a856cb6f8e02 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09cc88029b35e6e4e5a64852f5965778 = $(`<div id="html_09cc88029b35e6e4e5a64852f5965778" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Чеховская<br>         <b>Координаты:</b> 55.76596, 37.6075<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_e76838058f2a4b99faa2a856cb6f8e02.setContent(html_09cc88029b35e6e4e5a64852f5965778);
+            
+        
+
+        circle_marker_e047e8304c018db011ba8fc709652443.bindPopup(popup_e76838058f2a4b99faa2a856cb6f8e02)
+        ;
+
+        
+    
+    
+            var circle_marker_94da0fa7abe6998caa32da6ed0da4765 = L.circleMarker(
+                [55.802, 37.74438],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_c347d77ae81f3c5470a017c63698de7f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_591f714eacffb5aedb884a607ab2bd5f = $(`<div id="html_591f714eacffb5aedb884a607ab2bd5f" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Черкизовская<br>         <b>Координаты:</b> 55.802, 37.74438<br>         <b>Округ:</b> ВАО         </div>`)[0];
+                popup_c347d77ae81f3c5470a017c63698de7f.setContent(html_591f714eacffb5aedb884a607ab2bd5f);
+            
+        
+
+        circle_marker_94da0fa7abe6998caa32da6ed0da4765.bindPopup(popup_c347d77ae81f3c5470a017c63698de7f)
+        ;
+
+        
+    
+    
+            var circle_marker_39fec1eadd372647ebc48d600d97ca41 = L.circleMarker(
+                [55.63978, 37.60893],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_cc7479d107051ac6b32a7710c61973c0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_084c7cfb53adb04d6a21abea1bb68dba = $(`<div id="html_084c7cfb53adb04d6a21abea1bb68dba" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Чертаново<br>         <b>Координаты:</b> 55.63978, 37.60893<br>         <b>Округ:</b> ЮАО         </div>`)[0];
+                popup_cc7479d107051ac6b32a7710c61973c0.setContent(html_084c7cfb53adb04d6a21abea1bb68dba);
+            
+        
+
+        circle_marker_39fec1eadd372647ebc48d600d97ca41.bindPopup(popup_cc7479d107051ac6b32a7710c61973c0)
+        ;
+
+        
+    
+    
+            var circle_marker_b664811735dbd92ab3293cbb2d5cd112 = L.circleMarker(
+                [55.76426, 37.6389],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_ef521ae76adbd2c5964ae556ba882fca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0196b12fd9cc0ab502a69bf74f9005cb = $(`<div id="html_0196b12fd9cc0ab502a69bf74f9005cb" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Чистые пруды<br>         <b>Координаты:</b> 55.76426, 37.6389<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_ef521ae76adbd2c5964ae556ba882fca.setContent(html_0196b12fd9cc0ab502a69bf74f9005cb);
+            
+        
+
+        circle_marker_b664811735dbd92ab3293cbb2d5cd112.bindPopup(popup_ef521ae76adbd2c5964ae556ba882fca)
+        ;
+
+        
+    
+    
+            var circle_marker_d5f92b7ffcf1fe8a406fcfdb6d70e331 = L.circleMarker(
+                [55.756218, 37.659375],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_a0fa8535ac3c429f672e162999f5d65c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da59d7cd8cd1d89b01173c9e486c8a99 = $(`<div id="html_da59d7cd8cd1d89b01173c9e486c8a99" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Чкаловская<br>         <b>Координаты:</b> 55.756218, 37.659375<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_a0fa8535ac3c429f672e162999f5d65c.setContent(html_da59d7cd8cd1d89b01173c9e486c8a99);
+            
+        
+
+        circle_marker_d5f92b7ffcf1fe8a406fcfdb6d70e331.bindPopup(popup_a0fa8535ac3c429f672e162999f5d65c)
+        ;
+
+        
+    
+    
+            var circle_marker_6f14a44d6e9a80d94932eaf67306e712 = L.circleMarker(
+                [55.78867, 37.55936],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_e06e95157f9c8d69598988cdbed34277 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ccbd67078027970d683767a25f706adb = $(`<div id="html_ccbd67078027970d683767a25f706adb" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Динамо<br>         <b>Координаты:</b> 55.78867, 37.55936<br>         <b>Округ:</b> СЗАО         </div>`)[0];
+                popup_e06e95157f9c8d69598988cdbed34277.setContent(html_ccbd67078027970d683767a25f706adb);
+            
+        
+
+        circle_marker_6f14a44d6e9a80d94932eaf67306e712.bindPopup(popup_e06e95157f9c8d69598988cdbed34277)
+        ;
+
+        
+    
+    
+            var circle_marker_cfa8c370006bb3e104c88d20ff702928 = L.circleMarker(
+                [55.567759, 37.575724],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_12ded75794bbc9d0acd5aa67c842d603 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2cc068d924a45c5f84597c5a9f52606 = $(`<div id="html_d2cc068d924a45c5f84597c5a9f52606" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Бульвар Дмитрия Донского (стр.)<br>         <b>Координаты:</b> 55.567759, 37.575724<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_12ded75794bbc9d0acd5aa67c842d603.setContent(html_d2cc068d924a45c5f84597c5a9f52606);
+            
+        
+
+        circle_marker_cfa8c370006bb3e104c88d20ff702928.bindPopup(popup_12ded75794bbc9d0acd5aa67c842d603)
+        ;
+
+        
+    
+    
+            var circle_marker_8372d582129969a34a6ac704c6cfff52 = L.circleMarker(
+                [55.80756, 37.57959],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_b53d2992e8e8cf61b49a2f92fe6e5c0a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b52fc96cff8e997a98b236dc3a0cdbd1 = $(`<div id="html_b52fc96cff8e997a98b236dc3a0cdbd1" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Дмитровская<br>         <b>Координаты:</b> 55.80756, 37.57959<br>         <b>Округ:</b> САО         </div>`)[0];
+                popup_b53d2992e8e8cf61b49a2f92fe6e5c0a.setContent(html_b52fc96cff8e997a98b236dc3a0cdbd1);
+            
+        
+
+        circle_marker_8372d582129969a34a6ac704c6cfff52.bindPopup(popup_b53d2992e8e8cf61b49a2f92fe6e5c0a)
+        ;
+
+        
+    
+    
+            var circle_marker_d089b3744a4739fec7cbcf58a0f9e471 = L.circleMarker(
+                [55.72886, 37.62356],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_f56840a22e546f21215b6594dd0a14a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae4f0d7cdfc999b5787a6fb007f39237 = $(`<div id="html_ae4f0d7cdfc999b5787a6fb007f39237" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Добрынинская<br>         <b>Координаты:</b> 55.72886, 37.62356<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_f56840a22e546f21215b6594dd0a14a1.setContent(html_ae4f0d7cdfc999b5787a6fb007f39237);
+            
+        
+
+        circle_marker_d089b3744a4739fec7cbcf58a0f9e471.bindPopup(popup_f56840a22e546f21215b6594dd0a14a1)
+        ;
+
+        
+    
+    
+            var circle_marker_0547ab06c6ab5df3b533f6b9e6d14b92 = L.circleMarker(
+                [55.61009, 37.71612],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_d0b51ad3c314224bab23d78d2731cf81 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_444ae8e843c1264dd1f8625820e1cc1f = $(`<div id="html_444ae8e843c1264dd1f8625820e1cc1f" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Домодедовская<br>         <b>Координаты:</b> 55.61009, 37.71612<br>         <b>Округ:</b> ЮАО         </div>`)[0];
+                popup_d0b51ad3c314224bab23d78d2731cf81.setContent(html_444ae8e843c1264dd1f8625820e1cc1f);
+            
+        
+
+        circle_marker_0547ab06c6ab5df3b533f6b9e6d14b92.bindPopup(popup_d0b51ad3c314224bab23d78d2731cf81)
+        ;
+
+        
+    
+    
+            var circle_marker_f1d8fce6b6806f212c76afb844b1404a = L.circleMarker(
+                [55.782438, 37.612747],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_1b60882f30aea3b3277006ae132511e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28679932b17dd840ca8a7aafeaba8256 = $(`<div id="html_28679932b17dd840ca8a7aafeaba8256" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Достоевская (стр.)<br>         <b>Координаты:</b> 55.782438, 37.612747<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_1b60882f30aea3b3277006ae132511e0.setContent(html_28679932b17dd840ca8a7aafeaba8256);
+            
+        
+
+        circle_marker_f1d8fce6b6806f212c76afb844b1404a.bindPopup(popup_1b60882f30aea3b3277006ae132511e0)
+        ;
+
+        
+    
+    
+            var circle_marker_32a1a4d9e4df3d191e3153070436e286 = L.circleMarker(
+                [55.719732, 37.676915],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_96bdc427a182a596fadc0baf752b922b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_69a8b0e6acc09d60406dbe0356650462 = $(`<div id="html_69a8b0e6acc09d60406dbe0356650462" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Дубровка<br>         <b>Координаты:</b> 55.719732, 37.676915<br>         <b>Округ:</b> ЮВАО         </div>`)[0];
+                popup_96bdc427a182a596fadc0baf752b922b.setContent(html_69a8b0e6acc09d60406dbe0356650462);
+            
+        
+
+        circle_marker_32a1a4d9e4df3d191e3153070436e286.bindPopup(popup_96bdc427a182a596fadc0baf752b922b)
+        ;
+
+        
+    
+    
+            var circle_marker_5c303b1e11bae53049a19e2842167e93 = L.circleMarker(
+                [55.78177, 37.70471],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_87458e27c07eac4a598317dc91c5343f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05ab33c13a7352a7e36f505b774bf068 = $(`<div id="html_05ab33c13a7352a7e36f505b774bf068" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Электрозаводская<br>         <b>Координаты:</b> 55.78177, 37.70471<br>         <b>Округ:</b> ВАО         </div>`)[0];
+                popup_87458e27c07eac4a598317dc91c5343f.setContent(html_05ab33c13a7352a7e36f505b774bf068);
+            
+        
+
+        circle_marker_5c303b1e11bae53049a19e2842167e93.bindPopup(popup_87458e27c07eac4a598317dc91c5343f)
+        ;
+
+        
+    
+    
+            var circle_marker_b4fe27ae4f4a230aac932699adbe20e2 = L.circleMarker(
+                [55.75837, 37.75155],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_38bbfe1922f897fc31405300ef485ccf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8242fe637e78566e4715dfc52f5593ec = $(`<div id="html_8242fe637e78566e4715dfc52f5593ec" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Шоссе энтузиастов<br>         <b>Координаты:</b> 55.75837, 37.75155<br>         <b>Округ:</b> ВАО         </div>`)[0];
+                popup_38bbfe1922f897fc31405300ef485ccf.setContent(html_8242fe637e78566e4715dfc52f5593ec);
+            
+        
+
+        circle_marker_b4fe27ae4f4a230aac932699adbe20e2.bindPopup(popup_38bbfe1922f897fc31405300ef485ccf)
+        ;
+
+        
+    
+    
+            var circle_marker_28ef59bc90f84bc17b9681c844d74db7 = L.circleMarker(
+                [55.73953, 37.48366],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_b1d947cad1b288890b6691fd10f0bd62 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6895c93ee1f3a468f240afb1daf3405c = $(`<div id="html_6895c93ee1f3a468f240afb1daf3405c" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Филевский парк<br>         <b>Координаты:</b> 55.73953, 37.48366<br>         <b>Округ:</b> ЗАО         </div>`)[0];
+                popup_b1d947cad1b288890b6691fd10f0bd62.setContent(html_6895c93ee1f3a468f240afb1daf3405c);
+            
+        
+
+        circle_marker_28ef59bc90f84bc17b9681c844d74db7.bindPopup(popup_b1d947cad1b288890b6691fd10f0bd62)
+        ;
+
+        
+    
+    
+            var circle_marker_6f617700c1332b225232c1b27ff58050 = L.circleMarker(
+                [55.74673, 37.51384],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_f66be020cfddab85477dae57435de242 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f4dacc095f0a590747c4b7cfc5051ef = $(`<div id="html_4f4dacc095f0a590747c4b7cfc5051ef" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Фили<br>         <b>Координаты:</b> 55.74673, 37.51384<br>         <b>Округ:</b> ЗАО         </div>`)[0];
+                popup_f66be020cfddab85477dae57435de242.setContent(html_4f4dacc095f0a590747c4b7cfc5051ef);
+            
+        
+
+        circle_marker_6f617700c1332b225232c1b27ff58050.bindPopup(popup_f66be020cfddab85477dae57435de242)
+        ;
+
+        
+    
+    
+            var circle_marker_47b237276465960a3ed1c019ce394e41 = L.circleMarker(
+                [55.72718, 37.58036],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_4e448841d7dfffda39f0c796acdfa4fb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e1c1e24311d045ee9626e1e20136ffd = $(`<div id="html_4e1c1e24311d045ee9626e1e20136ffd" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Фрунзенская<br>         <b>Координаты:</b> 55.72718, 37.58036<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_4e448841d7dfffda39f0c796acdfa4fb.setContent(html_4e1c1e24311d045ee9626e1e20136ffd);
+            
+        
+
+        circle_marker_47b237276465960a3ed1c019ce394e41.bindPopup(popup_4e448841d7dfffda39f0c796acdfa4fb)
+        ;
+
+        
+    
+    
+            var circle_marker_52d4df575babbb0caa75322985bcc2bc = L.circleMarker(
+                [55.78768, 37.78329],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_974c34f5d287bc09b964822da73e3f53 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_184a76277c6b3251b8d27b60becd43ac = $(`<div id="html_184a76277c6b3251b8d27b60becd43ac" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Измайловская<br>         <b>Координаты:</b> 55.78768, 37.78329<br>         <b>Округ:</b> ВАО         </div>`)[0];
+                popup_974c34f5d287bc09b964822da73e3f53.setContent(html_184a76277c6b3251b8d27b60becd43ac);
+            
+        
+
+        circle_marker_52d4df575babbb0caa75322985bcc2bc.bindPopup(popup_974c34f5d287bc09b964822da73e3f53)
+        ;
+
+        
+    
+    
+            var circle_marker_f8d6a34a947e21a3103659b9c89953db = L.circleMarker(
+                [55.596141, 37.59981],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_87c41e90ee5e46c556ed5854e4e3b0d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd76c1483b6212db5b5225bf13aa7ec2 = $(`<div id="html_dd76c1483b6212db5b5225bf13aa7ec2" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Улица Академика Янгеля (стр.)<br>         <b>Координаты:</b> 55.596141, 37.59981<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_87c41e90ee5e46c556ed5854e4e3b0d6.setContent(html_dd76c1483b6212db5b5225bf13aa7ec2);
+            
+        
+
+        circle_marker_f8d6a34a947e21a3103659b9c89953db.bindPopup(popup_87c41e90ee5e46c556ed5854e4e3b0d6)
+        ;
+
+        
+    
+    
+            var circle_marker_20089da78b83f1782bff2722280ac05a = L.circleMarker(
+                [55.65332, 37.59722],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_39cccc176b5946a242a24d5e5174d90f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97df21702a639252abab386a94ae7c43 = $(`<div id="html_97df21702a639252abab386a94ae7c43" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Каховская<br>         <b>Координаты:</b> 55.65332, 37.59722<br>         <b>Округ:</b> ЮАО         </div>`)[0];
+                popup_39cccc176b5946a242a24d5e5174d90f.setContent(html_97df21702a639252abab386a94ae7c43);
+            
+        
+
+        circle_marker_20089da78b83f1782bff2722280ac05a.bindPopup(popup_39cccc176b5946a242a24d5e5174d90f)
+        ;
+
+        
+    
+    
+            var circle_marker_471938afe0b207a9bfa1844c7d9e7d9c = L.circleMarker(
+                [55.65566, 37.53923],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_80e5232dcde8f1a4feba608563b2ae7a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8edce47598bfbbf0bb04079a3b30a150 = $(`<div id="html_8edce47598bfbbf0bb04079a3b30a150" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Калужская<br>         <b>Координаты:</b> 55.65566, 37.53923<br>         <b>Округ:</b> ЮЗАО         </div>`)[0];
+                popup_80e5232dcde8f1a4feba608563b2ae7a.setContent(html_8edce47598bfbbf0bb04079a3b30a150);
+            
+        
+
+        circle_marker_471938afe0b207a9bfa1844c7d9e7d9c.bindPopup(popup_80e5232dcde8f1a4feba608563b2ae7a)
+        ;
+
+        
+    
+    
+            var circle_marker_3ffa7ba3f8b147c96f4b535d1cc597c3 = L.circleMarker(
+                [55.6343, 37.65632],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_aece8701fe504cdf1e6b87f553ebb923 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_60fc8ccd311cbefe3f1c214270dc8cdd = $(`<div id="html_60fc8ccd311cbefe3f1c214270dc8cdd" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Кантемировская<br>         <b>Координаты:</b> 55.6343, 37.65632<br>         <b>Округ:</b> ЮАО         </div>`)[0];
+                popup_aece8701fe504cdf1e6b87f553ebb923.setContent(html_60fc8ccd311cbefe3f1c214270dc8cdd);
+            
+        
+
+        circle_marker_3ffa7ba3f8b147c96f4b535d1cc597c3.bindPopup(popup_aece8701fe504cdf1e6b87f553ebb923)
+        ;
+
+        
+    
+    
+            var circle_marker_eb67d61ec27a5d9ecadb3e8277a7653c = L.circleMarker(
+                [55.65412, 37.64738],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_30a5acd026aea245b3584a465d4b6b12 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e8d3e6024affaa55b012d5f516a2c489 = $(`<div id="html_e8d3e6024affaa55b012d5f516a2c489" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Каширская<br>         <b>Координаты:</b> 55.65412, 37.64738<br>         <b>Округ:</b> ЮАО         </div>`)[0];
+                popup_30a5acd026aea245b3584a465d4b6b12.setContent(html_e8d3e6024affaa55b012d5f516a2c489);
+            
+        
+
+        circle_marker_eb67d61ec27a5d9ecadb3e8277a7653c.bindPopup(popup_30a5acd026aea245b3584a465d4b6b12)
+        ;
+
+        
+    
+    
+            var circle_marker_215866dd777024c834be39c9cf2edbe9 = L.circleMarker(
+                [55.74388, 37.56673],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_052208d6bfb198b568c5e03fa08f926f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_99eaf54eebcf6f4391c26498b9f9ca66 = $(`<div id="html_99eaf54eebcf6f4391c26498b9f9ca66" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Киевская<br>         <b>Координаты:</b> 55.74388, 37.56673<br>         <b>Округ:</b> ЗАО         </div>`)[0];
+                popup_052208d6bfb198b568c5e03fa08f926f.setContent(html_99eaf54eebcf6f4391c26498b9f9ca66);
+            
+        
+
+        circle_marker_215866dd777024c834be39c9cf2edbe9.bindPopup(popup_052208d6bfb198b568c5e03fa08f926f)
+        ;
+
+        
+    
+    
+            var circle_marker_e975ea3214b2c2b240d2cf49ef75cb6b = L.circleMarker(
+                [55.75634, 37.63002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_533a2da6571d415dd48b0085e262fa3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ebfa57d4964829daf1e598b4da1ee28 = $(`<div id="html_7ebfa57d4964829daf1e598b4da1ee28" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Китай город<br>         <b>Координаты:</b> 55.75634, 37.63002<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_533a2da6571d415dd48b0085e262fa3f.setContent(html_7ebfa57d4964829daf1e598b4da1ee28);
+            
+        
+
+        circle_marker_e975ea3214b2c2b240d2cf49ef75cb6b.bindPopup(popup_533a2da6571d415dd48b0085e262fa3f)
+        ;
+
+        
+    
+    
+            var circle_marker_1a284d8faae14083e65c843dabe68cdb = L.circleMarker(
+                [55.753903, 37.635405],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_577a8168fb7402661b2ef9ca1f78a516 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9800d727f26e050d451079d3a0f51418 = $(`<div id="html_9800d727f26e050d451079d3a0f51418" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Китай город<br>         <b>Координаты:</b> 55.753903, 37.635405<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_577a8168fb7402661b2ef9ca1f78a516.setContent(html_9800d727f26e050d451079d3a0f51418);
+            
+        
+
+        circle_marker_1a284d8faae14083e65c843dabe68cdb.bindPopup(popup_577a8168fb7402661b2ef9ca1f78a516)
+        ;
+
+        
+    
+    
+            var circle_marker_06b075f14924edbcce2af1aeddd37988 = L.circleMarker(
+                [55.67745, 37.66298],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_26e0f83985c2d55f424b5deebab06825 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4da6a83cf66d4561e6a4d91ad1e67a67 = $(`<div id="html_4da6a83cf66d4561e6a4d91ad1e67a67" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Коломенское<br>         <b>Координаты:</b> 55.67745, 37.66298<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_26e0f83985c2d55f424b5deebab06825.setContent(html_4da6a83cf66d4561e6a4d91ad1e67a67);
+            
+        
+
+        circle_marker_06b075f14924edbcce2af1aeddd37988.bindPopup(popup_26e0f83985c2d55f424b5deebab06825)
+        ;
+
+        
+    
+    
+            var circle_marker_9d654c3f7fcee1579d86f7f5d86556d4 = L.circleMarker(
+                [55.77717, 37.655689],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_7882a4b77250fc791a29ede5c60be1c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_926fc493ada41f8a58852befae77d317 = $(`<div id="html_926fc493ada41f8a58852befae77d317" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Комсомольская<br>         <b>Координаты:</b> 55.77717, 37.655689<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_7882a4b77250fc791a29ede5c60be1c5.setContent(html_926fc493ada41f8a58852befae77d317);
+            
+        
+
+        circle_marker_9d654c3f7fcee1579d86f7f5d86556d4.bindPopup(popup_7882a4b77250fc791a29ede5c60be1c5)
+        ;
+
+        
+    
+    
+            var circle_marker_a84cc45d8c94a9aee308aeff8b536e65 = L.circleMarker(
+                [55.63253, 37.52005],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_136e4bc9f347ae1d7235eba9521add93 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9709cd5bd96b44eba2f46f49bd5e6584 = $(`<div id="html_9709cd5bd96b44eba2f46f49bd5e6584" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Коньково<br>         <b>Координаты:</b> 55.63253, 37.52005<br>         <b>Округ:</b> ЮЗАО         </div>`)[0];
+                popup_136e4bc9f347ae1d7235eba9521add93.setContent(html_9709cd5bd96b44eba2f46f49bd5e6584);
+            
+        
+
+        circle_marker_a84cc45d8c94a9aee308aeff8b536e65.bindPopup(popup_136e4bc9f347ae1d7235eba9521add93)
+        ;
+
+        
+    
+    
+            var circle_marker_252b94f7cad32f9d9fd32dd672157da9 = L.circleMarker(
+                [55.70533, 37.68508],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_f1810b7bf1f11b902fee27849e082c74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_65cb70c22f036bff4664a3a515a39d4a = $(`<div id="html_65cb70c22f036bff4664a3a515a39d4a" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Кожуховская<br>         <b>Координаты:</b> 55.70533, 37.68508<br>         <b>Округ:</b> ЮВАО         </div>`)[0];
+                popup_f1810b7bf1f11b902fee27849e082c74.setContent(html_65cb70c22f036bff4664a3a515a39d4a);
+            
+        
+
+        circle_marker_252b94f7cad32f9d9fd32dd672157da9.bindPopup(popup_f1810b7bf1f11b902fee27849e082c74)
+        ;
+
+        
+    
+    
+            var circle_marker_6c91a06c31a0f68b9f65c385f0246fb0 = L.circleMarker(
+                [55.614491, 37.744724],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_c16980f80fde65d40f317a32137a460b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_92e5550790fca7403b44289136cbf519 = $(`<div id="html_92e5550790fca7403b44289136cbf519" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Красногвардейская<br>         <b>Координаты:</b> 55.614491, 37.744724<br>         <b>Округ:</b> ЮАО         </div>`)[0];
+                popup_c16980f80fde65d40f317a32137a460b.setContent(html_92e5550790fca7403b44289136cbf519);
+            
+        
+
+        circle_marker_6c91a06c31a0f68b9f65c385f0246fb0.bindPopup(popup_c16980f80fde65d40f317a32137a460b)
+        ;
+
+        
+    
+    
+            var circle_marker_32bb53782290930d75d5609b98b3b4d6 = L.circleMarker(
+                [55.760109, 37.577141],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_e43c95ec091a5dd07049a66164976b87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c633134356a5fdc1ed018d361e6f359f = $(`<div id="html_c633134356a5fdc1ed018d361e6f359f" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Краснопресненская<br>         <b>Координаты:</b> 55.760109, 37.577141<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_e43c95ec091a5dd07049a66164976b87.setContent(html_c633134356a5fdc1ed018d361e6f359f);
+            
+        
+
+        circle_marker_32bb53782290930d75d5609b98b3b4d6.bindPopup(popup_e43c95ec091a5dd07049a66164976b87)
+        ;
+
+        
+    
+    
+            var circle_marker_7efb21d6f5de3cfded39929f6615b682 = L.circleMarker(
+                [55.780763, 37.666264],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_cfe72b4747681a768510802325daa223 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c49c3064245e49aa61c90ca9cc16b50 = $(`<div id="html_4c49c3064245e49aa61c90ca9cc16b50" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Красносельская<br>         <b>Координаты:</b> 55.780763, 37.666264<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_cfe72b4747681a768510802325daa223.setContent(html_4c49c3064245e49aa61c90ca9cc16b50);
+            
+        
+
+        circle_marker_7efb21d6f5de3cfded39929f6615b682.bindPopup(popup_cfe72b4747681a768510802325daa223)
+        ;
+
+        
+    
+    
+            var circle_marker_2f8352256791cad1716a6a64760f946d = L.circleMarker(
+                [55.76958, 37.6499],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_0a95fc1f292439511222038bf12a36bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c5c54b390e1f035f86d7048c05f5c539 = $(`<div id="html_c5c54b390e1f035f86d7048c05f5c539" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Красные ворота<br>         <b>Координаты:</b> 55.76958, 37.6499<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_0a95fc1f292439511222038bf12a36bf.setContent(html_c5c54b390e1f035f86d7048c05f5c539);
+            
+        
+
+        circle_marker_2f8352256791cad1716a6a64760f946d.bindPopup(popup_0a95fc1f292439511222038bf12a36bf)
+        ;
+
+        
+    
+    
+            var circle_marker_254cb1301236f21855c0441edb4784e7 = L.circleMarker(
+                [55.732877, 37.668998],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_44bda2bc03314e04fa5a60c639c56fae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f4c1367050f0a87016d121e3d54aa78 = $(`<div id="html_4f4c1367050f0a87016d121e3d54aa78" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Крестьянская застава<br>         <b>Координаты:</b> 55.732877, 37.668998<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_44bda2bc03314e04fa5a60c639c56fae.setContent(html_4f4c1367050f0a87016d121e3d54aa78);
+            
+        
+
+        circle_marker_254cb1301236f21855c0441edb4784e7.bindPopup(popup_44bda2bc03314e04fa5a60c639c56fae)
+        ;
+
+        
+    
+    
+            var circle_marker_5b2a68b8d06e7bfd6c75ee56590623f6 = L.circleMarker(
+                [55.74525, 37.60463],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_608236f60f8697f847e1b5d6d2ddbfbe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3c876dfea0d4705c16fd59c8dd415a5a = $(`<div id="html_3c876dfea0d4705c16fd59c8dd415a5a" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Кропоткинская<br>         <b>Координаты:</b> 55.74525, 37.60463<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_608236f60f8697f847e1b5d6d2ddbfbe.setContent(html_3c876dfea0d4705c16fd59c8dd415a5a);
+            
+        
+
+        circle_marker_5b2a68b8d06e7bfd6c75ee56590623f6.bindPopup(popup_608236f60f8697f847e1b5d6d2ddbfbe)
+        ;
+
+        
+    
+    
+            var circle_marker_2ba92c19bb247fde7a999342cb85d021 = L.circleMarker(
+                [55.75879, 37.40633],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_5134581aed5b8120e72d1cc89a66c21e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae054ae36a5244ed618a386a23002369 = $(`<div id="html_ae054ae36a5244ed618a386a23002369" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Крылатское<br>         <b>Координаты:</b> 55.75879, 37.40633<br>         <b>Округ:</b> ЗАО         </div>`)[0];
+                popup_5134581aed5b8120e72d1cc89a66c21e.setContent(html_ae054ae36a5244ed618a386a23002369);
+            
+        
+
+        circle_marker_2ba92c19bb247fde7a999342cb85d021.bindPopup(popup_5134581aed5b8120e72d1cc89a66c21e)
+        ;
+
+        
+    
+    
+            var circle_marker_42a491544ab5691969be57445b9b381a = L.circleMarker(
+                [55.73045, 37.44646],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_3188a4b05e6d7f2a3e2c2447af71c365 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a0b669defc96fe5da40546e05c21135 = $(`<div id="html_9a0b669defc96fe5da40546e05c21135" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Кунцевская<br>         <b>Координаты:</b> 55.73045, 37.44646<br>         <b>Округ:</b> ЗАО         </div>`)[0];
+                popup_3188a4b05e6d7f2a3e2c2447af71c365.setContent(html_9a0b669defc96fe5da40546e05c21135);
+            
+        
+
+        circle_marker_42a491544ab5691969be57445b9b381a.bindPopup(popup_3188a4b05e6d7f2a3e2c2447af71c365)
+        ;
+
+        
+    
+    
+            var circle_marker_3e7c6fdd708afad203eeb0cc87500e4d = L.circleMarker(
+                [55.75848, 37.65985],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_ab9c8944dd816707bf417694946c2304 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_734c71c40951518de4185ae2728a4fb5 = $(`<div id="html_734c71c40951518de4185ae2728a4fb5" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Курская<br>         <b>Координаты:</b> 55.75848, 37.65985<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_ab9c8944dd816707bf417694946c2304.setContent(html_734c71c40951518de4185ae2728a4fb5);
+            
+        
+
+        circle_marker_3e7c6fdd708afad203eeb0cc87500e4d.bindPopup(popup_ab9c8944dd816707bf417694946c2304)
+        ;
+
+        
+    
+    
+            var circle_marker_cbc3d5ac4b212c73a8e6f2e7dc9f0983 = L.circleMarker(
+                [55.73947, 37.53433],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_634d0162a9e803027c062d2317311c7e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3f42fef41e71e836fd5280d7ae0196a = $(`<div id="html_b3f42fef41e71e836fd5280d7ae0196a" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Кутузовская<br>         <b>Координаты:</b> 55.73947, 37.53433<br>         <b>Округ:</b> ЗАО         </div>`)[0];
+                popup_634d0162a9e803027c062d2317311c7e.setContent(html_b3f42fef41e71e836fd5280d7ae0196a);
+            
+        
+
+        circle_marker_cbc3d5ac4b212c73a8e6f2e7dc9f0983.bindPopup(popup_634d0162a9e803027c062d2317311c7e)
+        ;
+
+        
+    
+    
+            var circle_marker_ea01d9187bee1e22f7098d487a31a828 = L.circleMarker(
+                [55.70531, 37.76775],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_94bd151f306ede44fb8e67b8daa1e656 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ac9bf26bdf48399b5da7425f1ce2169 = $(`<div id="html_8ac9bf26bdf48399b5da7425f1ce2169" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Кузьминки<br>         <b>Координаты:</b> 55.70531, 37.76775<br>         <b>Округ:</b> ЮВАО         </div>`)[0];
+                popup_94bd151f306ede44fb8e67b8daa1e656.setContent(html_8ac9bf26bdf48399b5da7425f1ce2169);
+            
+        
+
+        circle_marker_ea01d9187bee1e22f7098d487a31a828.bindPopup(popup_94bd151f306ede44fb8e67b8daa1e656)
+        ;
+
+        
+    
+    
+            var circle_marker_6d7dbced762923ffc5772ada74bc7710 = L.circleMarker(
+                [55.76118, 37.62386],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_1e24adc4ac41e61c017a80f7fe122e40 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e430225ea768d530323b2ee060c23a5 = $(`<div id="html_0e430225ea768d530323b2ee060c23a5" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Кузнецкий мост<br>         <b>Координаты:</b> 55.76118, 37.62386<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_1e24adc4ac41e61c017a80f7fe122e40.setContent(html_0e430225ea768d530323b2ee060c23a5);
+            
+        
+
+        circle_marker_6d7dbced762923ffc5772ada74bc7710.bindPopup(popup_1e24adc4ac41e61c017a80f7fe122e40)
+        ;
+
+        
+    
+    
+            var circle_marker_436065dbfaac64c978ccd5c5d901055c = L.circleMarker(
+                [55.70818, 37.58742],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_0c7b69dbb8baf50bf89785203bfe0f55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0028c6459b2a03311cb6ee543cb50211 = $(`<div id="html_0028c6459b2a03311cb6ee543cb50211" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Ленинский проспект<br>         <b>Координаты:</b> 55.70818, 37.58742<br>         <b>Округ:</b> ЮЗАО         </div>`)[0];
+                popup_0c7b69dbb8baf50bf89785203bfe0f55.setContent(html_0028c6459b2a03311cb6ee543cb50211);
+            
+        
+
+        circle_marker_436065dbfaac64c978ccd5c5d901055c.bindPopup(popup_0c7b69dbb8baf50bf89785203bfe0f55)
+        ;
+
+        
+    
+    
+            var circle_marker_e63fbcca594eb3f3912f58c26dc2c90d = L.circleMarker(
+                [55.75876, 37.62573],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_7b94fc7a9ca99e4c4c9b448c0ec67b8c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea707f511241d4a8d963026957beb434 = $(`<div id="html_ea707f511241d4a8d963026957beb434" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Лубянка<br>         <b>Координаты:</b> 55.75876, 37.62573<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_7b94fc7a9ca99e4c4c9b448c0ec67b8c.setContent(html_ea707f511241d4a8d963026957beb434);
+            
+        
+
+        circle_marker_e63fbcca594eb3f3912f58c26dc2c90d.bindPopup(popup_7b94fc7a9ca99e4c4c9b448c0ec67b8c)
+        ;
+
+        
+    
+    
+            var circle_marker_4a88fe6d11bf2a152b50195dedb865ca = L.circleMarker(
+                [55.67694, 37.76316],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_aac02663a6997517dd6bb648024bf0a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b5a9a65ac0658f398fd1a25b1df5a1a = $(`<div id="html_7b5a9a65ac0658f398fd1a25b1df5a1a" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Люблино<br>         <b>Координаты:</b> 55.67694, 37.76316<br>         <b>Округ:</b> ЮВАО         </div>`)[0];
+                popup_aac02663a6997517dd6bb648024bf0a9.setContent(html_7b5a9a65ac0658f398fd1a25b1df5a1a);
+            
+        
+
+        circle_marker_4a88fe6d11bf2a152b50195dedb865ca.bindPopup(popup_aac02663a6997517dd6bb648024bf0a9)
+        ;
+
+        
+    
+    
+            var circle_marker_8c0b9187625c9c73a352c1711675fa2d = L.circleMarker(
+                [55.793602, 37.615762],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_ea87c3a1f9bbfaef051fd0c9f159462f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_65297ac483e800b55bfc33cc5e25f58e = $(`<div id="html_65297ac483e800b55bfc33cc5e25f58e" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Марьина роща (стр.)<br>         <b>Координаты:</b> 55.793602, 37.615762<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_ea87c3a1f9bbfaef051fd0c9f159462f.setContent(html_65297ac483e800b55bfc33cc5e25f58e);
+            
+        
+
+        circle_marker_8c0b9187625c9c73a352c1711675fa2d.bindPopup(popup_ea87c3a1f9bbfaef051fd0c9f159462f)
+        ;
+
+        
+    
+    
+            var circle_marker_0de437a37a78dadebc3923d1a70ba2e8 = L.circleMarker(
+                [55.65193, 37.74771],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_e2912a976c9ba4ce2a5d6397154bc802 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a853de1ecb67c71c8520a8da2d4105b0 = $(`<div id="html_a853de1ecb67c71c8520a8da2d4105b0" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Марьино<br>         <b>Координаты:</b> 55.65193, 37.74771<br>         <b>Округ:</b> ЮВАО         </div>`)[0];
+                popup_e2912a976c9ba4ce2a5d6397154bc802.setContent(html_a853de1ecb67c71c8520a8da2d4105b0);
+            
+        
+
+        circle_marker_0de437a37a78dadebc3923d1a70ba2e8.bindPopup(popup_e2912a976c9ba4ce2a5d6397154bc802)
+        ;
+
+        
+    
+    
+            var circle_marker_f9d56958d90a3fbd616c8af95c3ac0ca = L.circleMarker(
+                [55.7407, 37.65773],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_f0cfda9519c9fdeff96c0ec35f1f695a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_472a8ec2c856e77b8a075821437f5773 = $(`<div id="html_472a8ec2c856e77b8a075821437f5773" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Марксистская<br>         <b>Координаты:</b> 55.7407, 37.65773<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_f0cfda9519c9fdeff96c0ec35f1f695a.setContent(html_472a8ec2c856e77b8a075821437f5773);
+            
+        
+
+        circle_marker_f9d56958d90a3fbd616c8af95c3ac0ca.bindPopup(popup_f0cfda9519c9fdeff96c0ec35f1f695a)
+        ;
+
+        
+    
+    
+            var circle_marker_a4088204f1326bfb445ebd7c39252efd = L.circleMarker(
+                [55.76909, 37.59635],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_4ce338561291e341f4028bd5a7696be8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d647b249e6554a19cf3dcfff5acf4b16 = $(`<div id="html_d647b249e6554a19cf3dcfff5acf4b16" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Маяковская<br>         <b>Координаты:</b> 55.76909, 37.59635<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_4ce338561291e341f4028bd5a7696be8.setContent(html_d647b249e6554a19cf3dcfff5acf4b16);
+            
+        
+
+        circle_marker_a4088204f1326bfb445ebd7c39252efd.bindPopup(popup_4ce338561291e341f4028bd5a7696be8)
+        ;
+
+        
+    
+    
+            var circle_marker_37f652bd5c9b115161d8fe06f265f8a3 = L.circleMarker(
+                [55.88594, 37.6612],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_2e211d13c3f415ab9e2fc177b8329a20 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5aeb6f20e520e14f49d30fcfd4937d32 = $(`<div id="html_5aeb6f20e520e14f49d30fcfd4937d32" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Медведково<br>         <b>Координаты:</b> 55.88594, 37.6612<br>         <b>Округ:</b> СВАО         </div>`)[0];
+                popup_2e211d13c3f415ab9e2fc177b8329a20.setContent(html_5aeb6f20e520e14f49d30fcfd4937d32);
+            
+        
+
+        circle_marker_37f652bd5c9b115161d8fe06f265f8a3.bindPopup(popup_2e211d13c3f415ab9e2fc177b8329a20)
+        ;
+
+        
+    
+    
+            var circle_marker_f9ca95cda2b8a70895342fa930581635 = L.circleMarker(
+                [55.78251, 37.59792],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_bd666834c43b0f920da9edd6d2643725 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb3208e5c4f7f9bf165fa27a5343c262 = $(`<div id="html_bb3208e5c4f7f9bf165fa27a5343c262" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Менделеевская<br>         <b>Координаты:</b> 55.78251, 37.59792<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_bd666834c43b0f920da9edd6d2643725.setContent(html_bb3208e5c4f7f9bf165fa27a5343c262);
+            
+        
+
+        circle_marker_f9ca95cda2b8a70895342fa930581635.bindPopup(popup_bd666834c43b0f920da9edd6d2643725)
+        ;
+
+        
+    
+    
+            var circle_marker_f584c87cdc8d61f6a58294a100dc37e7 = L.circleMarker(
+                [55.731548, 37.491016],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_cb1a92e5084832e7ca99e1a305267cfb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3529192037ebbd9b7a7f9fc253f37d04 = $(`<div id="html_3529192037ebbd9b7a7f9fc253f37d04" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Минская (стр.)<br>         <b>Координаты:</b> 55.731548, 37.491016<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_cb1a92e5084832e7ca99e1a305267cfb.setContent(html_3529192037ebbd9b7a7f9fc253f37d04);
+            
+        
+
+        circle_marker_f584c87cdc8d61f6a58294a100dc37e7.bindPopup(popup_cb1a92e5084832e7ca99e1a305267cfb)
+        ;
+
+        
+    
+    
+            var circle_marker_c1c4c8df5be9944b2e8d864545a028d2 = L.circleMarker(
+                [55.781196, 37.633529],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_17e3f778d7a7ff8a9c728f8ce425d401 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c732f715918cb2158ecfc9157ba8845 = $(`<div id="html_0c732f715918cb2158ecfc9157ba8845" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Проспект мира<br>         <b>Координаты:</b> 55.781196, 37.633529<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_17e3f778d7a7ff8a9c728f8ce425d401.setContent(html_0c732f715918cb2158ecfc9157ba8845);
+            
+        
+
+        circle_marker_c1c4c8df5be9944b2e8d864545a028d2.bindPopup(popup_17e3f778d7a7ff8a9c728f8ce425d401)
+        ;
+
+        
+    
+    
+            var circle_marker_754006f1288fbc4a43317f4e269ab621 = L.circleMarker(
+                [55.84589, 37.35909],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_7323b38ab8e1e4309e377c98e3565883 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc84fe2f9b66baf5296bce07bcf90885 = $(`<div id="html_fc84fe2f9b66baf5296bce07bcf90885" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Митино (стр.)<br>         <b>Координаты:</b> 55.84589, 37.35909<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_7323b38ab8e1e4309e377c98e3565883.setContent(html_fc84fe2f9b66baf5296bce07bcf90885);
+            
+        
+
+        circle_marker_754006f1288fbc4a43317f4e269ab621.bindPopup(popup_7323b38ab8e1e4309e377c98e3565883)
+        ;
+
+        
+    
+    
+            var circle_marker_4bf8f36ba86b493d55d701517f3b2c2f = L.circleMarker(
+                [55.74001, 37.41724],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_10b88c271f049f4ed68db58d4ca75575 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b41866c17a49ad59f2eb886c81de5e4 = $(`<div id="html_3b41866c17a49ad59f2eb886c81de5e4" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Молодежная<br>         <b>Координаты:</b> 55.74001, 37.41724<br>         <b>Округ:</b> ЗАО         </div>`)[0];
+                popup_10b88c271f049f4ed68db58d4ca75575.setContent(html_3b41866c17a49ad59f2eb886c81de5e4);
+            
+        
+
+        circle_marker_4bf8f36ba86b493d55d701517f3b2c2f.bindPopup(popup_10b88c271f049f4ed68db58d4ca75575)
+        ;
+
+        
+    
+    
+            var circle_marker_62b679ed0713a3df6d4a87540adfe240 = L.circleMarker(
+                [55.68386, 37.62285],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_ea33f6984306f25e7aa0c6b5f21042da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a4d93222d82e98fa8e533f8a4cdf555 = $(`<div id="html_3a4d93222d82e98fa8e533f8a4cdf555" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Нагатинская<br>         <b>Координаты:</b> 55.68386, 37.62285<br>         <b>Округ:</b> ЮАО         </div>`)[0];
+                popup_ea33f6984306f25e7aa0c6b5f21042da.setContent(html_3a4d93222d82e98fa8e533f8a4cdf555);
+            
+        
+
+        circle_marker_62b679ed0713a3df6d4a87540adfe240.bindPopup(popup_ea33f6984306f25e7aa0c6b5f21042da)
+        ;
+
+        
+    
+    
+            var circle_marker_32059ce874b273a174cf0d6037ede17b = L.circleMarker(
+                [55.67283, 37.61019],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_2196d0fcc4098f616270443d17b95778 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22c4cf6f7627a6b5ab2560dde978a292 = $(`<div id="html_22c4cf6f7627a6b5ab2560dde978a292" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Нагорная<br>         <b>Координаты:</b> 55.67283, 37.61019<br>         <b>Округ:</b> ЮАО         </div>`)[0];
+                popup_2196d0fcc4098f616270443d17b95778.setContent(html_22c4cf6f7627a6b5ab2560dde978a292);
+            
+        
+
+        circle_marker_32059ce874b273a174cf0d6037ede17b.bindPopup(popup_2196d0fcc4098f616270443d17b95778)
+        ;
+
+        
+    
+    
+            var circle_marker_852546312330064e9efadb25c39890af = L.circleMarker(
+                [55.66376, 37.60767],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_62a91cc56a5c160998ccf87643df028c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_783630718ef57a1f1cd4b46ba38d1b8a = $(`<div id="html_783630718ef57a1f1cd4b46ba38d1b8a" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Нахимовский проспект<br>         <b>Координаты:</b> 55.66376, 37.60767<br>         <b>Округ:</b> ЮАО         </div>`)[0];
+                popup_62a91cc56a5c160998ccf87643df028c.setContent(html_783630718ef57a1f1cd4b46ba38d1b8a);
+            
+        
+
+        circle_marker_852546312330064e9efadb25c39890af.bindPopup(popup_62a91cc56a5c160998ccf87643df028c)
+        ;
+
+        
+    
+    
+            var circle_marker_e66ec49378e19794563d540a99fa10f1 = L.circleMarker(
+                [55.66892, 37.55417],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_d22471f806e8576500b1eb98564630f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad0bc4267c7b9a990c87a9ded53bc9f0 = $(`<div id="html_ad0bc4267c7b9a990c87a9ded53bc9f0" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Новые черемушки<br>         <b>Координаты:</b> 55.66892, 37.55417<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_d22471f806e8576500b1eb98564630f2.setContent(html_ad0bc4267c7b9a990c87a9ded53bc9f0);
+            
+        
+
+        circle_marker_e66ec49378e19794563d540a99fa10f1.bindPopup(popup_d22471f806e8576500b1eb98564630f2)
+        ;
+
+        
+    
+    
+            var circle_marker_9a51e0cdb5ba1a3372c38d03bf7aec17 = L.circleMarker(
+                [55.75111, 37.81564],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_f22df09e5cd196779e81cbb0feeef0ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe39e0506222dfcb8a96f44bb75c7c7f = $(`<div id="html_fe39e0506222dfcb8a96f44bb75c7c7f" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Новогиреево<br>         <b>Координаты:</b> 55.75111, 37.81564<br>         <b>Округ:</b> ВАО         </div>`)[0];
+                popup_f22df09e5cd196779e81cbb0feeef0ef.setContent(html_fe39e0506222dfcb8a96f44bb75c7c7f);
+            
+        
+
+        circle_marker_9a51e0cdb5ba1a3372c38d03bf7aec17.bindPopup(popup_f22df09e5cd196779e81cbb0feeef0ef)
+        ;
+
+        
+    
+    
+            var circle_marker_9c1a5eb65d84e20ca866b01db6bd05ed = L.circleMarker(
+                [55.740539, 37.856347],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_8c0d287a3a65d7028557c4356e0ab61b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36ea251720a476c5e2c40d4fa5704ab4 = $(`<div id="html_36ea251720a476c5e2c40d4fa5704ab4" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Новокосино (стр.)<br>         <b>Координаты:</b> 55.740539, 37.856347<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_8c0d287a3a65d7028557c4356e0ab61b.setContent(html_36ea251720a476c5e2c40d4fa5704ab4);
+            
+        
+
+        circle_marker_9c1a5eb65d84e20ca866b01db6bd05ed.bindPopup(popup_8c0d287a3a65d7028557c4356e0ab61b)
+        ;
+
+        
+    
+    
+            var circle_marker_55145afb41fa672f7fd656b7c4cec5f6 = L.circleMarker(
+                [55.74212, 37.62901],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_74cdb7d71550e05a9ed0decd3e391583 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ca1908a0e3a1b9ccf8e8cd546ee1efdc = $(`<div id="html_ca1908a0e3a1b9ccf8e8cd546ee1efdc" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Новокузнецкая<br>         <b>Координаты:</b> 55.74212, 37.62901<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_74cdb7d71550e05a9ed0decd3e391583.setContent(html_ca1908a0e3a1b9ccf8e8cd546ee1efdc);
+            
+        
+
+        circle_marker_55145afb41fa672f7fd656b7c4cec5f6.bindPopup(popup_74cdb7d71550e05a9ed0decd3e391583)
+        ;
+
+        
+    
+    
+            var circle_marker_d95174557697024d9a06d7d1f3eda70a = L.circleMarker(
+                [55.77921, 37.6009],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_afa0ee136af0afb4dd5220235f12f8ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df4e9d2be8dc7ff2ccba91e401aea392 = $(`<div id="html_df4e9d2be8dc7ff2ccba91e401aea392" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Новослободская<br>         <b>Координаты:</b> 55.77921, 37.6009<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_afa0ee136af0afb4dd5220235f12f8ea.setContent(html_df4e9d2be8dc7ff2ccba91e401aea392);
+            
+        
+
+        circle_marker_d95174557697024d9a06d7d1f3eda70a.bindPopup(popup_afa0ee136af0afb4dd5220235f12f8ea)
+        ;
+
+        
+    
+    
+            var circle_marker_94c89709760fa154b5ff095ed36347a8 = L.circleMarker(
+                [55.75703, 37.61614],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_e7e522f1d67e20686e3177e500ae85ce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8530c9396188d2a8bfbbfd73c3653056 = $(`<div id="html_8530c9396188d2a8bfbbfd73c3653056" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Охотный ряд<br>         <b>Координаты:</b> 55.75703, 37.61614<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_e7e522f1d67e20686e3177e500ae85ce.setContent(html_8530c9396188d2a8bfbbfd73c3653056);
+            
+        
+
+        circle_marker_94c89709760fa154b5ff095ed36347a8.bindPopup(popup_e7e522f1d67e20686e3177e500ae85ce)
+        ;
+
+        
+    
+    
+            var circle_marker_7729262dde0b6e8d7022adf240af0eb3 = L.circleMarker(
+                [55.793615, 37.493496],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_68f91fa3db788794ba06813c1fd12a59 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d3f324825fee3871f6196d929dbb6df = $(`<div id="html_5d3f324825fee3871f6196d929dbb6df" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Октябрьское поле<br>         <b>Координаты:</b> 55.793615, 37.493496<br>         <b>Округ:</b> СЗАО         </div>`)[0];
+                popup_68f91fa3db788794ba06813c1fd12a59.setContent(html_5d3f324825fee3871f6196d929dbb6df);
+            
+        
+
+        circle_marker_7729262dde0b6e8d7022adf240af0eb3.bindPopup(popup_68f91fa3db788794ba06813c1fd12a59)
+        ;
+
+        
+    
+    
+            var circle_marker_7af28c4f16dba69f94bdb1752797dacb = L.circleMarker(
+                [55.729, 37.61139],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_42724f12724e21d06751ab02789cb84a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_16fa7aa08708d5dff45d62304706474a = $(`<div id="html_16fa7aa08708d5dff45d62304706474a" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Октябрьская<br>         <b>Координаты:</b> 55.729, 37.61139<br>         <b>Округ:</b> ЮЗАО         </div>`)[0];
+                popup_42724f12724e21d06751ab02789cb84a.setContent(html_16fa7aa08708d5dff45d62304706474a);
+            
+        
+
+        circle_marker_7af28c4f16dba69f94bdb1752797dacb.bindPopup(popup_42724f12724e21d06751ab02789cb84a)
+        ;
+
+        
+    
+    
+            var circle_marker_15956a7fa9c7e01cffb4a5a61c6521c0 = L.circleMarker(
+                [55.61214, 37.69584],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_0564d862aa7541974a13ec75d304edbf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35ec9192a7f68ede1c2c3712b0387b72 = $(`<div id="html_35ec9192a7f68ede1c2c3712b0387b72" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Орехово<br>         <b>Координаты:</b> 55.61214, 37.69584<br>         <b>Округ:</b> ЮАО         </div>`)[0];
+                popup_0564d862aa7541974a13ec75d304edbf.setContent(html_35ec9192a7f68ede1c2c3712b0387b72);
+            
+        
+
+        circle_marker_15956a7fa9c7e01cffb4a5a61c6521c0.bindPopup(popup_0564d862aa7541974a13ec75d304edbf)
+        ;
+
+        
+    
+    
+            var circle_marker_5705a090f77c05cf70f7c1af0116c84d = L.circleMarker(
+                [55.86417, 37.60488],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_69f5959c29e4d68a8f1004ab93394240 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_15bfd49ad949da53aa39a2fdc9709c97 = $(`<div id="html_15bfd49ad949da53aa39a2fdc9709c97" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Отрадное<br>         <b>Координаты:</b> 55.86417, 37.60488<br>         <b>Округ:</b> САО         </div>`)[0];
+                popup_69f5959c29e4d68a8f1004ab93394240.setContent(html_15bfd49ad949da53aa39a2fdc9709c97);
+            
+        
+
+        circle_marker_5705a090f77c05cf70f7c1af0116c84d.bindPopup(popup_69f5959c29e4d68a8f1004ab93394240)
+        ;
+
+        
+    
+    
+            var circle_marker_c424c8ba68c7f6af4a00d1e6059c9fa1 = L.circleMarker(
+                [55.73512, 37.59328],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_8d56706eec946ba1e9b4f97717a401a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f830477cfff0ee4aa21bd96603d5b983 = $(`<div id="html_f830477cfff0ee4aa21bd96603d5b983" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Парк культуры<br>         <b>Координаты:</b> 55.73512, 37.59328<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_8d56706eec946ba1e9b4f97717a401a1.setContent(html_f830477cfff0ee4aa21bd96603d5b983);
+            
+        
+
+        circle_marker_c424c8ba68c7f6af4a00d1e6059c9fa1.bindPopup(popup_8d56706eec946ba1e9b4f97717a401a1)
+        ;
+
+        
+    
+    
+            var circle_marker_11376309d597ae152e5e1ee85a5daa07 = L.circleMarker(
+                [55.736559, 37.512591],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_94b60094340464889ff67a548aed9024 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c463baec541e6a9269b21144cc1935a8 = $(`<div id="html_c463baec541e6a9269b21144cc1935a8" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Парк Победы (стр.)<br>         <b>Координаты:</b> 55.736559, 37.512591<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_94b60094340464889ff67a548aed9024.setContent(html_c463baec541e6a9269b21144cc1935a8);
+            
+        
+
+        circle_marker_11376309d597ae152e5e1ee85a5daa07.bindPopup(popup_94b60094340464889ff67a548aed9024)
+        ;
+
+        
+    
+    
+            var circle_marker_84c79f252b836bba143650fb5c5c7a2e = L.circleMarker(
+                [55.78962, 37.7479],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_712be02db883f85cf062afe1f831ecb2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b572e3ae1797d22902dfbaad890a7f8b = $(`<div id="html_b572e3ae1797d22902dfbaad890a7f8b" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Партизанская<br>         <b>Координаты:</b> 55.78962, 37.7479<br>         <b>Округ:</b> ВАО         </div>`)[0];
+                popup_712be02db883f85cf062afe1f831ecb2.setContent(html_b572e3ae1797d22902dfbaad890a7f8b);
+            
+        
+
+        circle_marker_84c79f252b836bba143650fb5c5c7a2e.bindPopup(popup_712be02db883f85cf062afe1f831ecb2)
+        ;
+
+        
+    
+    
+            var circle_marker_7ede1f4a87502db72bc36e1c719c7b3b = L.circleMarker(
+                [55.7313, 37.63612],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_d414d478a4fa6bbd9b60256639288498 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c0ac6462ecc0ccaffa0cd661768a375c = $(`<div id="html_c0ac6462ecc0ccaffa0cd661768a375c" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Павелецкая<br>         <b>Координаты:</b> 55.7313, 37.63612<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_d414d478a4fa6bbd9b60256639288498.setContent(html_c0ac6462ecc0ccaffa0cd661768a375c);
+            
+        
+
+        circle_marker_7ede1f4a87502db72bc36e1c719c7b3b.bindPopup(popup_d414d478a4fa6bbd9b60256639288498)
+        ;
+
+        
+    
+    
+            var circle_marker_349a8e4efe87a4f5d425ee09516fe469 = L.circleMarker(
+                [55.69252, 37.7295],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_2c040fdf56c900e5df5f3aea69f156a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4629b56b812747f5682b54a4c4a672c4 = $(`<div id="html_4629b56b812747f5682b54a4c4a672c4" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Печатники<br>         <b>Координаты:</b> 55.69252, 37.7295<br>         <b>Округ:</b> ЮВАО         </div>`)[0];
+                popup_2c040fdf56c900e5df5f3aea69f156a4.setContent(html_4629b56b812747f5682b54a4c4a672c4);
+            
+        
+
+        circle_marker_349a8e4efe87a4f5d425ee09516fe469.bindPopup(popup_2c040fdf56c900e5df5f3aea69f156a4)
+        ;
+
+        
+    
+    
+            var circle_marker_40255685d0596500d617017f936d1924 = L.circleMarker(
+                [55.75109, 37.78854],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_6df2929fc60e9c47e2cef84e2c9692ee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_89b56d54fb3597d636b50e25e36b820f = $(`<div id="html_89b56d54fb3597d636b50e25e36b820f" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Перово<br>         <b>Координаты:</b> 55.75109, 37.78854<br>         <b>Округ:</b> ВАО         </div>`)[0];
+                popup_6df2929fc60e9c47e2cef84e2c9692ee.setContent(html_89b56d54fb3597d636b50e25e36b820f);
+            
+        
+
+        circle_marker_40255685d0596500d617017f936d1924.bindPopup(popup_6df2929fc60e9c47e2cef84e2c9692ee)
+        ;
+
+        
+    
+    
+            var circle_marker_3b89cc4ce3682522664b2263bf37a971 = L.circleMarker(
+                [55.79342, 37.79979],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_27e5beb023133ef5137b7fb36cc4fb4c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c95becd6f8fd4e49029c4dee79828e00 = $(`<div id="html_c95becd6f8fd4e49029c4dee79828e00" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Первомайская<br>         <b>Координаты:</b> 55.79342, 37.79979<br>         <b>Округ:</b> ВАО         </div>`)[0];
+                popup_27e5beb023133ef5137b7fb36cc4fb4c.setContent(html_c95becd6f8fd4e49029c4dee79828e00);
+            
+        
+
+        circle_marker_3b89cc4ce3682522664b2263bf37a971.bindPopup(popup_27e5beb023133ef5137b7fb36cc4fb4c)
+        ;
+
+        
+    
+    
+            var circle_marker_d189226fc474dc159fd8924d7a1a12fb = L.circleMarker(
+                [55.83712, 37.57349],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_5eba9136e142fefe33e6cfc64f95cced = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b1b74943eb04e3162f87654e7309669a = $(`<div id="html_b1b74943eb04e3162f87654e7309669a" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Петровско-Разумовская<br>         <b>Координаты:</b> 55.83712, 37.57349<br>         <b>Округ:</b> САО         </div>`)[0];
+                popup_5eba9136e142fefe33e6cfc64f95cced.setContent(html_b1b74943eb04e3162f87654e7309669a);
+            
+        
+
+        circle_marker_d189226fc474dc159fd8924d7a1a12fb.bindPopup(popup_5eba9136e142fefe33e6cfc64f95cced)
+        ;
+
+        
+    
+    
+            var circle_marker_575727a13f5660028e0332730feee0c7 = L.circleMarker(
+                [55.73583, 37.46731],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_a8b5781b255c421370891e6a7d3fed6f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c8acd677d2c86463a548e252ac6c8a8b = $(`<div id="html_c8acd677d2c86463a548e252ac6c8a8b" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Пионерская<br>         <b>Координаты:</b> 55.73583, 37.46731<br>         <b>Округ:</b> ЗАО         </div>`)[0];
+                popup_a8b5781b255c421370891e6a7d3fed6f.setContent(html_c8acd677d2c86463a548e252ac6c8a8b);
+            
+        
+
+        circle_marker_575727a13f5660028e0332730feee0c7.bindPopup(popup_a8b5781b255c421370891e6a7d3fed6f)
+        ;
+
+        
+    
+    
+            var circle_marker_18139914f5e480535f84207145ea21b8 = L.circleMarker(
+                [55.85931, 37.43687],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_a602bf9d5adcdb8e7514f281bb4c1112 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_81ced00809d64f8ed124124608475660 = $(`<div id="html_81ced00809d64f8ed124124608475660" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Планерная<br>         <b>Координаты:</b> 55.85931, 37.43687<br>         <b>Округ:</b> СЗАО         </div>`)[0];
+                popup_a602bf9d5adcdb8e7514f281bb4c1112.setContent(html_81ced00809d64f8ed124124608475660);
+            
+        
+
+        circle_marker_18139914f5e480535f84207145ea21b8.bindPopup(popup_a602bf9d5adcdb8e7514f281bb4c1112)
+        ;
+
+        
+    
+    
+            var circle_marker_1392026e97338949ecc22efe0cbd5e9e = L.circleMarker(
+                [55.745663, 37.681123],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_ae27eb80fac2f7a1be8921c8e5e932de = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf336c7b0aca0b05048470e4dff2b4f1 = $(`<div id="html_bf336c7b0aca0b05048470e4dff2b4f1" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Площадь Ильича<br>         <b>Координаты:</b> 55.745663, 37.681123<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_ae27eb80fac2f7a1be8921c8e5e932de.setContent(html_bf336c7b0aca0b05048470e4dff2b4f1);
+            
+        
+
+        circle_marker_1392026e97338949ecc22efe0cbd5e9e.bindPopup(popup_ae27eb80fac2f7a1be8921c8e5e932de)
+        ;
+
+        
+    
+    
+            var circle_marker_3bc15839b7cb034973dd969b7c912890 = L.circleMarker(
+                [55.81503, 37.73209],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_4c06b1fc509795f9a1e2bcac83adc92f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d64d8b6b2c5b3b0205f909ca09e52bc = $(`<div id="html_0d64d8b6b2c5b3b0205f909ca09e52bc" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Улица Подбельского<br>         <b>Координаты:</b> 55.81503, 37.73209<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_4c06b1fc509795f9a1e2bcac83adc92f.setContent(html_0d64d8b6b2c5b3b0205f909ca09e52bc);
+            
+        
+
+        circle_marker_3bc15839b7cb034973dd969b7c912890.bindPopup(popup_4c06b1fc509795f9a1e2bcac83adc92f)
+        ;
+
+        
+    
+    
+            var circle_marker_6cd6ee35a5564397d8c6b19d919976b5 = L.circleMarker(
+                [55.81336, 37.73524],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_c32cbb57bc462a70dc2621661c536038 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce2cdf3281fb8a9e772ea47ccae8382f = $(`<div id="html_ce2cdf3281fb8a9e772ea47ccae8382f" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Улица Подбельского<br>         <b>Координаты:</b> 55.81336, 37.73524<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_c32cbb57bc462a70dc2621661c536038.setContent(html_ce2cdf3281fb8a9e772ea47ccae8382f);
+            
+        
+
+        circle_marker_6cd6ee35a5564397d8c6b19d919976b5.bindPopup(popup_c32cbb57bc462a70dc2621661c536038)
+        ;
+
+        
+    
+    
+            var circle_marker_1977db316c0fa4f94ae054df9cf19bb7 = L.circleMarker(
+                [55.77691, 37.51692],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_f0534f295b5af96b241846bd334f8adc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5feafd72a5714ac0b3220618f4ab9db8 = $(`<div id="html_5feafd72a5714ac0b3220618f4ab9db8" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Полежаевская<br>         <b>Координаты:</b> 55.77691, 37.51692<br>         <b>Округ:</b> СЗАО         </div>`)[0];
+                popup_f0534f295b5af96b241846bd334f8adc.setContent(html_5feafd72a5714ac0b3220618f4ab9db8);
+            
+        
+
+        circle_marker_1977db316c0fa4f94ae054df9cf19bb7.bindPopup(popup_f0534f295b5af96b241846bd334f8adc)
+        ;
+
+        
+    
+    
+            var circle_marker_88105417c218d5fc9e27f829733cd70c = L.circleMarker(
+                [55.73654, 37.61856],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_09cef343228edf89126ebb1ea45d2223 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1333bdc87b9171980f3de58546d0141e = $(`<div id="html_1333bdc87b9171980f3de58546d0141e" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Полянка<br>         <b>Координаты:</b> 55.73654, 37.61856<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_09cef343228edf89126ebb1ea45d2223.setContent(html_1333bdc87b9171980f3de58546d0141e);
+            
+        
+
+        circle_marker_88105417c218d5fc9e27f829733cd70c.bindPopup(popup_09cef343228edf89126ebb1ea45d2223)
+        ;
+
+        
+    
+    
+            var circle_marker_8faeaaff706ee13b959594608a26baf3 = L.circleMarker(
+                [55.61354, 37.60499],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_d1e51f88f754c3765844a3e821feab66 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_43953d3f917a884f4c4cf3254dd4eb26 = $(`<div id="html_43953d3f917a884f4c4cf3254dd4eb26" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Пражская<br>         <b>Координаты:</b> 55.61354, 37.60499<br>         <b>Округ:</b> ЮАО         </div>`)[0];
+                popup_d1e51f88f754c3765844a3e821feab66.setContent(html_43953d3f917a884f4c4cf3254dd4eb26);
+            
+        
+
+        circle_marker_8faeaaff706ee13b959594608a26baf3.bindPopup(popup_d1e51f88f754c3765844a3e821feab66)
+        ;
+
+        
+    
+    
+            var circle_marker_2d36848f7af6bc585d57d6987335231f = L.circleMarker(
+                [55.79655, 37.71591],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_79696e35aeffb6a7bd78fceb0de66681 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36f269cdabfd8ca0113704568ba9155f = $(`<div id="html_36f269cdabfd8ca0113704568ba9155f" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Преображенская площадь<br>         <b>Координаты:</b> 55.79655, 37.71591<br>         <b>Округ:</b> ВАО         </div>`)[0];
+                popup_79696e35aeffb6a7bd78fceb0de66681.setContent(html_36f269cdabfd8ca0113704568ba9155f);
+            
+        
+
+        circle_marker_2d36848f7af6bc585d57d6987335231f.bindPopup(popup_79696e35aeffb6a7bd78fceb0de66681)
+        ;
+
+        
+    
+    
+            var circle_marker_946f79e030099a76d466ddd008b0112d = L.circleMarker(
+                [55.67822, 37.56381],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_47c355ae287fa29b380990be2b6fd654 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_470108f01d736f3b5ec393270ff0a5ec = $(`<div id="html_470108f01d736f3b5ec393270ff0a5ec" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Профсоюзная<br>         <b>Координаты:</b> 55.67822, 37.56381<br>         <b>Округ:</b> ЮЗАО         </div>`)[0];
+                popup_47c355ae287fa29b380990be2b6fd654.setContent(html_470108f01d736f3b5ec393270ff0a5ec);
+            
+        
+
+        circle_marker_946f79e030099a76d466ddd008b0112d.bindPopup(popup_47c355ae287fa29b380990be2b6fd654)
+        ;
+
+        
+    
+    
+            var circle_marker_cb704b3aff7ddc2f26285e4b914abda1 = L.circleMarker(
+                [55.73171, 37.66726],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_65766eb32d5cea9aa393dfa207ba62c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c5230395b2eae232e050782ffa9a6a93 = $(`<div id="html_c5230395b2eae232e050782ffa9a6a93" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Пролетарская<br>         <b>Координаты:</b> 55.73171, 37.66726<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_65766eb32d5cea9aa393dfa207ba62c2.setContent(html_c5230395b2eae232e050782ffa9a6a93);
+            
+        
+
+        circle_marker_cb704b3aff7ddc2f26285e4b914abda1.bindPopup(popup_65766eb32d5cea9aa393dfa207ba62c2)
+        ;
+
+        
+    
+    
+            var circle_marker_0495ca1c462b3592033b0d60bbcf761f = L.circleMarker(
+                [55.698344, 37.850869],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_fe8a5c1e0869fc8c524aff33eff8d482 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09e0ad39872da0bf74174ce41f675ecf = $(`<div id="html_09e0ad39872da0bf74174ce41f675ecf" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Пронская (стр.)<br>         <b>Координаты:</b> 55.698344, 37.850869<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_fe8a5c1e0869fc8c524aff33eff8d482.setContent(html_09e0ad39872da0bf74174ce41f675ecf);
+            
+        
+
+        circle_marker_0495ca1c462b3592033b0d60bbcf761f.bindPopup(popup_fe8a5c1e0869fc8c524aff33eff8d482)
+        ;
+
+        
+    
+    
+            var circle_marker_5dfed648078cdf2141f6ac14bce79c98 = L.circleMarker(
+                [55.76565, 37.60417],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_d8bddee70ebc074b9ec57da91a022749 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_670c0075a6b79125de617572964ab811 = $(`<div id="html_670c0075a6b79125de617572964ab811" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Пушкинская<br>         <b>Координаты:</b> 55.76565, 37.60417<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_d8bddee70ebc074b9ec57da91a022749.setContent(html_670c0075a6b79125de617572964ab811);
+            
+        
+
+        circle_marker_5dfed648078cdf2141f6ac14bce79c98.bindPopup(popup_d8bddee70ebc074b9ec57da91a022749)
+        ;
+
+        
+    
+    
+            var circle_marker_31fad9a956447dda674d69481cd6ae4c = L.circleMarker(
+                [55.85378, 37.47679],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_08522e111f0c5ac7454df06e6479e8a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0224a9ab512a59e6f51fa7a094c96071 = $(`<div id="html_0224a9ab512a59e6f51fa7a094c96071" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Речной вокзал<br>         <b>Координаты:</b> 55.85378, 37.47679<br>         <b>Округ:</b> СЗАО         </div>`)[0];
+                popup_08522e111f0c5ac7454df06e6479e8a5.setContent(html_0224a9ab512a59e6f51fa7a094c96071);
+            
+        
+
+        circle_marker_31fad9a956447dda674d69481cd6ae4c.bindPopup(popup_08522e111f0c5ac7454df06e6479e8a5)
+        ;
+
+        
+    
+    
+            var circle_marker_4518a2086e4d95cbf119e646e8b8c5fa = L.circleMarker(
+                [55.75646, 37.62321],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_c698c2039f677975ba1d24a6bc3792d9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6750eb8a719eabb19fc065d7b9d9888c = $(`<div id="html_6750eb8a719eabb19fc065d7b9d9888c" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Площадь Революции<br>         <b>Координаты:</b> 55.75646, 37.62321<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_c698c2039f677975ba1d24a6bc3792d9.setContent(html_6750eb8a719eabb19fc065d7b9d9888c);
+            
+        
+
+        circle_marker_4518a2086e4d95cbf119e646e8b8c5fa.bindPopup(popup_c698c2039f677975ba1d24a6bc3792d9)
+        ;
+
+        
+    
+    
+            var circle_marker_64d88c3065ebac56ac32c162a7ff341d = L.circleMarker(
+                [55.79222, 37.63557],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_f122d647e6057ccdff79d46a2c3fc211 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de3d725272cf95dd52f5eca415a9fb94 = $(`<div id="html_de3d725272cf95dd52f5eca415a9fb94" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Рижская<br>         <b>Координаты:</b> 55.79222, 37.63557<br>         <b>Округ:</b> СВАО         </div>`)[0];
+                popup_f122d647e6057ccdff79d46a2c3fc211.setContent(html_de3d725272cf95dd52f5eca415a9fb94);
+            
+        
+
+        circle_marker_64d88c3065ebac56ac32c162a7ff341d.bindPopup(popup_f122d647e6057ccdff79d46a2c3fc211)
+        ;
+
+        
+    
+    
+            var circle_marker_254a419963fd78a5bcbd4646ae795bae = L.circleMarker(
+                [55.746487, 37.682631],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_93f9df42ed2f4f8ab352147c28dcdbbd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4863e81fba2b054275afc82beaf1407e = $(`<div id="html_4863e81fba2b054275afc82beaf1407e" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Римская<br>         <b>Координаты:</b> 55.746487, 37.682631<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_93f9df42ed2f4f8ab352147c28dcdbbd.setContent(html_4863e81fba2b054275afc82beaf1407e);
+            
+        
+
+        circle_marker_254a419963fd78a5bcbd4646ae795bae.bindPopup(popup_93f9df42ed2f4f8ab352147c28dcdbbd)
+        ;
+
+        
+    
+    
+            var circle_marker_28c3f6ece2a4462b9964f322082366b2 = L.circleMarker(
+                [55.71753, 37.79425],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_bf36dda694d8364d1e91de54ac8b5c35 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bba722b3a69c7871601e4408e76eda58 = $(`<div id="html_bba722b3a69c7871601e4408e76eda58" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Рязанский проспект<br>         <b>Координаты:</b> 55.71753, 37.79425<br>         <b>Округ:</b> ЮВАО         </div>`)[0];
+                popup_bf36dda694d8364d1e91de54ac8b5c35.setContent(html_bba722b3a69c7871601e4408e76eda58);
+            
+        
+
+        circle_marker_28c3f6ece2a4462b9964f322082366b2.bindPopup(popup_bf36dda694d8364d1e91de54ac8b5c35)
+        ;
+
+        
+    
+    
+            var circle_marker_ba7c553464299d3f8f03dccad046b6c6 = L.circleMarker(
+                [55.79421, 37.58666],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_a456da41e9925b8878558a00d47822bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9588d4f6fa8ba95de4ee7b196eaaa6bd = $(`<div id="html_9588d4f6fa8ba95de4ee7b196eaaa6bd" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Cавеловская<br>         <b>Координаты:</b> 55.79421, 37.58666<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_a456da41e9925b8878558a00d47822bf.setContent(html_9588d4f6fa8ba95de4ee7b196eaaa6bd);
+            
+        
+
+        circle_marker_ba7c553464299d3f8f03dccad046b6c6.bindPopup(popup_a456da41e9925b8878558a00d47822bf)
+        ;
+
+        
+    
+    
+            var circle_marker_ce2dce797733a2718b0e086f6895674e = L.circleMarker(
+                [55.80955, 37.79884],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_e9d578396eccd790901a187e916b2e7c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_01b025cd4ef9f5ff2c8fa0f0273412ad = $(`<div id="html_01b025cd4ef9f5ff2c8fa0f0273412ad" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Щелковская<br>         <b>Координаты:</b> 55.80955, 37.79884<br>         <b>Округ:</b> ВАО         </div>`)[0];
+                popup_e9d578396eccd790901a187e916b2e7c.setContent(html_01b025cd4ef9f5ff2c8fa0f0273412ad);
+            
+        
+
+        circle_marker_ce2dce797733a2718b0e086f6895674e.bindPopup(popup_e9d578396eccd790901a187e916b2e7c)
+        ;
+
+        
+    
+    
+            var circle_marker_52ceab3fdd6800d1ebb76128fef450e6 = L.circleMarker(
+                [55.80796, 37.46629],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_0754a818cf3f140156b6d52ef91321b1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_810dd78a59589f3505bb088814a3098c = $(`<div id="html_810dd78a59589f3505bb088814a3098c" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Щукинская<br>         <b>Координаты:</b> 55.80796, 37.46629<br>         <b>Округ:</b> СЗАО         </div>`)[0];
+                popup_0754a818cf3f140156b6d52ef91321b1.setContent(html_810dd78a59589f3505bb088814a3098c);
+            
+        
+
+        circle_marker_52ceab3fdd6800d1ebb76128fef450e6.bindPopup(popup_0754a818cf3f140156b6d52ef91321b1)
+        ;
+
+        
+    
+    
+            var circle_marker_5b0e66a37db7a5bfb1b3a539cd2b1622 = L.circleMarker(
+                [55.78279, 37.71844],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_4a3cceea6ecaa0d904ca765c880dc657 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_caf572182aa7d99a8a7f957b56b54217 = $(`<div id="html_caf572182aa7d99a8a7f957b56b54217" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Cеменовская<br>         <b>Координаты:</b> 55.78279, 37.71844<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_4a3cceea6ecaa0d904ca765c880dc657.setContent(html_caf572182aa7d99a8a7f957b56b54217);
+            
+        
+
+        circle_marker_5b0e66a37db7a5bfb1b3a539cd2b1622.bindPopup(popup_4a3cceea6ecaa0d904ca765c880dc657)
+        ;
+
+        
+    
+    
+            var circle_marker_21f15468f3c2b4fd3d8d25fc63a354ea = L.circleMarker(
+                [55.72658, 37.62462],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_ec2c20a2803f19a09f68dac9bf381795 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47c190882cc6dbcd0abbb455956171c7 = $(`<div id="html_47c190882cc6dbcd0abbb455956171c7" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Cерпуховская<br>         <b>Координаты:</b> 55.72658, 37.62462<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_ec2c20a2803f19a09f68dac9bf381795.setContent(html_47c190882cc6dbcd0abbb455956171c7);
+            
+        
+
+        circle_marker_21f15468f3c2b4fd3d8d25fc63a354ea.bindPopup(popup_ec2c20a2803f19a09f68dac9bf381795)
+        ;
+
+        
+    
+    
+            var circle_marker_b873a0e6db5650e616145f551e99c7b8 = L.circleMarker(
+                [55.65121, 37.59939],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_c41f68a6e13ffc8bb998304f7ef7b3dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7646f4355ac706d20e3f0d19e2afd246 = $(`<div id="html_7646f4355ac706d20e3f0d19e2afd246" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Cевастопольская<br>         <b>Координаты:</b> 55.65121, 37.59939<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_c41f68a6e13ffc8bb998304f7ef7b3dd.setContent(html_7646f4355ac706d20e3f0d19e2afd246);
+            
+        
+
+        circle_marker_b873a0e6db5650e616145f551e99c7b8.bindPopup(popup_c41f68a6e13ffc8bb998304f7ef7b3dd)
+        ;
+
+        
+    
+    
+            var circle_marker_6e15be011a24925c0b5d0244f8d90668 = L.circleMarker(
+                [55.71886, 37.60797],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_20dd0871f51f71bf3404c05bd8ce60d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba71076e427a672cc1941f9a6693e506 = $(`<div id="html_ba71076e427a672cc1941f9a6693e506" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Шаболовская<br>         <b>Координаты:</b> 55.71886, 37.60797<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_20dd0871f51f71bf3404c05bd8ce60d7.setContent(html_ba71076e427a672cc1941f9a6693e506);
+            
+        
+
+        circle_marker_6e15be011a24925c0b5d0244f8d90668.bindPopup(popup_20dd0871f51f71bf3404c05bd8ce60d7)
+        ;
+
+        
+    
+    
+            var circle_marker_f065c31cbbae0de4f80b34657158a772 = L.circleMarker(
+                [55.84937, 37.43951],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_9320ef1d7326f979359a377f7c430370 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_985e49c5e3e3ca8d806a5203a0e6d34c = $(`<div id="html_985e49c5e3e3ca8d806a5203a0e6d34c" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Cходненская<br>         <b>Координаты:</b> 55.84937, 37.43951<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_9320ef1d7326f979359a377f7c430370.setContent(html_985e49c5e3e3ca8d806a5203a0e6d34c);
+            
+        
+
+        circle_marker_f065c31cbbae0de4f80b34657158a772.bindPopup(popup_9320ef1d7326f979359a377f7c430370)
+        ;
+
+        
+    
+    
+            var circle_marker_26b4f87283d42588362c44cda6b81be1 = L.circleMarker(
+                [55.729508, 37.468829],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_115361f8e2c540c0d5585ad5a958dd78 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f6ef13ef2271bd37bf3ac8e94a74f02 = $(`<div id="html_7f6ef13ef2271bd37bf3ac8e94a74f02" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Cлавянский бульвар (стр.)<br>         <b>Координаты:</b> 55.729508, 37.468829<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_115361f8e2c540c0d5585ad5a958dd78.setContent(html_7f6ef13ef2271bd37bf3ac8e94a74f02);
+            
+        
+
+        circle_marker_26b4f87283d42588362c44cda6b81be1.bindPopup(popup_115361f8e2c540c0d5585ad5a958dd78)
+        ;
+
+        
+    
+    
+            var circle_marker_b184bccfb0e8b41400fd3c87a00a969d = L.circleMarker(
+                [55.74823, 37.58384],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_91c19bff5d13041cca90ec923ba1259e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb895da36090ec6dcd08b56978562537 = $(`<div id="html_cb895da36090ec6dcd08b56978562537" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Cмоленская<br>         <b>Координаты:</b> 55.74823, 37.58384<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_91c19bff5d13041cca90ec923ba1259e.setContent(html_cb895da36090ec6dcd08b56978562537);
+            
+        
+
+        circle_marker_b184bccfb0e8b41400fd3c87a00a969d.bindPopup(popup_91c19bff5d13041cca90ec923ba1259e)
+        ;
+
+        
+    
+    
+            var circle_marker_89f5b43c3d9fbff35285a5a7aa13eecb = L.circleMarker(
+                [55.80518, 37.51495],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_2338537b81c52a036b7bc3a4557f7396 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_daa5e112dd916307bc03e636e92f4bb5 = $(`<div id="html_daa5e112dd916307bc03e636e92f4bb5" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Cокол<br>         <b>Координаты:</b> 55.80518, 37.51495<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_2338537b81c52a036b7bc3a4557f7396.setContent(html_daa5e112dd916307bc03e636e92f4bb5);
+            
+        
+
+        circle_marker_89f5b43c3d9fbff35285a5a7aa13eecb.bindPopup(popup_2338537b81c52a036b7bc3a4557f7396)
+        ;
+
+        
+    
+    
+            var circle_marker_f87e327e0fc753aa3786a320e9c35325 = L.circleMarker(
+                [55.78893, 37.67943],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_b0783dd2d5728843bec11bcc32b6448e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_681ad37d917968f35eea184932100622 = $(`<div id="html_681ad37d917968f35eea184932100622" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Cокольники<br>         <b>Координаты:</b> 55.78893, 37.67943<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_b0783dd2d5728843bec11bcc32b6448e.setContent(html_681ad37d917968f35eea184932100622);
+            
+        
+
+        circle_marker_f87e327e0fc753aa3786a320e9c35325.bindPopup(popup_b0783dd2d5728843bec11bcc32b6448e)
+        ;
+
+        
+    
+    
+            var circle_marker_74299a084ec2ff0c953a998f6b63e939 = L.circleMarker(
+                [55.72397, 37.56547],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_09d8f21d436bbf669b215510bc411ba1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1c5f7557a9f9445ebbe9ec3d3a4aed8 = $(`<div id="html_d1c5f7557a9f9445ebbe9ec3d3a4aed8" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Cпортивная<br>         <b>Координаты:</b> 55.72397, 37.56547<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_09d8f21d436bbf669b215510bc411ba1.setContent(html_d1c5f7557a9f9445ebbe9ec3d3a4aed8);
+            
+        
+
+        circle_marker_74299a084ec2ff0c953a998f6b63e939.bindPopup(popup_09d8f21d436bbf669b215510bc411ba1)
+        ;
+
+        
+    
+    
+            var circle_marker_27d4a9cda16accdbed71234ac4b8d0d5 = L.circleMarker(
+                [55.765551, 37.635261],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_935fcce258224b9e64c2d0db0c5ae452 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_699552c3f338c27ca4b75b310ec5cd70 = $(`<div id="html_699552c3f338c27ca4b75b310ec5cd70" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Cретенский бульвар (стр.)<br>         <b>Координаты:</b> 55.765551, 37.635261<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_935fcce258224b9e64c2d0db0c5ae452.setContent(html_699552c3f338c27ca4b75b310ec5cd70);
+            
+        
+
+        circle_marker_27d4a9cda16accdbed71234ac4b8d0d5.bindPopup(popup_935fcce258224b9e64c2d0db0c5ae452)
+        ;
+
+        
+    
+    
+            var circle_marker_a57b906afdc0609e83c79ccb61ad12f2 = L.circleMarker(
+                [55.80435, 37.396363],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_7f9bd567a43daba5910e95897e376dea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_65a42e8f33a5d8eb4b119c43e245ccac = $(`<div id="html_65a42e8f33a5d8eb4b119c43e245ccac" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Cтрогино (стр.)<br>         <b>Координаты:</b> 55.80435, 37.396363<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_7f9bd567a43daba5910e95897e376dea.setContent(html_65a42e8f33a5d8eb4b119c43e245ccac);
+            
+        
+
+        circle_marker_a57b906afdc0609e83c79ccb61ad12f2.bindPopup(popup_7f9bd567a43daba5910e95897e376dea)
+        ;
+
+        
+    
+    
+            var circle_marker_33daf9ad07edee09d104e9fbc6f605e7 = L.circleMarker(
+                [55.73873, 37.54825],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_e5143d2b44bc052d6fd92c05a73722cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d053b37fcbf2b5595c4d0dd9ecd7a1bd = $(`<div id="html_d053b37fcbf2b5595c4d0dd9ecd7a1bd" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Cтуденческая<br>         <b>Координаты:</b> 55.73873, 37.54825<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_e5143d2b44bc052d6fd92c05a73722cd.setContent(html_d053b37fcbf2b5595c4d0dd9ecd7a1bd);
+            
+        
+
+        circle_marker_33daf9ad07edee09d104e9fbc6f605e7.bindPopup(popup_e5143d2b44bc052d6fd92c05a73722cd)
+        ;
+
+        
+    
+    
+            var circle_marker_8386a891425a1af5ab6a48afcd4f6ba1 = L.circleMarker(
+                [55.77211, 37.63239],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_8a2e2bab4d0ff52515f14abe08210020 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ed5e9185ff6aca1dc2dc2debdcaa3f9 = $(`<div id="html_9ed5e9185ff6aca1dc2dc2debdcaa3f9" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Cухаревская<br>         <b>Координаты:</b> 55.77211, 37.63239<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_8a2e2bab4d0ff52515f14abe08210020.setContent(html_9ed5e9185ff6aca1dc2dc2debdcaa3f9);
+            
+        
+
+        circle_marker_8386a891425a1af5ab6a48afcd4f6ba1.bindPopup(popup_8a2e2bab4d0ff52515f14abe08210020)
+        ;
+
+        
+    
+    
+            var circle_marker_a6de8e818820f9412e0478a59493f29d = L.circleMarker(
+                [55.781984, 37.614487],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_00b9bcb0548fadde8eeedb8b5af54376 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a82e0da03b7c099719c5fd06b2af4623 = $(`<div id="html_a82e0da03b7c099719c5fd06b2af4623" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Площадь Cуворова (стр.)<br>         <b>Координаты:</b> 55.781984, 37.614487<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_00b9bcb0548fadde8eeedb8b5af54376.setContent(html_a82e0da03b7c099719c5fd06b2af4623);
+            
+        
+
+        circle_marker_a6de8e818820f9412e0478a59493f29d.bindPopup(popup_00b9bcb0548fadde8eeedb8b5af54376)
+        ;
+
+        
+    
+    
+            var circle_marker_d63563f72f1d3a08fad617f31c47f9b1 = L.circleMarker(
+                [55.85543, 37.65419],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_f85c458259085e1303526ca59a1ce5d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a7e24d8323b2861fadf0af1c423e42c7 = $(`<div id="html_a7e24d8323b2861fadf0af1c423e42c7" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Cвиблово<br>         <b>Координаты:</b> 55.85543, 37.65419<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_f85c458259085e1303526ca59a1ce5d6.setContent(html_a7e24d8323b2861fadf0af1c423e42c7);
+            
+        
+
+        circle_marker_d63563f72f1d3a08fad617f31c47f9b1.bindPopup(popup_f85c458259085e1303526ca59a1ce5d6)
+        ;
+
+        
+    
+    
+            var circle_marker_b88a9f2ebf4dc6ab9ad64b57ac4c5744 = L.circleMarker(
+                [55.74255, 37.65389],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_9436b7ebbdff5324a7ec41e88535d186 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c0428dc302a2da161cecaef6ee1ac24 = $(`<div id="html_6c0428dc302a2da161cecaef6ee1ac24" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Таганская<br>         <b>Координаты:</b> 55.74255, 37.65389<br>         <b>Округ:</b> ЮВАО         </div>`)[0];
+                popup_9436b7ebbdff5324a7ec41e88535d186.setContent(html_6c0428dc302a2da161cecaef6ee1ac24);
+            
+        
+
+        circle_marker_b88a9f2ebf4dc6ab9ad64b57ac4c5744.bindPopup(popup_9436b7ebbdff5324a7ec41e88535d186)
+        ;
+
+        
+    
+    
+            var circle_marker_c9365cc97ff320f9da4a02955f35c361 = L.circleMarker(
+                [55.75857, 37.6177],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_0ea2d391c648031cfcb345a6fc83750b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b306f154dd9ed5ae86998636765b582d = $(`<div id="html_b306f154dd9ed5ae86998636765b582d" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Театральная<br>         <b>Координаты:</b> 55.75857, 37.6177<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_0ea2d391c648031cfcb345a6fc83750b.setContent(html_b306f154dd9ed5ae86998636765b582d);
+            
+        
+
+        circle_marker_c9365cc97ff320f9da4a02955f35c361.bindPopup(popup_0ea2d391c648031cfcb345a6fc83750b)
+        ;
+
+        
+    
+    
+            var circle_marker_9802bfeda1c2f56a50ec434e7ec580ce = L.circleMarker(
+                [55.70947, 37.73282],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_7fab1eb49b3a16bdc3078e2edb242391 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_607af26dd331688a899fbe97be72c72d = $(`<div id="html_607af26dd331688a899fbe97be72c72d" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Текстильшики<br>         <b>Координаты:</b> 55.70947, 37.73282<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_7fab1eb49b3a16bdc3078e2edb242391.setContent(html_607af26dd331688a899fbe97be72c72d);
+            
+        
+
+        circle_marker_9802bfeda1c2f56a50ec434e7ec580ce.bindPopup(popup_7fab1eb49b3a16bdc3078e2edb242391)
+        ;
+
+        
+    
+    
+            var circle_marker_77fc031ce6b38d37cbaf48cf3906b8b8 = L.circleMarker(
+                [55.61814, 37.50814],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_c94ceffd2d2852b8bc841903657789f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f48c35e825e3701295fcf4c876f92e1c = $(`<div id="html_f48c35e825e3701295fcf4c876f92e1c" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Теплый стан<br>         <b>Координаты:</b> 55.61814, 37.50814<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_c94ceffd2d2852b8bc841903657789f9.setContent(html_f48c35e825e3701295fcf4c876f92e1c);
+            
+        
+
+        circle_marker_77fc031ce6b38d37cbaf48cf3906b8b8.bindPopup(popup_c94ceffd2d2852b8bc841903657789f9)
+        ;
+
+        
+    
+    
+            var circle_marker_e439c905d3b288173e6aa738a89452c0 = L.circleMarker(
+                [55.81842, 37.57571],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_38207e10dc266480f6cb77d263cb357a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_904020478a9c1db3307730afea184458 = $(`<div id="html_904020478a9c1db3307730afea184458" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Тимирязевская<br>         <b>Координаты:</b> 55.81842, 37.57571<br>         <b>Округ:</b> САО         </div>`)[0];
+                popup_38207e10dc266480f6cb77d263cb357a.setContent(html_904020478a9c1db3307730afea184458);
+            
+        
+
+        circle_marker_e439c905d3b288173e6aa738a89452c0.bindPopup(popup_38207e10dc266480f6cb77d263cb357a)
+        ;
+
+        
+    
+    
+            var circle_marker_e348990218f3076b18f68c799e6e45ff = L.circleMarker(
+                [55.74061, 37.62492],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_0c5edb3510424dfbaef5c5a0852fa5c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_946ca3781714d7268048bbaae18986dc = $(`<div id="html_946ca3781714d7268048bbaae18986dc" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Третьяковская<br>         <b>Координаты:</b> 55.74061, 37.62492<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_0c5edb3510424dfbaef5c5a0852fa5c4.setContent(html_946ca3781714d7268048bbaae18986dc);
+            
+        
+
+        circle_marker_e348990218f3076b18f68c799e6e45ff.bindPopup(popup_0c5edb3510424dfbaef5c5a0852fa5c4)
+        ;
+
+        
+    
+    
+            var circle_marker_ab6fcdd90a4cfaf169587e1fa73d5568 = L.circleMarker(
+                [55.767605, 37.6221],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_db77f44b2e8823e41bc29673ab1ddbfe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_feb1884fc34550b7e8333acac28b24e0 = $(`<div id="html_feb1884fc34550b7e8333acac28b24e0" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Трубная (стр.)<br>         <b>Координаты:</b> 55.767605, 37.6221<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_db77f44b2e8823e41bc29673ab1ddbfe.setContent(html_feb1884fc34550b7e8333acac28b24e0);
+            
+        
+
+        circle_marker_ab6fcdd90a4cfaf169587e1fa73d5568.bindPopup(popup_db77f44b2e8823e41bc29673ab1ddbfe)
+        ;
+
+        
+    
+    
+            var circle_marker_74ebbd394f2c604fce4e9dbeef5ab8c2 = L.circleMarker(
+                [55.62011, 37.66939],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_d58a4eb3c7d116ca2056a5cf73171928 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce04d8de5da4c548a37b3b85b677c1bc = $(`<div id="html_ce04d8de5da4c548a37b3b85b677c1bc" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Царицино<br>         <b>Координаты:</b> 55.62011, 37.66939<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_d58a4eb3c7d116ca2056a5cf73171928.setContent(html_ce04d8de5da4c548a37b3b85b677c1bc);
+            
+        
+
+        circle_marker_74ebbd394f2c604fce4e9dbeef5ab8c2.bindPopup(popup_d58a4eb3c7d116ca2056a5cf73171928)
+        ;
+
+        
+    
+    
+            var circle_marker_5194b281bfd3a912203d41257dbf3757 = L.circleMarker(
+                [55.7716, 37.62058],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_67bd8a9b2ae5b6aecb991e7728e95dee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1fe1c763090494d40b339fe1497a8516 = $(`<div id="html_1fe1c763090494d40b339fe1497a8516" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Цветной бульвар<br>         <b>Координаты:</b> 55.7716, 37.62058<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_67bd8a9b2ae5b6aecb991e7728e95dee.setContent(html_1fe1c763090494d40b339fe1497a8516);
+            
+        
+
+        circle_marker_5194b281bfd3a912203d41257dbf3757.bindPopup(popup_67bd8a9b2ae5b6aecb991e7728e95dee)
+        ;
+
+        
+    
+    
+            var circle_marker_404d92c5b107629529103b5c930b64ee = L.circleMarker(
+                [55.70901, 37.6226],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_e86c1fe099329e2f3c60609fa613a0dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27cdcdeb3e57c6a6ef5705d76ceea69f = $(`<div id="html_27cdcdeb3e57c6a6ef5705d76ceea69f" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Тульская<br>         <b>Координаты:</b> 55.70901, 37.6226<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_e86c1fe099329e2f3c60609fa613a0dc.setContent(html_27cdcdeb3e57c6a6ef5705d76ceea69f);
+            
+        
+
+        circle_marker_404d92c5b107629529103b5c930b64ee.bindPopup(popup_e86c1fe099329e2f3c60609fa613a0dc)
+        ;
+
+        
+    
+    
+            var circle_marker_876cb78392c1383fb163105b04c2d2b6 = L.circleMarker(
+                [55.7646, 37.63623],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_9c928859d29684e02efdc823fe1677a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e0ca91da9ba58cf4edc4030401c2739 = $(`<div id="html_4e0ca91da9ba58cf4edc4030401c2739" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Тургеневская<br>         <b>Координаты:</b> 55.7646, 37.63623<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_9c928859d29684e02efdc823fe1677a4.setContent(html_4e0ca91da9ba58cf4edc4030401c2739);
+            
+        
+
+        circle_marker_876cb78392c1383fb163105b04c2d2b6.bindPopup(popup_9c928859d29684e02efdc823fe1677a4)
+        ;
+
+        
+    
+    
+            var circle_marker_a2028cc5769df92378d0ed568f434d1a = L.circleMarker(
+                [55.8258, 37.43621],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_883b18055e8d6b70ebdca1506ef089a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a946490d3778c4c6c330e4fcdaba6c5a = $(`<div id="html_a946490d3778c4c6c330e4fcdaba6c5a" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Тушинская<br>         <b>Координаты:</b> 55.8258, 37.43621<br>         <b>Округ:</b> СЗАО         </div>`)[0];
+                popup_883b18055e8d6b70ebdca1506ef089a1.setContent(html_a946490d3778c4c6c330e4fcdaba6c5a);
+            
+        
+
+        circle_marker_a2028cc5769df92378d0ed568f434d1a.bindPopup(popup_883b18055e8d6b70ebdca1506ef089a1)
+        ;
+
+        
+    
+    
+            var circle_marker_0f64f38be20021f638d39e3a3e2c2cc0 = L.circleMarker(
+                [55.7652, 37.60352],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_21424b4dcd838a4a08723e19ddfd1b07 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e986a0bbff6b30284ab0ad26bf83caae = $(`<div id="html_e986a0bbff6b30284ab0ad26bf83caae" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Тверская<br>         <b>Координаты:</b> 55.7652, 37.60352<br>         <b>Округ:</b> ЦАО         </div>`)[0];
+                popup_21424b4dcd838a4a08723e19ddfd1b07.setContent(html_e986a0bbff6b30284ab0ad26bf83caae);
+            
+        
+
+        circle_marker_0f64f38be20021f638d39e3a3e2c2cc0.bindPopup(popup_21424b4dcd838a4a08723e19ddfd1b07)
+        ;
+
+        
+    
+    
+            var circle_marker_0b3d3bc9f67ef1525209cbdceadb7075 = L.circleMarker(
+                [55.76355, 37.56375],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_704019a93d6ca10d4b3c30d0417af197 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9282fd146ef681944c6641f513f68a92 = $(`<div id="html_9282fd146ef681944c6641f513f68a92" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Улица 1905 года<br>         <b>Координаты:</b> 55.76355, 37.56375<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_704019a93d6ca10d4b3c30d0417af197.setContent(html_9282fd146ef681944c6641f513f68a92);
+            
+        
+
+        circle_marker_0b3d3bc9f67ef1525209cbdceadb7075.bindPopup(popup_704019a93d6ca10d4b3c30d0417af197)
+        ;
+
+        
+    
+    
+            var circle_marker_720a56c5740793d181dfd1f2f740b404 = L.circleMarker(
+                [55.69167, 37.53433],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_6cb276d41ba58350bf3689ca19a8472b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ff8567ca5bdf237ca4df89fc59108a8 = $(`<div id="html_0ff8567ca5bdf237ca4df89fc59108a8" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Университет<br>         <b>Координаты:</b> 55.69167, 37.53433<br>         <b>Округ:</b> ЮЗАО         </div>`)[0];
+                popup_6cb276d41ba58350bf3689ca19a8472b.setContent(html_0ff8567ca5bdf237ca4df89fc59108a8);
+            
+        
+
+        circle_marker_720a56c5740793d181dfd1f2f740b404.bindPopup(popup_6cb276d41ba58350bf3689ca19a8472b)
+        ;
+
+        
+    
+    
+            var circle_marker_a5fcb64948f2f5c4959db8d62fdb44b6 = L.circleMarker(
+                [55.65381, 37.62084],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_778bfefa6338d0e03d3b3bb363d3921a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ced045059c2dd9d47717592bf741679 = $(`<div id="html_7ced045059c2dd9d47717592bf741679" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Варшавская<br>         <b>Координаты:</b> 55.65381, 37.62084<br>         <b>Округ:</b> ЮАО         </div>`)[0];
+                popup_778bfefa6338d0e03d3b3bb363d3921a.setContent(html_7ced045059c2dd9d47717592bf741679);
+            
+        
+
+        circle_marker_a5fcb64948f2f5c4959db8d62fdb44b6.bindPopup(popup_778bfefa6338d0e03d3b3bb363d3921a)
+        ;
+
+        
+    
+    
+            var circle_marker_5eb55898fa1ca63cb262a030db5f2f66 = L.circleMarker(
+                [55.82177, 37.64107],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_9c4a39118ef7562ceb55c983e8bf3d11 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a0f09da36d4c02bdd482fe91b03da2e = $(`<div id="html_2a0f09da36d4c02bdd482fe91b03da2e" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> ВДНХ<br>         <b>Координаты:</b> 55.82177, 37.64107<br>         <b>Округ:</b> СВАО         </div>`)[0];
+                popup_9c4a39118ef7562ceb55c983e8bf3d11.setContent(html_2a0f09da36d4c02bdd482fe91b03da2e);
+            
+        
+
+        circle_marker_5eb55898fa1ca63cb262a030db5f2f66.bindPopup(popup_9c4a39118ef7562ceb55c983e8bf3d11)
+        ;
+
+        
+    
+    
+            var circle_marker_1189788189ee6eb4c630dcaa15132c85 = L.circleMarker(
+                [55.67613, 37.5045],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_187772e927822eb1671f05e82c22b86d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b039c5fa3dd1400d04055d6208a696da = $(`<div id="html_b039c5fa3dd1400d04055d6208a696da" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Проспект Вернадского<br>         <b>Координаты:</b> 55.67613, 37.5045<br>         <b>Округ:</b> ЮЗАО         </div>`)[0];
+                popup_187772e927822eb1671f05e82c22b86d.setContent(html_b039c5fa3dd1400d04055d6208a696da);
+            
+        
+
+        circle_marker_1189788189ee6eb4c630dcaa15132c85.bindPopup(popup_187772e927822eb1671f05e82c22b86d)
+        ;
+
+        
+    
+    
+            var circle_marker_f1e756a23dbfb195c7d1b7256f49ca97 = L.circleMarker(
+                [55.84669, 37.59251],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_301b2670d88706e8198edf9f93a8e7c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e057f15e91f4d6ca831e290e68bd0e7 = $(`<div id="html_2e057f15e91f4d6ca831e290e68bd0e7" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Владыкино<br>         <b>Координаты:</b> 55.84669, 37.59251<br>         <b>Округ:</b> САО         </div>`)[0];
+                popup_301b2670d88706e8198edf9f93a8e7c5.setContent(html_2e057f15e91f4d6ca831e290e68bd0e7);
+            
+        
+
+        circle_marker_f1e756a23dbfb195c7d1b7256f49ca97.bindPopup(popup_301b2670d88706e8198edf9f93a8e7c5)
+        ;
+
+        
+    
+    
+            var circle_marker_e331cb3d6a34830dd2f1606b34e81d58 = L.circleMarker(
+                [55.8386, 37.48749],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_4de6f358110848bc776b6a3b9cf7ff44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_533da1d4580c8f93acc2b663eb4d357b = $(`<div id="html_533da1d4580c8f93acc2b663eb4d357b" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Водный стадион<br>         <b>Координаты:</b> 55.8386, 37.48749<br>         <b>Округ:</b> СЗАО         </div>`)[0];
+                popup_4de6f358110848bc776b6a3b9cf7ff44.setContent(html_533da1d4580c8f93acc2b663eb4d357b);
+            
+        
+
+        circle_marker_e331cb3d6a34830dd2f1606b34e81d58.bindPopup(popup_4de6f358110848bc776b6a3b9cf7ff44)
+        ;
+
+        
+    
+    
+            var circle_marker_3c9831709f0a85008671f71d25cb75d5 = L.circleMarker(
+                [55.81811, 37.49905],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_805eeec6d7abc7164d06e6b40645f037 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2dc357053a8864e03f311c7f8e6cc952 = $(`<div id="html_2dc357053a8864e03f311c7f8e6cc952" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Войковская<br>         <b>Координаты:</b> 55.81811, 37.49905<br>         <b>Округ:</b> СЗАО         </div>`)[0];
+                popup_805eeec6d7abc7164d06e6b40645f037.setContent(html_2dc357053a8864e03f311c7f8e6cc952);
+            
+        
+
+        circle_marker_3c9831709f0a85008671f71d25cb75d5.bindPopup(popup_805eeec6d7abc7164d06e6b40645f037)
+        ;
+
+        
+    
+    
+            var circle_marker_b2c50dd1e2a77a291f1e17db7ae530d1 = L.circleMarker(
+                [55.83459, 37.38367],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_f50707463095d3f11b492eb40867d701 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_614be9166752f4601d01cbb6e82d4ecb = $(`<div id="html_614be9166752f4601d01cbb6e82d4ecb" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Волоколамская (стр.)<br>         <b>Координаты:</b> 55.83459, 37.38367<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_f50707463095d3f11b492eb40867d701.setContent(html_614be9166752f4601d01cbb6e82d4ecb);
+            
+        
+
+        circle_marker_b2c50dd1e2a77a291f1e17db7ae530d1.bindPopup(popup_f50707463095d3f11b492eb40867d701)
+        ;
+
+        
+    
+    
+            var circle_marker_163d395dacbfca22eea04888db9e5861 = L.circleMarker(
+                [55.7243, 37.68795],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_1510437db97c2f6b6db6770924c0f7ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c411090adf0c2372beb1c71656cb2eeb = $(`<div id="html_c411090adf0c2372beb1c71656cb2eeb" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Волгоградский проспект<br>         <b>Координаты:</b> 55.7243, 37.68795<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_1510437db97c2f6b6db6770924c0f7ed.setContent(html_c411090adf0c2372beb1c71656cb2eeb);
+            
+        
+
+        circle_marker_163d395dacbfca22eea04888db9e5861.bindPopup(popup_1510437db97c2f6b6db6770924c0f7ed)
+        ;
+
+        
+    
+    
+            var circle_marker_a429e3dbf6bf24764c00dca65df75bf3 = L.circleMarker(
+                [55.69101, 37.75498],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_988e1bfd9538c52d8400ce52be428900 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ef1d19849a3fc65eeaf9153c02f09614 = $(`<div id="html_ef1d19849a3fc65eeaf9153c02f09614" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Волжская<br>         <b>Координаты:</b> 55.69101, 37.75498<br>         <b>Округ:</b> ЮВАО         </div>`)[0];
+                popup_988e1bfd9538c52d8400ce52be428900.setContent(html_ef1d19849a3fc65eeaf9153c02f09614);
+            
+        
+
+        circle_marker_a429e3dbf6bf24764c00dca65df75bf3.bindPopup(popup_988e1bfd9538c52d8400ce52be428900)
+        ;
+
+        
+    
+    
+            var circle_marker_f7c0a7cdaa4c908f2698ab44000ebf7e = L.circleMarker(
+                [55.710454, 37.558601],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_a195dd61566461ed0bfc63c444358c30 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e40cb8f6861ef4b0fbdb2a0d67391a3 = $(`<div id="html_4e40cb8f6861ef4b0fbdb2a0d67391a3" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Воробьёвы горы<br>         <b>Координаты:</b> 55.710454, 37.558601<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_a195dd61566461ed0bfc63c444358c30.setContent(html_4e40cb8f6861ef4b0fbdb2a0d67391a3);
+            
+        
+
+        circle_marker_f7c0a7cdaa4c908f2698ab44000ebf7e.bindPopup(popup_a195dd61566461ed0bfc63c444358c30)
+        ;
+
+        
+    
+    
+            var circle_marker_ae2c0afdb1b0e6207704be7ee86ad01b = L.circleMarker(
+                [55.715, 37.81802],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_5ca0121f78f4cecb84e9df4e641b14dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ddb7f38c50cbd86524bf23c748e65bc7 = $(`<div id="html_ddb7f38c50cbd86524bf23c748e65bc7" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Выхино<br>         <b>Координаты:</b> 55.715, 37.81802<br>         <b>Округ:</b> ЮВАО         </div>`)[0];
+                popup_5ca0121f78f4cecb84e9df4e641b14dd.setContent(html_ddb7f38c50cbd86524bf23c748e65bc7);
+            
+        
+
+        circle_marker_ae2c0afdb1b0e6207704be7ee86ad01b.bindPopup(popup_5ca0121f78f4cecb84e9df4e641b14dd)
+        ;
+
+        
+    
+    
+            var circle_marker_3fca8d226b4d72efe0c88ed6cbac76fb = L.circleMarker(
+                [55.60535, 37.53494],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_3c0b5c61b4b334bd65b62f271c436ee0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44f4dcd2ed06872d2a62d974363710ba = $(`<div id="html_44f4dcd2ed06872d2a62d974363710ba" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Ясенево<br>         <b>Координаты:</b> 55.60535, 37.53494<br>         <b>Округ:</b> ЮЗАО         </div>`)[0];
+                popup_3c0b5c61b4b334bd65b62f271c436ee0.setContent(html_44f4dcd2ed06872d2a62d974363710ba);
+            
+        
+
+        circle_marker_3fca8d226b4d72efe0c88ed6cbac76fb.bindPopup(popup_3c0b5c61b4b334bd65b62f271c436ee0)
+        ;
+
+        
+    
+    
+            var circle_marker_3ae7ccfcf25c2ce792edd3ebd5ea9c84 = L.circleMarker(
+                [55.66464, 37.48421],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_3eb9c8e03d38e4fd96dc98978e6ac5cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb29a95dd4e7a87c9516359897d4c7bd = $(`<div id="html_fb29a95dd4e7a87c9516359897d4c7bd" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Юго-западная<br>         <b>Координаты:</b> 55.66464, 37.48421<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_3eb9c8e03d38e4fd96dc98978e6ac5cd.setContent(html_fb29a95dd4e7a87c9516359897d4c7bd);
+            
+        
+
+        circle_marker_3ae7ccfcf25c2ce792edd3ebd5ea9c84.bindPopup(popup_3eb9c8e03d38e4fd96dc98978e6ac5cd)
+        ;
+
+        
+    
+    
+            var circle_marker_0c7de7ae4a0032e34900584c56222226 = L.circleMarker(
+                [55.62122, 37.60752],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_4dfbe2e532900791a653cc5d927664ab);
+        
+    
+        var popup_4a8fc97b21322543356d113b4e8fabd6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_69fcee0fa26aaea46fb76101cf0607ef = $(`<div id="html_69fcee0fa26aaea46fb76101cf0607ef" style="width: 100.0%; height: 100.0%;">         <b>Станция:</b> Южная<br>         <b>Координаты:</b> 55.62122, 37.60752<br>         <b>Округ:</b> Не определен         </div>`)[0];
+                popup_4a8fc97b21322543356d113b4e8fabd6.setContent(html_69fcee0fa26aaea46fb76101cf0607ef);
+            
+        
+
+        circle_marker_0c7de7ae4a0032e34900584c56222226.bindPopup(popup_4a8fc97b21322543356d113b4e8fabd6)
+        ;
+
+        
+    
+</script>
+</html>
